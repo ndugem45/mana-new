@@ -1,12 +1,629 @@
-body {
-    background-color: rgb(251, 251, 232);
+nav {
+	padding-block: 24px;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
-.homepage {
-    text-align: center;
-    padding-top: 10em;
+nav .container {
+	display: flex;
+	align-items: center;
 }
 
-.logo {
-    width: 25%;
+nav .nav-logo {
+	width: 138px;
+	height: 56px;
+	aspect-ratio: 69 / 28;
+}
+
+nav .menu-group {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+	margin-left: 64px;
+	margin-right: auto;
+}
+
+nav .menu-group a {
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+nav .right-group {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+nav .right-group a {
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.hero {
+	background: url("assets/hero-bg.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	padding-top: 176px;
+	padding-bottom: 341px;
+}
+
+.hero .container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.hero .label {
+	color: #ffe4ac;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.hero p {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: "Inter Display";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+	max-width: 343px;
+	text-align: left;
+	margin: unset;
+}
+
+.hero a {
+	margin-top: 48px;
+}
+
+.hero h1 {
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	max-width: 755px;
+	text-align: left;
+	margin-block: 16px;
+}
+
+.running {
+	padding-block: 24px;
+}
+
+.running .container {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	overflow: hidden;
+}
+
+.running img {
+	width: auto;
+	object-fit: contain;
+	flex-shrink: 0;
+	padding: 24px 25px;
+}
+
+.about .container {
+	display: flex;
+	align-items: stretch;
+}
+
+.about .container img {
+	flex: 1;
+	height: auto;
+	object-fit: cover;
+	aspect-ratio: 3 / 4;
+}
+
+.about .container .content {
+	flex: 1;
+	padding-inline: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about .container .content .label {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.about .container .content h2 {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	margin-top: 24px;
+	margin-bottom: 145px;
+	position: relative;
+}
+
+.about .container .content h2 span {
+	color: #e1a423;
+	text-align: center;
+	font-family: Farmhouse;
+	font-size: 120px;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	width: 100%;
+	right: 0;
+	bottom: -105px;
+}
+
+.about .container .content p {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	margin-bottom: 16px;
+}
+
+.products {
+	padding-block: 100px;
+	background-color: white;
+}
+
+.products .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 141px;
+}
+
+.products .head .left {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.products .head .label {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.products .head h2 {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	position: relative;
+	max-width: 662px;
+}
+
+.products .head h2 span {
+	color: #e1a423;
+	text-align: center;
+	font-family: Farmhouse;
+	font-size: 120px;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	width: 100%;
+	right: -260px;
+	bottom: -101px;
+}
+
+.products .content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.products .content .card {
+	background-color: transparent;
+	padding: 24px;
+	padding-top: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 24px;
+}
+
+.products .content .card:hover {
+	background-color: #f5efe8;
+}
+
+.products .content .card img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	aspect-ratio: 1 / 1;
+	padding-inline: 40px;
+}
+
+.products .content .card .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.products .content .card .info h3 {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.products .content .card .info p {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.products .content .card a {
+	width: 100%;
+}
+
+.representation {
+	padding-block: 100px;
+	background-color: #f5efe8;
+}
+
+.representation .label {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.representation h2 {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	margin-top: 24px;
+	margin-bottom: 145px;
+	position: relative;
+	max-width: 644px;
+}
+
+.founder {
+	background: url("assets/founder.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-block: 100px;
+	color: white;
+}
+
+.founder .label {
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.founder h2 {
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	margin-top: 24px;
+	margin-bottom: 81px;
+	position: relative;
+}
+
+.founder h2 span:first-child {
+	max-width: 382px;
+	position: relative;
+	display: block;
+}
+
+.founder h2 span:last-child {
+	display: block;
+	color: #fff;
+	font-family: Farmhouse;
+	font-size: 120px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	position: relative;
+	margin-top: 143px;
+	margin-left: auto;
+	width: fit-content;
+}
+
+.founder .bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.founder .bottom p {
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	max-width: 328px;
+}
+
+.founder .bottom .wrap {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.founder .bottom .wrap button {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	border-radius: 40px;
+	background: #fff;
+}
+
+.testimonial {
+	background: white;
+	padding-block: 100px;
+}
+
+.testimonial .label {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.testimonial h2 {
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: -1.6px;
+	max-width: 577px;
+	position: relative;
+	margin-top: 24px;
+	margin-bottom: 80px;
+}
+
+.testimonial h2 span {
+	color: #e1a423;
+	font-family: Farmhouse;
+	font-size: 120px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 110%;
+	position: absolute;
+	bottom: -30px;
+	right: -407px;
+}
+
+.testimonial .slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 64px;
+}
+
+.testimonial .slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.testimonial .slide .stars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.testimonial .slide p {
+	color: #332717;
+	text-align: center;
+	font-family: "Inter Display";
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.testimonial .slide .user {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.testimonial .slide .user img {
+	width: 64px;
+	height: 64px;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.testimonial .slide .user div {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	color: rgba(51, 39, 23, 0.8);
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+.testimonial .slide .user div span:first-child {
+	color: #332717;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.testimonial .slider-nav {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: auto;
+	justify-self: center;
+}
+
+.testimonial .slider-nav button {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	border-radius: 40px;
+	border: 1px solid rgba(38, 21, 12, 0.2);
+}
+
+footer {
+	padding-block: 64px;
+	background: url("assets/footer-bg.png") #132142;
+	color: white;
+}
+
+footer .top {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .top .form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+footer .top .form p {
+	max-width: 284px;
+	font-family: "Inter Display";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+footer .top .menu-group {
+	display: flex;
+	gap: 110px;
+}
+
+footer .top .menu {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	color: #fff;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+footer .top .menu .menu-label {
+	color: rgba(255, 255, 255, 0.6);
+	font-family: "Inter Display";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+	margin-bottom: 4px;
+}
+
+footer .brand {
+	margin-top: 120px;
+	width: 100%;
+	font-family: Farmhouse;
+	font-size: 225px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+	background: linear-gradient(
+		92deg,
+		#cd8b00 -2.13%,
+		#fcf6c6 19.1%,
+		#e5c266 50.97%,
+		#fcf6c6 73.46%,
+		#cd8b00 94.12%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+footer .copy {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+}
+
+footer .copy div {
+	display: flex;
+	align-items: center;
+	gap: 32px;
 }
