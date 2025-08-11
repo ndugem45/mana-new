@@ -55,12 +55,24 @@ nav .right-group a {
 	text-align: center;
 	padding-top: 176px;
 	padding-bottom: 341px;
+	position: relative;
+}
+.hero video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
 }
 
 .hero .container {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+	z-index: 2;
+	position: relative;
 }
 
 .hero .label {
