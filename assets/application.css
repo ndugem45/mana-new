@@ -138,7 +138,7 @@ nav .right-group a {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(calc( -100% + 80px ));
   }
 }
 
