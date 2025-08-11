@@ -130,6 +130,7 @@ nav .right-group a {
 	object-fit: contain;
 	flex-shrink: 0;
 	padding: 24px 25px;
+	opacity: 0.5;
 }
 
 .about .container {
