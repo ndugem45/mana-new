@@ -326,6 +326,11 @@ nav .right-group a {
 
 .products .content .card a {
 	width: 100%;
+	opacity: 0;
+}
+
+.products .content .card:hover a {
+	opacity: 1;
 }
 
 .representation {
