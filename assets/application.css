@@ -125,6 +125,13 @@ nav .right-group a {
 	overflow: hidden;
 }
 
+.running .group{
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	flex-shrink: 0;
+}
+
 .running img {
 	width: auto;
 	object-fit: contain;
