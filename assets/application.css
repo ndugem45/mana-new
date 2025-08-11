@@ -51,9 +51,6 @@ nav .right-group a {
 }
 
 .hero {
-	background: url("assets/hero-bg.png") no-repeat;
-	background-size: cover;
-	background-position: center;
 	color: #fff;
 	text-align: center;
 	padding-top: 176px;
@@ -125,9 +122,10 @@ nav .right-group a {
 .about .container {
 	display: flex;
 	align-items: stretch;
+	overflow: auto;
 }
 
-.about .container img {
+.about .container .cover {
 	flex: 1;
 	height: auto;
 	object-fit: cover;
@@ -140,6 +138,7 @@ nav .right-group a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 710px;
 }
 
 .about .container .content .label {
@@ -173,9 +172,9 @@ nav .right-group a {
 	font-style: normal;
 	font-weight: 400;
 	position: absolute;
-	width: 100%;
+	width: fit-content;
 	right: 0;
-	bottom: -105px;
+	bottom: -83px;
 }
 
 .about .container .content p {
@@ -237,8 +236,8 @@ nav .right-group a {
 	font-weight: 400;
 	position: absolute;
 	width: 100%;
-	right: -260px;
-	bottom: -101px;
+	right: -270px;
+	bottom: -80px;
 }
 
 .products .content {
@@ -328,9 +327,6 @@ nav .right-group a {
 }
 
 .founder {
-	background: url("assets/founder.png") no-repeat;
-	background-position: center;
-	background-size: cover;
 	padding-block: 100px;
 	color: white;
 }
@@ -450,7 +446,7 @@ nav .right-group a {
 	line-height: 110%;
 	position: absolute;
 	bottom: -30px;
-	right: -407px;
+	right: -386px;
 }
 
 .testimonial .slider {
@@ -537,7 +533,6 @@ nav .right-group a {
 
 footer {
 	padding-block: 64px;
-	background: url("assets/footer-bg.png") #132142;
 	color: white;
 }
 

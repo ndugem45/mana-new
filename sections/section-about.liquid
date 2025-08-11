@@ -1,6 +1,14 @@
+{% style %}
+  .about .container .content {
+    background: url({{ 'about-pattern.png' | asset_url }}) no-repeat;
+    background-position: 40% 21%;
+    background-size: 1216px;
+  }
+{% endstyle %}
+
 <section class="about">
-  <div class="container --full">
-    <img src="assets/about-cover.png" alt="">
+  <div class="container --wide">
+    <img src="{{ 'about-cover.png' | asset_url }}" alt="">
     <div class="content">
       <span class="label">ABOUT US</span>
       <h2>
