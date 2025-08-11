@@ -1,20 +1,10 @@
 <section class="running">
   <div class="container --full">
-    <div class="group">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-    </div>
-    <div class="group">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-    </div>
-    <div class="group">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-    </div>
-    <div class="group">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-    </div>
+    {% for a in (1..5) %}
+      <div class="group">
+        <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
+        <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
+      </div>
+    {% endfor %}
   </div>
 </section>
