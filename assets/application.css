@@ -123,6 +123,7 @@ nav .right-group a {
 	align-items: center;
 	gap: 32px;
 	overflow: hidden;
+	animation: marquee 20s linear infinite;
 }
 
 .running .group{
@@ -130,6 +131,15 @@ nav .right-group a {
 	align-items: center;
 	gap: 32px;
 	flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .running img {
