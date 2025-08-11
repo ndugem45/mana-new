@@ -121,7 +121,6 @@ nav .right-group a {
 .running .container {
 	display: flex;
 	align-items: center;
-	gap: 32px;
 	overflow: hidden;
 }
 
