@@ -169,11 +169,12 @@
       infinite: true
     });
 
-    $('#section-{{ section.id }} .slider-left').click(()=>{
+    $('#section-{{ section.id }} .slider-left').on('click', function () {
       $('#section-{{ section.id }} .slider').slick('slickPrev');
-    })
-    $('#section-{{ section.id }} .slider-right').click(()=>{
+    });
+
+    $('#section-{{ section.id }} .slider-right').on('click', function () {
       $('#section-{{ section.id }} .slider').slick('slickNext');
-    })
+    });
   });
 </script>
