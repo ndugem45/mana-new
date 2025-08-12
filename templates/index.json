@@ -1,0 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-hero": {
+      "type": "section-hero",
+      "settings": {}
+    },
+    "section-running": {
+      "type": "section-running",
+      "settings": {}
+    },
+    "section-about": {
+      "type": "section-about",
+      "settings": {}
+    },
+    "section-product": {
+      "type": "section-product",
+      "settings": {}
+    },
+    "section-representation": {
+      "type": "section-representation",
+      "settings": {}
+    },
+    "section-founder": {
+      "type": "section-founder",
+      "settings": {}
+    },
+    "section-testimonial": {
+      "type": "section-testimonial",
+      "settings": {}
+    }
+  },
+  "order": [
+    "section-hero",
+    "section-running",
+    "section-about",
+    "section-product",
+    "section-representation",
+    "section-founder",
+    "section-testimonial"
+  ]
+}
