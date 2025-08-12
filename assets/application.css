@@ -385,6 +385,17 @@ nav .right-group a {
 	position: relative;
 }
 
+.representation .content div{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .founder {
 	padding-block: 100px;
 	color: white;
