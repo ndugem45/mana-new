@@ -1,3 +1,12 @@
+{% style %}
+  #shopify-section-{{section.id}} .slick-slide .slide{
+    padding-inline: 0px;
+    transition: all 200ms ease-in-out;
+  }
+  #shopify-section-{{section.id}} .slick-active .slide{
+    padding-inline: 120px;
+  }
+{% endstyle %}
 
 <div class="container">
   <span class="label">OUR STORIES, OUR SEAT</span>
