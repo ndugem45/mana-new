@@ -368,6 +368,12 @@ nav .right-group a {
 	width: 560px;
 }
 
+.representation .slide .content{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
 .founder {
 	padding-block: 100px;
 	color: white;
