@@ -364,6 +364,9 @@ nav .right-group a {
 	position: relative;
 	max-width: 644px;
 }
+.representation .slide{
+	width: 560px;
+}
 
 .founder {
 	padding-block: 100px;
