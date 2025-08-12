@@ -384,6 +384,7 @@ nav .right-group a {
 	flex-direction: column;
 	position: relative;
 	aspect-ratio: 1/1;
+	background: lightgrey;
 }
 
 .representation .content .top{
