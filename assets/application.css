@@ -368,6 +368,17 @@ nav .right-group a {
 	width: 560px;
 }
 
+.representation .slide p{
+	margin-top: 24px;
+	color: #332717;
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	width: 80%;
+}
+
 .representation .slide .content{
 	display: flex;
 	flex-direction: column;
