@@ -570,6 +570,7 @@ nav .right-group a {
 	gap: 8px;
 	border-radius: 40px;
 	border: 1px solid rgba(38, 21, 12, 0.2);
+	cursor: pointer;
 }
 
 footer {
