@@ -385,7 +385,7 @@ nav .right-group a {
 	position: relative;
 }
 
-.representation .content div{
+.representation .content .top{
 	position: absolute;
 	width: 100%;
 	top: 0;
