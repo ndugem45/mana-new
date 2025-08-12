@@ -157,13 +157,12 @@
       </svg>
     </button>
   </div>
-  #section-{{ section.id }} 
 </div>
 
 
 <script>
   $(document).ready(function(){
-    $('#section-{{ section.id }} .slider').slick({
+    $('#shopify-section-{{section.id}} .slider').slick({
       centerMode: true,
       variableWidth: true,
       arrows: false,
@@ -171,12 +170,12 @@
       infinite: true
     });
 
-    $('#section-{{ section.id }} .slider-left').on('click', function () {
-      $('#section-{{ section.id }} .slider').slick('slickPrev');
+    $('#shopify-section-{{section.id}} .slider-left').on('click', function () {
+      $('#shopify-section-{{section.id}} .slider').slick('slickPrev');
     });
 
-    $('#section-{{ section.id }} .slider-right').on('click', function () {
-      $('#section-{{ section.id }} .slider').slick('slickNext');
+    $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
+      $('#shopify-section-{{section.id}} .slider').slick('slickNext');
     });
   });
 </script>
