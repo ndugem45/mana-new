@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {{ content_for_header }}
     <!-- Header hook for plugins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     {% style %}
       @font-face {
         font-family: "Inter Display";
@@ -27,7 +29,6 @@
     {% endstyle %}
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'global.css' | asset_url | stylesheet_tag }}
-    {{ 'application.js' | asset_url | script_tag }}
   </head>
   <body>
     {% section 'section-navbar' %}
@@ -35,5 +36,7 @@
       {{ content_for_layout }}
     </main>
     {% section 'section-footer' %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    {{ 'application.js' | asset_url | script_tag }}
   </body>
 </html>
