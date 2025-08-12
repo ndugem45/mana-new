@@ -387,6 +387,12 @@ nav .right-group a {
 	background: lightgrey;
 }
 
+.representation .content a{
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+}
+
 .representation .content .top{
 	position: absolute;
 	width: 100%;
