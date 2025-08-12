@@ -161,12 +161,19 @@
 </section>
 <script>
   $(document).ready(function(){
-    $('.slider').slick({
+    $('#section-{{ section.id }} .slider').slick({
       centerMode: true,
       variableWidth: true,
       arrows: false,
       dots: false,
       infinite: true
     });
+
+    $('#section-{{ section.id }} .slider-left').click(()=>{
+      $('#section-{{ section.id }} .slider').slick('slickPrev');
+    })
+    $('#section-{{ section.id }} .slider-right').click(()=>{
+      $('#section-{{ section.id }} .slider').slick('slickNext');
+    })
   });
 </script>
