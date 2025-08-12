@@ -383,6 +383,7 @@ nav .right-group a {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	aspect-ratio: 1/1;
 }
 
 .representation .content .top{
