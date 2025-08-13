@@ -21,7 +21,9 @@
       "type": "section-about",
       "name": "About Section",
       "settings": {
-        "label": "ABOUT US"
+        "label": "ABOUT US",
+        "title": "The story behind the plate — <span> About Us </span>",
+        "desc": "<p>Feenie's Table is where design, culture, and story meet. What began with one plate — made to honour the way we really eat — is now a movement celebrating meals, rituals, and the people behind them. We design for every eating style, every table, every culture. For bread that stays warm, for sauces with their own space, for those who eat differently.</p><p></p><p>Every piece is functional, beautiful, and made to reclaim the place we've always deserved. Because this isn't just about tableware — it's about everyone getting a seat at the table. </p>"
       }
     },
     "section-product": {
