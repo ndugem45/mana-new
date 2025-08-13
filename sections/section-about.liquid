@@ -12,8 +12,7 @@
   <div class="content">
     <span class="label">{{ section.settings.label }}</span>
     <h2>
-      The story behind the plate —
-      <span> About Us </span>
+      {{ section.settings.title }}
     </h2>
     <p>
       Feenie's Table is where design, culture, and story meet. What began with one plate — made to honour the way we really eat — is now a movement celebrating meals, rituals, and the people behind them. We design for every eating style, every table, every culture. For bread that stays warm, for sauces with their own space, for those who eat differently.
@@ -37,8 +36,18 @@
     {
       "type": "text",
       "id": "label",
-      "label": "Label title",
+      "label": "Section Label",
       "default": "ABOUT US"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section Title",
+      "default": "The story behind the plate — <span> About Us </span>"
     }
   ],
   "presets": [
