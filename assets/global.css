@@ -39,7 +39,8 @@ a {
 	align-items: center;
 	gap: 8px;
 	border-radius: 40px;
-	background: #fff;
+	background: rgba(255, 255, 255, 1);
+	backdrop-filter: blur(6px);
 	color: #332717;
 	font-family: "Inter Display";
 	font-size: 16px;
@@ -49,14 +50,23 @@ a {
 	text-transform: uppercase;
 	border: 1px solid transparent;
 }
+.btn:hover{
+	background: rgba(255, 255, 255, 0.80);
+}
 .btn.--brown {
 	background: #26150c;
 	color: white;
+}
+.btn.---brown:hover{
+	background: rgba(38, 21, 12, 0.80);
 }
 .btn.--outline {
 	background: transparent;
 	border: 1px solid white;
 	color: white;
+}
+.btn.---outline:hover{
+	background: rgba(255, 255, 255, 0.08);
 }
 
 button {
