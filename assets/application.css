@@ -337,9 +337,10 @@ nav .right-group a {
 	line-height: normal;
 }
 
-.products .content .card .btn {
+.products .content .card .btn,
+.products .content .card .btn.--disable {
 	width: 100%;
-	opacity: 0;
+	opacity: 0 !important;
 	transition: all 200ms ease-in-out;
 	transition-delay: 50ms;
 }
