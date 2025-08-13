@@ -57,14 +57,14 @@ a {
 .btn:hover svg{
 	transform: translateX(30%);
 }
-.btn:hover{
+.btn:not(.--disable):hover{
 	background: rgba(255, 255, 255, 0.80);
 }
 .btn.--brown {
 	background: #26150c;
 	color: white;
 }
-.btn.--brown:hover{
+.btn.--brown:not(.--disable):hover{
 	background: rgba(38, 21, 12, 0.80);
 }
 .btn.--outline {
@@ -72,7 +72,7 @@ a {
 	border: 1px solid white;
 	color: white;
 }
-.btn.--outline:hover{
+.btn.--outline:not(.--disable):hover{
 	background: rgba(255, 255, 255, 0.08);
 }
 
