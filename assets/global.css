@@ -54,6 +54,9 @@ a {
 	transform: translateX(0%);
 	transition: all 200ms ease-in-out;
 }
+.btn.--disable{
+	opacity: 0.5;
+}
 .btn:hover svg{
 	transform: translateX(30%);
 }
