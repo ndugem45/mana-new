@@ -368,6 +368,9 @@ nav .right-group a {
 	width: 800px;
 	margin-inline: 28px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .representation .slide p{
