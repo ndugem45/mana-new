@@ -19,7 +19,9 @@
     },
     "section-about": {
       "type": "section-about",
-      "settings": {}
+      "settings": {
+        "label": "ABOUT US asdad"
+      }
     },
     "section-product": {
       "type": "section-product",
