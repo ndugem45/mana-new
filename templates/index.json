@@ -17,12 +17,6 @@
       "type": "section-running",
       "settings": {}
     },
-    "section-about": {
-      "type": "section-about",
-      "settings": {
-        "label": "ABOUT US asdad"
-      }
-    },
     "section-product": {
       "type": "section-product",
       "settings": {}
@@ -43,7 +37,6 @@
   "order": [
     "section-hero",
     "section-running",
-    "section-about",
     "section-product",
     "section-representation",
     "section-founder",
