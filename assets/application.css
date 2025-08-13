@@ -280,7 +280,6 @@ nav .right-group a {
 }
 
 .products .content .card {
-	background-color: transparent;
 	padding: 24px;
 	padding-top: 35px;
 	display: flex;
@@ -288,11 +287,12 @@ nav .right-group a {
 	align-items: center;
 	text-align: center;
 	gap: 24px;
+	background-color: rgba(245, 239, 232, 0);
 	transition: all 300ms ease-in-out;
 }
 
 .products .content .card:hover {
-	background-color: #f5efe8;
+	background-color: rgba(245, 239, 232, 1);
 }
 
 .products .content .card img {
