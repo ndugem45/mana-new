@@ -57,7 +57,7 @@ a {
 	background: #26150c;
 	color: white;
 }
-.btn:hover.---brown{
+.btn.--brown:hover{
 	background: rgba(38, 21, 12, 0.80);
 }
 .btn.--outline {
@@ -65,7 +65,7 @@ a {
 	border: 1px solid white;
 	color: white;
 }
-.btn:hover.---outline{
+.btn.--outline:hover{
 	background: rgba(255, 255, 255, 0.08);
 }
 
