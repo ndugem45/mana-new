@@ -395,7 +395,7 @@ nav .right-group a {
 	background: lightgrey;
 	align-items: center;
 	overflow: hidden;
-	transition: all 400ms ease-in-out;
+	transition: all 200ms ease-in-out;
 	transition-delay: 200ms;
 }
 
