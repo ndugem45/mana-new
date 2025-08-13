@@ -10,7 +10,7 @@
 <div class="container --wide">
   <img src="{{ 'about-cover.png' | asset_url }}" alt="">
   <div class="content">
-    <span class="label">ABOUT US</span>
+    <span class="label">{{ section.settings.label }}</span>
     <h2>
       The story behind the plate —
       <span> About Us </span>
@@ -30,6 +30,16 @@
   "tag": "section",
   "class": "about",
   "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label title",
+      "default": "ABOUT US"
+    }
   ],
   "presets": [
     {
