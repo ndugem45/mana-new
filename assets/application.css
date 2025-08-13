@@ -337,14 +337,14 @@ nav .right-group a {
 	line-height: normal;
 }
 
-.products .content .card a {
+.products .content .card .btn {
 	width: 100%;
 	opacity: 0;
 	transition: all 200ms ease-in-out;
 	transition-delay: 50ms;
 }
 
-.products .content .card:hover a {
+.products .content .card:hover .btn {
 	opacity: 1;
 }
 
