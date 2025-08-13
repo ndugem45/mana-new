@@ -469,6 +469,13 @@ nav .right-group a {
 	background: rgba(38, 21, 12, 0);
 }
 
+.representation .slider-nav .slider-right {
+	margin-bottom: -64px;
+}
+.representation .slider-nav .slider-left {
+	margin-top: -64px;
+}
+
 .representation .slider-nav button:hover {
 	background: rgba(38, 21, 12, 0.08);
 }
