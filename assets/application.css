@@ -399,7 +399,7 @@ nav .right-group a {
 	background: lightgrey;
 	align-items: center;
 	overflow: hidden;
-	transition: all 200ms ease-in-out;
+	transition: all 200ms linear;
 	transition-delay: 100ms;
 }
 
