@@ -394,6 +394,7 @@ nav .right-group a {
     height: 600px;
 	background: lightgrey;
 	align-items: center;
+	overflow: hidden;
 }
 
 .representation .content a{
@@ -414,6 +415,9 @@ nav .right-group a {
 	display: none;
 	position: absolute;
 	top: 200px;
+}
+.representation .content h3{
+	color: white;
 }
 
 .representation .content .top{
