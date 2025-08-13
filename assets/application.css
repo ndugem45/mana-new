@@ -288,7 +288,7 @@ nav .right-group a {
 	text-align: center;
 	gap: 24px;
 	background-color: rgba(245, 239, 232, 0);
-	transition: all 200ms ease-in-out;
+	transition: all 300ms ease-out;
 }
 
 .products .content .card:hover {
