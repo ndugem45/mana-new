@@ -266,7 +266,7 @@ nav .right-group a {
 	font-style: normal;
 	font-weight: 400;
 	position: absolute;
-	width: 100%;
+	width: fit-content;
 	right: -270px;
 	bottom: -80px;
 }
