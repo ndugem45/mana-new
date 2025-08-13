@@ -599,7 +599,7 @@ nav .right-group a {
 
 .testimonial .slide .user {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 16px;
 }
 
