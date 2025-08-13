@@ -34,7 +34,7 @@ nav .menu-group a {
 	line-height: normal;
 	text-transform: uppercase;
 }
-nav .menu-group a: {
+nav .menu-group a:hover {
 	text-decoration: underline;
 }
 
