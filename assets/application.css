@@ -218,6 +218,9 @@ nav .right-group a {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 130%;
+}
+
+.about .container .content .desc p{
 	margin-bottom: 16px;
 }
 
