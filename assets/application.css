@@ -444,11 +444,29 @@ nav .right-group a {
 	font-weight: 500;
 	line-height: 130%;
 }
+
 .representation .slider-nav{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
 	align-items: center;
+}
+
+.representation .slider-nav button {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	border-radius: 40px;
+	border: 1px solid rgba(38, 21, 12, 0.2);
+	cursor: pointer;
+	background: rgba(38, 21, 12, 0);
+}
+
+.representation .slider-nav button:hover {
+	background: rgba(38, 21, 12, 0.08);
 }
 
 .founder {
