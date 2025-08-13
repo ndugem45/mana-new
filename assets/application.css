@@ -402,7 +402,8 @@ nav .right-group a {
 	right: 24px;
 }
 
-.representation .content h3{
+.representation .content h3,
+.representation .slide h3{
 	color: #E1A423;
 	text-align: center;
 	font-family: Farmhouse;
