@@ -344,7 +344,7 @@ nav .right-group a {
 	transition-delay: 50ms;
 }
 
-.products .content .card:hover a.btn {
+.products .content .card:hover .btn {
 	opacity: 1;
 }
 
