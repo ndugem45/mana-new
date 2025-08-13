@@ -384,7 +384,9 @@ nav .right-group a {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	aspect-ratio: 1/1;
+	width: 600px;
+    margin-inline: auto;
+    height: 600px;
 	background: lightgrey;
 }
 
