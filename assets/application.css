@@ -345,8 +345,11 @@ nav .right-group a {
 	transition-delay: 50ms;
 }
 
-.products .content .card:hover .btn {
+.products .content .card:hover .btn:not(.--disable) {
 	opacity: 1;
+}
+.products .content .card:hover .btn.--disable {
+	opacity: 0.5 !important;
 }
 
 .representation {
