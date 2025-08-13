@@ -415,7 +415,7 @@ nav .right-group a {
 	position: absolute;
 	top: 200px;
 	transform: scale(0.5);
-	transition: all 200ms ease-in-out;
+	transition: all 400ms ease-in-out;
 	transition-delay: 200ms;
 }
 .representation .content h3{
