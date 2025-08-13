@@ -623,7 +623,7 @@ nav .right-group a {
 	line-height: 130%;
 }
 
-.testimonial .slide .user div span:first-child {
+.testimonial .slide .user div .name {
 	color: #332717;
 	font-size: 18px;
 	font-weight: 500;
