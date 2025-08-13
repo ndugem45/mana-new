@@ -34,6 +34,9 @@ nav .menu-group a {
 	line-height: normal;
 	text-transform: uppercase;
 }
+nav .menu-group a: {
+	text-decoration: underline;
+}
 
 nav .right-group {
 	display: flex;
