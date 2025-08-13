@@ -389,6 +389,7 @@ nav .right-group a {
     margin-inline: auto;
     height: 600px;
 	background: lightgrey;
+	align-items: center;
 }
 
 .representation .content a{
