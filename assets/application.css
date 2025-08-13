@@ -367,6 +367,7 @@ nav .right-group a {
 .representation .slide{
 	width: 800px;
 	margin-inline: 28px;
+	position: relative;
 }
 
 .representation .slide p{
