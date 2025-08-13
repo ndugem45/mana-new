@@ -49,6 +49,16 @@
       </div>
       <a href="" class="btn --brown"> ADD CART </a>
     </div> {% endcomment %}
+    {% for product in section.settings.products %}
+      <div class="card">
+        <img src="{{ product.featured_image.src | img_url: 'original' }}" alt="">
+        <div class="info">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.price | money }}</p>
+        </div>
+        <a href="{{ product.variants.first.url }}" class="btn --brown"> ADD CART </a>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
