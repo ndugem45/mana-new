@@ -648,6 +648,7 @@ nav .right-group a {
 	border: 1px solid rgba(38, 21, 12, 0.2);
 	cursor: pointer;
 	background: rgba(255, 255, 255, 1);
+	backdrop-filter: blur(6px);
 }
 
 .testimonial .slider-nav button:hover {
