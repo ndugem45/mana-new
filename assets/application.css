@@ -444,6 +444,12 @@ nav .right-group a {
 	font-weight: 500;
 	line-height: 130%;
 }
+.representation .slider-nav{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+}
 
 .founder {
 	padding-block: 100px;
