@@ -302,6 +302,11 @@ nav .right-group a {
 	object-fit: contain;
 	aspect-ratio: 1 / 1;
 	padding-inline: 40px;
+	transition: all 200ms ease-out;
+}
+
+.products .content .card:hover img {
+	transform: scale(1.05);
 }
 
 .products .content .card .info {
