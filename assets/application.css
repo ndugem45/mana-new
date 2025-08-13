@@ -396,7 +396,7 @@ nav .right-group a {
 	align-items: center;
 	overflow: hidden;
 	transition: all 200ms ease-in-out;
-	transition-delay: 200ms;
+	transition-delay: 100ms;
 }
 
 .representation .content a{
