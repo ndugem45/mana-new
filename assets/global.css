@@ -55,7 +55,7 @@ a {
 	transition: all 200ms ease-in-out;
 }
 .btn:hover svg{
-	transform: translateX(10%);
+	transform: translateX(30%);
 }
 .btn:hover{
 	background: rgba(255, 255, 255, 0.80);
