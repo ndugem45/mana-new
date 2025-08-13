@@ -293,6 +293,7 @@ nav .right-group a {
 
 .products .content .card:hover {
 	background-color: rgba(245, 239, 232, 1);
+	transition-delay: 200ms;
 }
 
 .products .content .card img {
