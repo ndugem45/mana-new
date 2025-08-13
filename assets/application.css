@@ -647,12 +647,11 @@ nav .right-group a {
 	border-radius: 40px;
 	border: 1px solid rgba(38, 21, 12, 0.2);
 	cursor: pointer;
-	background: rgba(255, 255, 255, 1);
-	backdrop-filter: blur(6px);
+	background: rgba(38, 21, 12, 0);
 }
 
 .testimonial .slider-nav button:hover {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(38, 21, 12, 0.08);
 }
 
 footer {
