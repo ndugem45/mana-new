@@ -17,6 +17,13 @@
       "type": "section-running",
       "settings": {}
     },
+    "section_about_UCNw7C": {
+      "type": "section-about",
+      "name": "About Section",
+      "settings": {
+        "label": "ABOUT US"
+      }
+    },
     "section-product": {
       "type": "section-product",
       "settings": {}
@@ -37,6 +44,7 @@
   "order": [
     "section-hero",
     "section-running",
+    "section_about_UCNw7C",
     "section-product",
     "section-representation",
     "section-founder",
