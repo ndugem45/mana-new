@@ -447,9 +447,13 @@ nav .right-group a {
 
 .representation .slider-nav{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	position: relative;
 	align-items: center;
+}
+
+.representation .slider-nav.--right{
+	justify-content: flex-end;
 }
 
 .representation .slider-nav button {
