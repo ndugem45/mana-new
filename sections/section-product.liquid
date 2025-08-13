@@ -56,7 +56,13 @@
           <h3>{{ product.title }}</h3>
           <p>{{ product.price | money }}</p>
         </div>
-        <a href="{{ product.variants.first.url }}" class="btn --brown"> ADD CART </a>
+        <a href="{{ product.variants.first.url }}" disabled="{% if product.available %}false{% else %}true{% endif %}" class="btn --brown"> 
+          {% if product.available %}
+            ADD CART 
+          {% else %} 
+            OUT OF STOCK
+          {% endif %}
+        </a>
       </div>
     {% endfor %}
   </div>
