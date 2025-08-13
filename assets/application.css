@@ -467,13 +467,19 @@ nav .right-group a {
 	border: 1px solid rgba(38, 21, 12, 0.2);
 	cursor: pointer;
 	background: rgba(38, 21, 12, 0);
+	position: relative;
+	z-index: 4;
 }
 
 .representation .slider-nav .slider-right {
 	margin-bottom: -64px;
+    bottom: -54px;
+	left: -17px;
 }
 .representation .slider-nav .slider-left {
 	margin-top: -64px;
+    top: -54px;
+	right: -17px;
 }
 
 .representation .slider-nav button:hover {
