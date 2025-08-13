@@ -306,7 +306,7 @@ nav .right-group a {
 }
 
 .products .content .card:hover img {
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 .products .content .card .info {
