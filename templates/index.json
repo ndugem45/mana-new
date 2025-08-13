@@ -28,7 +28,18 @@
     },
     "section-product": {
       "type": "section-product",
-      "settings": {}
+      "settings": {
+        "label": "INTRODUCING Our PRODUCTS",
+        "title": "Launching on kickstarter in — <span> September 2025 </span>",
+        "cta_title": "VIEW ALL PRODUCTS",
+        "cta_url": "",
+        "products": [
+          "turkish-iznik-heritage-plate",
+          "turkish-iznik-heritage-plate-2",
+          "turkish-iznik-heritage-plate-3",
+          "turkish-iznik-heritage-plate-4"
+        ]
+      }
     },
     "section-representation": {
       "type": "section-representation",
