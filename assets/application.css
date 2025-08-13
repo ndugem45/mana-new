@@ -403,8 +403,7 @@ nav .right-group a {
 	right: 24px;
 }
 
-.representation .content h3,
-.representation .slide h3{
+.representation h3{
 	color: #E1A423;
 	text-align: center;
 	font-family: Farmhouse;
@@ -415,6 +414,7 @@ nav .right-group a {
 	opacity: 0;
 	position: absolute;
 	top: 200px;
+	transform: translateY(10%);
 	transition: all 200ms ease-in-out;
 	transition-delay: 200ms;
 }
