@@ -63,6 +63,7 @@ a {
 @media only screen and (max-width: 990px) {
 	.btn {
 		padding: 12px 24px;
+		font-size: 14px;
 	}
 }
 .btn svg{
