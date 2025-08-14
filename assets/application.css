@@ -308,13 +308,14 @@ nav .right-group a {
 }
 @media only screen and (max-width: 990px) {
 	.about .container .content h2 span {
-		bottom: -42px;
 		font-size: 94px;
+		bottom: -42px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.about .container .content h2 span {
 		font-size: 64px;
+		bottom: -28px;
 	}
 }
 
