@@ -549,6 +549,19 @@ nav .right-group a {
 	position: relative;
 	max-width: 644px;
 }
+@media only screen and (max-width: 990px) {
+	.representation h2 {
+		font-size: 62px;
+		letter-spacing: -1.3px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.representation h2 {
+		font-size: 54px;
+		letter-spacing: -1.12px;
+	}
+}
+
 .representation .slide{
 	width: 800px;
 	margin-inline: 28px;
