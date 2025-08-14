@@ -200,6 +200,7 @@ nav .right-group a {
 	}
 	.running .group.mobile{
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
