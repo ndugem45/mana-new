@@ -104,11 +104,6 @@ nav .right-group a {
 	line-height: normal;
 	text-transform: uppercase;
 }
-@media only screen and (max-width: 480px) {
-	.hero .label {
-		font-size: 12px;
-	}
-}
 
 .hero p {
 	color: rgba(255, 255, 255, 0.8);
