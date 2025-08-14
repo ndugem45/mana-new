@@ -135,7 +135,17 @@
       arrows: false,
       dots: false,
       infinite: true,
-      adaptiveHeight: false
+      adaptiveHeight: false,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+          },
+        },
+      ]
     });
 
     $('#shopify-section-{{section.id}} .slider-left').on('click', function () {
