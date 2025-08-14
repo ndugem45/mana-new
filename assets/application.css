@@ -343,6 +343,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.products .head {
 		margin-bottom: 40px;
+		flex-direction: column;
 	}
 }
 
