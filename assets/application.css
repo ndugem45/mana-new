@@ -196,7 +196,8 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.running .group:not(.--mobile){
 		gap: 0px;
-		animation: unset;;
+		animation: unset;
+		display: none;
 	}
 	.running .group.mobile{
 		display: flex;
