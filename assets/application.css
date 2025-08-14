@@ -190,7 +190,7 @@ nav .right-group a {
 	flex-shrink: 0;
 	animation: marquee 5s linear infinite;
 }
-.running .group.mobile{
+.running .group.--mobile{
 	display: none;
 }
 @media only screen and (max-width: 990px) {
@@ -198,7 +198,7 @@ nav .right-group a {
 		animation: unset;
 		display: none;
 	}
-	.running .group.mobile{
+	.running .group.--mobile{
 		display: flex;
 		flex-wrap: wrap;
 		gap: 24px;
