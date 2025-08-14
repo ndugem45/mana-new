@@ -60,6 +60,11 @@ a {
 	text-transform: uppercase;
 	border: 1px solid transparent;
 }
+@media only screen and (max-width: 990px) {
+	.btn {
+		padding: 12px 24px;
+	}
+}
 .btn svg{
 	transform: translateX(0%);
 	transition: all 200ms ease-in-out;
