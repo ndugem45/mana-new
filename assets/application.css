@@ -183,17 +183,23 @@ nav .right-group a {
 	}
 }
 
-.running .group{
+.running .group:not(.--mobile){
 	display: flex;
 	align-items: center;
 	gap: 32px;
 	flex-shrink: 0;
 	animation: marquee 5s linear infinite;
 }
+.running .group.mobile{
+	display: none;
+}
 @media only screen and (max-width: 990px) {
-	.running .group{
+	.running .group:not(.--mobile){
 		gap: 0px;
 		animation: unset;;
+	}
+	.running .group.mobile{
+		display: flex;
 	}
 }
 
