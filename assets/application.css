@@ -675,9 +675,15 @@ nav .right-group a {
 .representation .slider-nav.--right{
 	justify-content: flex-end;
 }
+.representation .slider-nav.--right.--mobile{
+	display: none;
+}
 @media only screen and (max-width: 990px) {
 	.representation .slider-nav.--right:not(.--mobile){
 		display: none;
+	}
+	.representation .slider-nav.--right.--mobile{
+		display: flex;
 	}
 }
 .representation .slider-nav button {
@@ -700,10 +706,24 @@ nav .right-group a {
     bottom: -54px;
 	left: -17px;
 }
+@media only screen and (max-width: 990px) {
+	.representation .slider-nav.--right.--mobile{
+		position: relative;
+		bottom: unset;
+		left: unset;
+	}
+}
 .representation .slider-nav .slider-left {
 	margin-top: -64px;
     top: -54px;
 	right: -17px;
+}
+@media only screen and (max-width: 990px) {
+	.representation .slider-nav .slider-left {
+		position: relative;
+		top: unset;
+		right: unset;
+	}
 }
 
 .representation .slider-nav button:hover {
