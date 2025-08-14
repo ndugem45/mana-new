@@ -675,15 +675,9 @@ nav .right-group a {
 .representation .slider-nav.--right{
 	justify-content: flex-end;
 }
-.representation .slider-nav.--right.--mobile{
-	display: none;
-}
 @media only screen and (max-width: 990px) {
-	.representation .slider-nav.--right:not(.--mobile){
+	.representation .slider-nav.--right{
 		display: none;
-	}
-	.representation .slider-nav.--right.--mobile{
-		display: flex;
 	}
 }
 .representation .slider-nav button {
@@ -707,7 +701,7 @@ nav .right-group a {
 	left: -17px;
 }
 @media only screen and (max-width: 990px) {
-	.representation .slider-nav.--right.--mobile{
+	.representation .slider-nav .slider-right.--mobile{
 		position: relative;
 		bottom: unset;
 		left: unset;
