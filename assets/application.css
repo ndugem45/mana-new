@@ -588,6 +588,13 @@ nav .right-group a {
 	width: 95%;
 	margin-inline: auto;
 }
+@media only screen and (max-width: 990px) {
+	.representation .slide p{
+		width: 100%;
+		font-size: 14px;
+		text-align: center;
+	}
+}
 
 .representation .slide .content{
 	display: flex;
