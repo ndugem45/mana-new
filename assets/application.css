@@ -306,6 +306,16 @@ nav .right-group a {
 	right: 0;
 	bottom: -83px;
 }
+@media only screen and (max-width: 990px) {
+	.about .container .content h2 span {
+		font-size: 94px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.about .container .content h2 span {
+		font-size: 64px;
+	}
+}
 
 .about .container .content .desc {
 	color: #332717;
