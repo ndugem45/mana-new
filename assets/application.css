@@ -343,7 +343,6 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.products .head {
 		margin-bottom: 40px;
-		flex-direction: column;
 	}
 }
 
@@ -351,6 +350,15 @@ nav .right-group a {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+}
+
+.products .head a {
+	display: block;
+}
+@media only screen and (max-width: 990px) {
+	.products .head a {
+		display: none;
+	}
 }
 
 .products .head .label {
