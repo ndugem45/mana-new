@@ -19,6 +19,16 @@ section,
 	padding-inline: 64px;
 	margin-inline: auto;
 }
+@media only screen and (max-width: 990px) {
+	.container {
+		padding-inline: 40px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.container {
+		padding-inline: 20px;
+	}
+}
 .container.--wide {
 	max-width: 1600px;
 	padding-inline: unset;
