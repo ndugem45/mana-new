@@ -223,6 +223,11 @@ nav .right-group a {
 	align-items: stretch;
 	overflow: auto;
 }
+@media only screen and (max-width: 990px) {
+	.about .container {
+		flex-direction: column;
+	}
+}
 
 .about .container .cover {
 	flex: 1;
