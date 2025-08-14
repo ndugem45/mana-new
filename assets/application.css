@@ -116,16 +116,6 @@ nav .right-group a {
 	text-align: left;
 	margin: unset;
 }
-@media only screen and (max-width: 990px) {
-	.hero p {
-		font-size: 16px;
-	}
-}
-@media only screen and (max-width: 480px) {
-	.hero p {
-		font-size: 14px;
-	}
-}
 
 .hero a {
 	margin-top: 48px;
