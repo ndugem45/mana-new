@@ -24,6 +24,11 @@ nav .menu-group {
 	margin-left: 64px;
 	margin-right: auto;
 }
+@media only screen and (max-width: 990px) {
+	nav .menu-group {
+		display: none;
+	}
+}
 
 nav .menu-group a {
 	color: #fff;
