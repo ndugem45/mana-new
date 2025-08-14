@@ -326,12 +326,22 @@ nav .right-group a {
 	padding-block: 100px;
 	background-color: white;
 }
+@media only screen and (max-width: 990px) {
+	.products {
+		padding-block: 64px;
+	}
+}
 
 .products .head {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	margin-bottom: 141px;
+}
+@media only screen and (max-width: 990px) {
+	.products .head {
+		margin-bottom: 40px;
+	}
 }
 
 .products .head .left {
@@ -360,6 +370,18 @@ nav .right-group a {
 	letter-spacing: -1.6px;
 	position: relative;
 	max-width: 662px;
+}
+@media only screen and (max-width: 990px) {
+	.products .head h2 {
+		font-size: 64px;
+		letter-spacing: -1.3px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.products .head h2 {
+		font-size: 56px;
+		letter-spacing: -1.12px;
+	}
 }
 
 .products .head h2 span {
