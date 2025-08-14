@@ -675,7 +675,11 @@ nav .right-group a {
 .representation .slider-nav.--right{
 	justify-content: flex-end;
 }
-
+@media only screen and (max-width: 990px) {
+	.representation .slider-nav.--right:not(.--mobile){
+		display: none;
+	}
+}
 .representation .slider-nav button {
 	display: flex;
 	width: 64px;
