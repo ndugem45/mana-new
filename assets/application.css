@@ -276,11 +276,13 @@ nav .right-group a {
 	.about .container .content h2 {
 		font-size: 64px;
 		margin-bottom: 64px;
+		letter-spacing: -1.3px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.about .container .content h2 {
 		font-size: 56px;
+		letter-spacing: -1.12px;
 	}
 }
 
