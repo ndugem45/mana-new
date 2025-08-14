@@ -435,6 +435,8 @@ nav .right-group a {
 	.products .content {
 		display: flex;
 		overflow: auto;
+		margin-left: -20px;
+		width: 100vw;
 	}
 }
 
