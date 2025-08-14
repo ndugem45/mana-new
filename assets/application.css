@@ -198,6 +198,8 @@ nav .right-group a {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 24px;
+		justify-content: center;
+		align-items: flex-start;
 	}
 }
 
