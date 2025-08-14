@@ -217,11 +217,6 @@ nav .right-group a {
 	padding: 24px 25px;
 	opacity: 0.5;
 }
-@media only screen and (max-width: 990px) {
-	.running img {
-		padding: 12px 18px;
-	}
-}
 
 .about .container {
 	display: flex;
