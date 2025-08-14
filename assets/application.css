@@ -149,14 +149,13 @@ nav .right-group a {
 }
 @media only screen and (max-width: 990px) {
 	.hero h1 {
-		width: 70%;
+		width: 100%;
 		font-size: 72px;
 		letter-spacing: -1px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.hero h1 {
-		width: 100%;
 		font-size: 64px;
 		letter-spacing: -0.7px;
 	}
