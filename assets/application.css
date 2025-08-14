@@ -253,6 +253,11 @@ nav .right-group a {
 	justify-content: center;
 	max-width: 710px;
 }
+@media only screen and (max-width: 990px) {
+	.about .container .content {
+		padding-inline: 0px;
+	}
+}
 
 .about .container .content .label {
 	color: #332717;
