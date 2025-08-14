@@ -182,6 +182,11 @@ nav .right-group a {
 	gap: 32px;
 	overflow: hidden;
 }
+@media only screen and (max-width: 990px) {
+	.running .container {
+		gap: 24px;
+	}
+}
 
 .running .group{
 	display: flex;
@@ -189,6 +194,11 @@ nav .right-group a {
 	gap: 32px;
 	flex-shrink: 0;
 	animation: marquee 5s linear infinite;
+}
+@media only screen and (max-width: 990px) {
+	.running .group{
+		gap: 24px;
+	}
 }
 
 @keyframes marquee {
@@ -206,6 +216,11 @@ nav .right-group a {
 	flex-shrink: 0;
 	padding: 24px 25px;
 	opacity: 0.5;
+}
+@media only screen and (max-width: 990px) {
+	.running img {
+		padding: 8px 18px;
+	}
 }
 
 .about .container {
