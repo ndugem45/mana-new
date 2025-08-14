@@ -165,11 +165,6 @@ nav .right-group a {
 .running {
 	padding-block: 24px;
 }
-@media only screen and (max-width: 990px) {
-	.running {
-		padding-block: 12px;
-	}
-}
 
 .running .container {
 	display: flex;
