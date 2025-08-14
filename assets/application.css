@@ -431,6 +431,12 @@ nav .right-group a {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+@media only screen and (max-width: 480px) {
+	.products .content {
+		display: flex;
+		overflow: auto;
+	}
+}
 
 .products .content .card {
 	padding: 24px;
