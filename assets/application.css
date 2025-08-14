@@ -449,6 +449,11 @@ nav .right-group a {
 	background-color: rgba(245, 239, 232, 0);
 	transition: all 300ms ease-out;
 }
+@media only screen and (max-width: 480px) {
+	.products .content .card {
+		flex-shrink: 0;
+	}
+}
 
 .products .content .card:hover {
 	background-color: rgba(245, 239, 232, 1);
