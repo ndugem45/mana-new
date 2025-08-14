@@ -61,6 +61,11 @@ nav .right-group a {
 	padding-bottom: 341px;
 	position: relative;
 }
+@media only screen and (max-width: 990px) {
+	.hero {
+		padding-bottom: 245px;
+	}
+}
 
 .hero video{
 	position: absolute;
@@ -132,6 +137,13 @@ nav .right-group a {
 		width: 70%;
 		font-size: 48px;
 		letter-spacing: -1px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.hero h1 {
+		width: 100%;
+		font-size: 32px;
+		letter-spacing: -0.7px;
 	}
 }
 
