@@ -705,6 +705,7 @@ nav .right-group a {
 		position: relative;
 		bottom: unset;
 		left: unset;
+		margin: unset;
 	}
 }
 .representation .slider-nav .slider-left {
@@ -717,6 +718,7 @@ nav .right-group a {
 		position: relative;
 		top: unset;
 		right: unset;
+		margin: unset;
 	}
 }
 
