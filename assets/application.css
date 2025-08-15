@@ -1028,8 +1028,9 @@ nav .right-group a {
 	display: flex;
 	align-items: center;
 	gap: 8px;
-	margin: auto;
+	margin-inline: auto;
 	justify-self: center;
+	width: fit-content;
 }
 
 .testimonial .slider-nav button {
