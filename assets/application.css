@@ -1133,6 +1133,7 @@ footer .copy {
 	footer .copy {
 		font-size: 14px;
 		flex-direction: column;
+		gap: 24px;
 	}
 }
 
