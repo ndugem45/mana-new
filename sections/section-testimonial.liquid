@@ -174,7 +174,18 @@
       variableWidth: true,
       arrows: false,
       dots: false,
-      infinite: true
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            variableWidth: false,
+          },
+        },
+      ]
     });
 
     $('#shopify-section-{{section.id}} .slider-left').on('click', function () {
