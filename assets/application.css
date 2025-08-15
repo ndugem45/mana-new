@@ -836,6 +836,12 @@ nav .right-group a {
 	backdrop-filter: blur(6px);
 	cursor: pointer;
 }
+@media only screen and (max-width: 990px) {
+	.founder .bottom .wrap button {
+		width: 54px;
+		height: 54px;
+	}
+}
 
 .founder .bottom .wrap button:hover {
 	background: rgba(255, 255, 255, 0.80);
