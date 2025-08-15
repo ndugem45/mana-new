@@ -1079,6 +1079,11 @@ footer .top .menu-group {
 	display: flex;
 	gap: 110px;
 }
+@media only screen and (max-width: 990px) {
+	footer .top .menu-group {
+		flex-direction: column;
+	}
+}
 
 footer .top .menu {
 	display: flex;
