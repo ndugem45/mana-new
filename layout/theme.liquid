@@ -29,11 +29,6 @@
     {% endstyle %}
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'global.css' | asset_url | stylesheet_tag }}
-    {% comment %} Swiper CSS {% endcomment %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    {% comment %} Swiper JS {% endcomment %}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     {% section 'section-navbar' %}
