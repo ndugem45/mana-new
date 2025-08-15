@@ -810,6 +810,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.founder .bottom p {
 		width: 100%;
+		max-width: 100%;
 	}
 }
 
