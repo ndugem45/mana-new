@@ -931,6 +931,11 @@ nav .right-group a {
 	bottom: -30px;
 	right: -386px;
 }
+@media only screen and (max-width: 990px) {
+	.testimonial h2 span {
+		right: 0;
+	}
+}
 
 .testimonial .slider {
 	display: flex;
