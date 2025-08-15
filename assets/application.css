@@ -797,6 +797,11 @@ nav .right-group a {
 	margin-left: auto;
 	width: fit-content;
 }
+@media only screen and (max-width: 990px) {
+	.founder h2 span:last-child {
+		font-size: 82px;
+	}
+}
 
 .founder .bottom {
 	display: flex;
