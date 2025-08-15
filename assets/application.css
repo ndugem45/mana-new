@@ -765,6 +765,18 @@ nav .right-group a {
 	margin-bottom: 81px;
 	position: relative;
 }
+@media only screen and (max-width: 990px) {
+	.founder h2 {
+		font-size: 62px;
+		letter-spacing: -1.3px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.founder h2 {
+		font-size: 54px;
+		letter-spacing: -1.12px;
+	}
+}
 
 .founder h2 span:first-child {
 	max-width: 382px;
