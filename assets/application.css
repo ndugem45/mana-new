@@ -813,6 +813,11 @@ nav .right-group a {
 	align-items: center;
 	gap: 8px;
 }
+@media only screen and (max-width: 990px) {
+	.founder .bottom .wrap {
+		justify-content: space-between;
+	}
+}
 
 .founder .bottom .wrap button {
 	display: flex;
