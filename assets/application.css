@@ -707,8 +707,12 @@ nav .right-group a {
     bottom: -54px;
 	left: -17px;
 }
+.representation .slider-nav .slider-right.--mobile{
+	display: none;
+}
 @media only screen and (max-width: 990px) {
 	.representation .slider-nav .slider-right.--mobile{
+		display: block;
 		position: relative;
 		bottom: unset;
 		left: unset;
