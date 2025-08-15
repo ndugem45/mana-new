@@ -955,6 +955,11 @@ nav .right-group a {
 	width: 760px;
 	margin-inline: 60px;
 }
+@media only screen and (max-width: 990px) {
+	.testimonial .slide {
+		width: 100%;
+	}
+}
 
 .testimonial .slide .stars {
 	display: flex;
