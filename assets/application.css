@@ -804,6 +804,10 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.founder h2 span:last-child {
 		font-size: 64px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.founder h2 span:last-child {
 		margin-top: 220px;
 	}
 }
