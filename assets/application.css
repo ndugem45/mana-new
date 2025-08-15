@@ -934,6 +934,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.testimonial h2 span {
 		right: 0;
+		bottom: -45px;
 		font-size: 64px;
 	}
 }
