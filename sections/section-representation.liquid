@@ -62,6 +62,16 @@
   #shopify-section-{{section.id}} .slide:hover .content{
     background-size: 120% auto;
   }
+  #shopify-section-{{section.id}} .swiper-slide .slide {
+    padding-inline: 120px;
+    padding-top: 133px;
+    transition: all 200ms linear;
+  }
+
+  #shopify-section-{{section.id}} .swiper-slide-active .slide {
+    padding-inline: 0;
+    padding-top: 0;
+  }
 {% endstyle %}
 
 <div class="container">
