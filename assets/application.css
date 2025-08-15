@@ -911,6 +911,7 @@ nav .right-group a {
 	.testimonial h2 {
 		font-size: 64px;
 		letter-spacing: -1.3px;
+		margin-bottom: 110px;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -934,7 +935,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.testimonial h2 span {
 		right: 0;
-		bottom: -45px;
+		bottom: -55px;
 		font-size: 64px;
 	}
 }
