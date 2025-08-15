@@ -882,7 +882,7 @@ nav .right-group a {
 	.testimonial {
 		padding-block: 64px;
 	}
-	.testimonial .container{
+	.testimonial .container.--full{
 		padding-inline: 20px;
 	}
 }
