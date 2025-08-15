@@ -62,7 +62,7 @@
   #shopify-section-{{section.id}} .slide:hover .content{
     background-size: 120% auto;
   }
-  #shopify-section-{{section.id}} .swiper-slide .slide {
+  /* #shopify-section-{{section.id}} .swiper-slide .slide {
     padding-inline: 120px;
     padding-top: 133px;
     transition: all 200ms linear;
@@ -71,7 +71,7 @@
   #shopify-section-{{section.id}} .swiper-slide-active .slide {
     padding-inline: 0;
     padding-top: 0;
-  }
+  } */
 {% endstyle %}
 
 <div class="container">
@@ -143,31 +143,30 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper('#shopify-section-{{section.id}} .swiper', {
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    loop: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        centeredSlides: false
-      },
-      991: {
-        slidesPerView: 'auto',
-        centeredSlides: true
+    const swiper = new Swiper('#shopify-section-{{section.id}} .swiper', {
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          centeredSlides: false
+        },
+        991: {
+          slidesPerView: 'auto',
+          centeredSlides: true
+        }
       }
-    }
+    });
+
+    // Navigation
+    document.querySelector('#shopify-section-{{section.id}} .slider-left')
+      .addEventListener('click', () => swiper.slidePrev());
+    
+    document.querySelector('#shopify-section-{{section.id}} .slider-right')
+      .addEventListener('click', () => swiper.slideNext());
   });
-
-  // Navigation
-  document.querySelector('#shopify-section-{{section.id}} .slider-left')
-    .addEventListener('click', () => swiper.slidePrev());
-  
-  document.querySelector('#shopify-section-{{section.id}} .slider-right')
-    .addEventListener('click', () => swiper.slideNext());
-});
-
 </script>
 
 {% schema %}
