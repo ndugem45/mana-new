@@ -236,6 +236,11 @@ nav .right-group a {
 	aspect-ratio: 3 / 4;
 	max-width: 50%;
 }
+@media only screen and (max-width: 990px) {
+	.about .container .cover {
+		max-width: 100%;
+	}
+}
 
 .about .container .content {
 	flex: 1;
