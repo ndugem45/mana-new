@@ -162,10 +162,10 @@
               video.pause();
             }
 
-            if(v.classList.contains('active')){
-              v.classList.remove('active');
+            if(parent.classList.contains('active')){
+              parent.classList.remove('active');
             }else{
-              v.classList.add('active');
+              parent.classList.add('active');
             }
           })
       })
@@ -173,7 +173,7 @@
     $('#shopify-section-{{section.id}} .slider').on('afterChange', function(slick, currentSlide){
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
         v.nextElementSibling.pause();
-        v.classList.remove('active');
+        vparentElement.parentElement.classList.remove('active');
       })
     });
 
