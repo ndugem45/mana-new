@@ -181,7 +181,7 @@
     $('#shopify-section-{{section.id}} .slider').on('afterChange', function(slick, currentSlide){
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
         v.nextElementSibling.pause();
-        vparentElement.parentElement.classList.remove('active');
+        v.parentElement.parentElement.classList.remove('active');
       })
     });
 
