@@ -64,7 +64,15 @@
     },
     "section-testimonial": {
       "type": "section-testimonial",
-      "settings": {}
+      "settings": {
+        "label": "What Our Customers Are Saying",
+        "title": "Words from your table — <span> Testimonials </span>",
+        "metafields": [
+          "harpreet-birdi",
+          "arun-sandhu",
+          "jyoti-edwards"
+        ]
+      }
     }
   },
   "order": [
