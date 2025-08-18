@@ -145,6 +145,7 @@
       $('#shopify-section-{{section.id}} .container.--full').css('height', $('#shopify-section-{{section.id}} .slider').height()+'px')
       document.querySelectorAll('#shopify-section-{{section.id}} .slide video').forEach((v,i)=>{
           v.addEventListener('click',(elem)=>{
+            console.log(elem)
             if(v.paused){
               v.play();
             }else{
