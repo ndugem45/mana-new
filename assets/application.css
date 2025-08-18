@@ -639,10 +639,10 @@ nav .right-group a {
 }
 
 .representation .slide .content .play-control #pause,
-.representation .slide .content .play-control.active #play{
+.representation .slide.active .content .play-control #play{
 	display: none;
 }
-.representation .slide .content .play-control.active #pause,
+.representation .slide.active .content .play-control #pause,
 .representation .slide .content .play-control #play{
 	display: block;
 }
