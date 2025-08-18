@@ -65,8 +65,8 @@
 {% endstyle %}
 
 <div class="container">
-  <span class="label">DISH and DIALOGUE</span>
-  <h2>Representation served —</h2>
+  <span class="label">{{ section.settings.label }}</span>
+  <h2>{{ section.settings.title }}</h2>
 </div>
 <div class="container">
   <div class="slider-nav --right">
@@ -183,6 +183,27 @@
   "tag": "section",
   "class": "representation",
   "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "DISH and DIALOGUE"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section title",
+      "default": "Representation served —",
+      "info": "Wrap alternate font with <span>"
+    },
   ],
   "presets": [
     {
