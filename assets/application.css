@@ -617,6 +617,12 @@ nav .right-group a {
 	}
 }
 
+.representation .slide .content video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 .representation .content a{
 	position: absolute;
 	bottom: 24px;
