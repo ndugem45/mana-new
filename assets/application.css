@@ -234,6 +234,7 @@ nav .right-group a {
 	height: auto;
 	object-fit: cover;
 	aspect-ratio: 3 / 4;
+	max-width: 50%;
 }
 
 .about .container .content {
