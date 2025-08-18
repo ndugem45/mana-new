@@ -617,8 +617,7 @@ nav .right-group a {
 	}
 }
 
-.representation .slide .content .icon-play,
-.representation .slide .content .icon-pause{
+.representation .slide .content .play-control{
 	position: absolute;
 	z-index: 5;
 	width: 64px;
@@ -634,14 +633,18 @@ nav .right-group a {
 	border: 1px solid transparent;
 	cursor: pointer;
 }
-.representation .slide .content .icon-play:hover,
-.representation .slide .content .icon-pause:hover{
+.representation .slide .content .play-control:hover{
 	background: rgba(255, 255, 255, 0.8);
 	border: 1px solid white;
 }
 
-.representation .slide .content .icon-pause{
+.representation .slide .content .play-control #pause,
+.representation .slide .content .play-control.active #play{
 	display: none;
+}
+.representation .slide .content .play-control.active #pause,
+.representation .slide .content .play-control #play{
+	display: block;
 }
 
 .representation .slide .content video{
