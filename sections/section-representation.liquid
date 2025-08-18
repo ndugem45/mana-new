@@ -87,11 +87,7 @@
         <h3>
           {{ item.label }}
         </h3>
-        <div class="content" style="
-            {% comment %} background: url({{ 'representation-img.png' | asset_url }}) no-repeat;
-            background-size: cover;
-            background-position: center center; {% endcomment %}
-          ">
+        <div class="content">
           <video controls >
             <source src="{{ item.thumbnail | file_url }}" type="video/mp4">
             Your browser does not support the video tag.
