@@ -11,9 +11,11 @@
   Your browser does not support the video tag.
 </video>
 <div class="container">
-  <span class="label">A TRIBUTE TO WHERE WE COME FROM</span>
-  <h1>A custom plate crafted for the way we eat</h1>
-  <p>Preserving texture, protecting flavour and honouring culture.</p>
+  <span class="label">{{ section.settings.label }}</span>
+  <h1>{{ section.settings.title }}</h1>
+  <div class="desc">
+    {{ section.settings.desc }}
+  </div>
   <a href="" class="btn">
     <span> Shop Now </span>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +32,37 @@
   "tag": "section",
   "class": "hero",
   "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "A TRIBUTE TO WHERE WE COME FROM"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section title",
+      "default": "A custom plate crafted for the way we eat",
+      "info": "Wrap alternate font with <span>"
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Section description",
+      "default": "<p>Preserving texture, protecting flavour and honouring culture.</p>"
+    },
   ],
   "presets": [
     {
