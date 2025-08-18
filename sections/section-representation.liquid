@@ -160,6 +160,7 @@
   $(document).ready(function(){
     $('#shopify-section-{{section.id}} .slider').on('init', function(slick){
       $('#shopify-section-{{section.id}} .container.--full').css('height', $('#shopify-section-{{section.id}} .slider').height()+'px')
+      $('.slider-left').hide()
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
           v.addEventListener('click',(elem)=>{
             let video = v.nextElementSibling;
