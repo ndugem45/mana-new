@@ -630,6 +630,7 @@ nav .right-group a {
 	justify-content: center;
 	border-radius: 50%;
 	background-color: white;
+	cursor: pointer;
 }
 
 .representation .slide .content video{
