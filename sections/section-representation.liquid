@@ -179,7 +179,7 @@
           })
       })
     });
-    $('#shopify-section-{{section.id}} .slider').on('afterChange', function(slick, currentSlide){
+    $('#shopify-section-{{section.id}} .slider').on('afterChange', function(event, slick, currentSlide){
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
         v.nextElementSibling.pause();
         v.parentElement.parentElement.classList.remove('active');
