@@ -20,23 +20,23 @@
     padding-top: 0px;
   }
   @media only screen and (max-width: 990px) {
-    #shopify-section-{{section.id}} .slick-active .slide{
+    #shopify-section-{{section.id}} .slick-current .slide{
       margin-inline: auto;
     }
   }
-  #shopify-section-{{section.id}} .slick-active .slide .content{
+  #shopify-section-{{section.id}} .slick-current .slide .content{
     height: 700px;
   }
   @media only screen and (max-width: 990px) {
-    #shopify-section-{{section.id}} .slick-active .slide .content{
+    #shopify-section-{{section.id}} .slick-current .slide .content{
       height: 400px;
     }
   }
-  #shopify-section-{{section.id}} .slick-active .slide p{
+  #shopify-section-{{section.id}} .slick-current .slide p{
     width: 600px;
   }
   @media only screen and (max-width: 990px) {
-    #shopify-section-{{section.id}} .slick-active .slide p{
+    #shopify-section-{{section.id}} .slick-current .slide p{
       width: 100%;
     }
   }
@@ -48,14 +48,14 @@
     transition-delay: 200ms;
     transition: all 400ms ease-in-out;
   }
-  #shopify-section-{{section.id}} .slick-active .top, 
-  #shopify-section-{{section.id}} .slick-active h3,
-  #shopify-section-{{section.id}} .slick-active .play-control,
-  #shopify-section-{{section.id}} .slick-active p{
+  #shopify-section-{{section.id}} .slick-current .top, 
+  #shopify-section-{{section.id}} .slick-current h3,
+  #shopify-section-{{section.id}} .slick-current .play-control,
+  #shopify-section-{{section.id}} .slick-current p{
     opacity: 1;
     transition-delay: all 0ms;
   }
-  #shopify-section-{{section.id}} .slick-active h3{
+  #shopify-section-{{section.id}} .slick-current h3{
     transform: scale(1);
     transition-delay: 0ms;
   }
@@ -63,7 +63,7 @@
     background-size: 120% auto;
   }
 
-  #shopify-section-{{section.id}} .slick-active .slide.active h3{
+  #shopify-section-{{section.id}} .slick-current .slide.active h3{
     opacity: 0;
     transform: scale(0.8);
     transition-delay: 0ms;
