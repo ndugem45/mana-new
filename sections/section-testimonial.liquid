@@ -17,135 +17,33 @@
 </div>
 <div class="container --full">
   <div class="slider">
-    <div>
-      <div class="slide">
-        <div class="stars">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
+    {% for item in section.settings.metafields %}
+      <div>
+        <div class="slide">
+          <div class="stars">
+            {% for a in (1..item.rating) %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path
+                d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
+                fill="#FDB72A" />
+            </svg>
+            {% endfor %}
         </div>
         <p>
-          "Love this - best plate ever!"
+          "{{ item.message }}"
         </p>
         <div class="user">
           <img src="{{ 'testimonial-user.svg' | asset_url }}" alt="">
           <div>
-            <span class="name"> HARPREET BIRDI </span>
+            <span class="name"> {{ item.user_name }} </span>
             <span>
-              From <span>London UK</span>
+              From <span>{{ item.user_from }}</span>
             </span>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="slide">
-        <div class="stars">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-        </div>
-        <p>
-          "Never knew how much I needed a Feenie plate!"
-        </p>
-        <div class="user">
-          <img src="{{ 'testimonial-user.svg' | asset_url }}" alt="">
-          <div>
-            <span class="name"> ARUN SANDHU </span>
-            <span>
-              From <span>London UK</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="slide">
-        <div class="stars">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <path
-              d="M9.70703 35.0002L12.4154 23.2918L3.33203 15.4168L15.332 14.3752L19.9987 3.3335L24.6654 14.3752L36.6654 15.4168L27.582 23.2918L30.2904 35.0002L19.9987 28.7918L9.70703 35.0002Z"
-              fill="#FDB72A" />
-          </svg>
-        </div>
-        <p>
-          "As someone who grew up eating bread and small bowls, I've always made do with plates that didn't quite work. This feels like coming home!"
-        </p>
-        <div class="user">
-          <img src="{{ 'testimonial-user.svg' | asset_url }}" alt="">
-          <div>
-            <span class="name"> JYOTI EDWARDS </span>
-            <span>
-              From <span>Dubai, UAE</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
   <div class="slider-nav">
     <button class="slider-left">
