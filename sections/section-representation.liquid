@@ -81,11 +81,11 @@
 </div>
 <div class="container --full">
   <div class="slider">
-    {% for a in section.settings.metafields %}
+    {% for item in section.settings.metafields %}
     <div>
       <div class="slide">
         <h3>
-          Dubai
+          {{ item.settings.italic }}
         </h3>
         <div class="content" style="
             background: url({{ 'representation-img.png' | asset_url }}) no-repeat;
@@ -94,14 +94,14 @@
           ">
           <div class="top">
             <span>
-              STORY TITLE —
+              {{ item.settings.title }}
             </span>
             <span>
               02
             </span>
           </div>
           <h3>
-            Dubai
+            {{ item.settings.italic }}
           </h3>
           <a href="" class="btn">
             <span>
