@@ -43,11 +43,24 @@
     },
     "section-representation": {
       "type": "section-representation",
-      "settings": {}
+      "settings": {
+        "label": "DISH and DIALOGUE",
+        "title": "Representation served —",
+        "metafield": [
+          "shivone",
+          "food-carries-so-many-secrets"
+        ]
+      }
     },
     "section-founder": {
       "type": "section-founder",
-      "settings": {}
+      "settings": {
+        "label": "FOUNDER STORY",
+        "title": "<span> Meet the Founder — </span><span> Feenie Khan </span>",
+        "desc": "<p>Founded by Feenie Khan, a British-Pakistani entrepreneur, mother, and lover of tablescapes based in the UAE.</p>",
+        "cta_title": "VIEW WHOLE STORY",
+        "cta_url": ""
+      }
     },
     "section-testimonial": {
       "type": "section-testimonial",
