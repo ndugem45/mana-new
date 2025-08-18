@@ -708,6 +708,7 @@ nav .right-group a {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 130%;
+	text-transform: uppercase;
 }
 
 .representation .slider-nav{
