@@ -186,15 +186,17 @@
       })
 
       if(currentSlide+1 === slick.slideCount){
-        $('.slider-right').hide()
+        $('.slider-right').hide();
+        $('.slider-right.--mobile').hide();
       }else{
-        $('.slider-right').show()
+        $('.slider-right').show();
+        $('.slider-right.--mobile').show();
       }
 
       if(currentSlide === 0){
-        $('.slider-left').hide()
+        $('.slider-left').hide();
       }else{
-        $('.slider-left').show()
+        $('.slider-left').show();
       }
     });
 
