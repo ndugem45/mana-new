@@ -627,7 +627,7 @@ nav .right-group a {
 	position: absolute;
 	bottom: 24px;
 	right: 24px;
-	transform: translateY(10%);
+	transform: translateY(20%);
 	opacity: 0;
 	transition: all 200ms ease-in-out;
 }
