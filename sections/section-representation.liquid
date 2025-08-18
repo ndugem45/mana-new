@@ -62,6 +62,12 @@
   #shopify-section-{{section.id}} .slide:hover .content{
     background-size: 120% auto;
   }
+
+  #shopify-section-{{section.id}} .slick-active .slide.active h3{
+    opacity: 0;
+    transform: scale(0);
+    transition-delay: 10ms;
+  }
 {% endstyle %}
 
 <div class="container">
