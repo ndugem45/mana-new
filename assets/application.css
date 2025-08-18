@@ -633,6 +633,10 @@ nav .right-group a {
 	cursor: pointer;
 }
 
+.representation .slide .content .icon-pause{
+	display: none;
+}
+
 .representation .slide .content video{
 	width: 100%;
 	height: 100%;
