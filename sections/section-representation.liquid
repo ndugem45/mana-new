@@ -159,6 +159,12 @@
             }else{
               v.pause();
             }
+
+            if(v.classList.includes('active')){
+              v.classList.remove('active')
+            }else{
+              v.classList.add('active')
+            }
           })
       })
     });
