@@ -7,15 +7,14 @@
 {% endstyle %}
 
 <div class="container">
-  <span class="label"> FOUNDER STORY </span>
+  <span class="label"> {{section.settings.label}} </span>
   <h2>
-    <span> Meet the Founder — </span>
-    <span> Feenie Khan </span>
+    {{ section.settings.title }}
   </h2>
   <div class="bottom">
-    <p>
-      Founded by Feenie Khan, a British-Pakistani entrepreneur, mother, and lover of tablescapes based in the UAE.
-    </p>
+    <div class="desc">
+      {{ section.settings.desc }}
+    </div>
     <div class="wrap">
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -42,6 +41,36 @@
   "tag": "section",
   "class": "founder",
   "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "FOUNDER STORY"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section title",
+      "default": "<span> Meet the Founder — </span><span> Feenie Khan </span>"
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Section description",
+      "default": "<p>Founded by Feenie Khan, a British-Pakistani entrepreneur, mother, and lover of tablescapes based in the UAE.</p>"
+    },
   ],
   "presets": [
     {
