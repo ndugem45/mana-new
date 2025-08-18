@@ -10,10 +10,9 @@
 
 
 <div class="container">
-  <span class="label"> What Our Customers Are Saying </span>
+  <span class="label"> {{ section.settings.label }} </span>
   <h2>
-    Words from your table —
-    <span> Testimonials </span>
+    {{ section.settings.title }}
   </h2>
 </div>
 <div class="container --full">
@@ -204,6 +203,27 @@
   "tag": "section",
   "class": "testimonial",
   "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "What Our Customers Are Saying"
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Section title",
+      "default": "Words from your table — <span> Testimonials </span>",
+      "info": "Wrap alternate font with <span>"
+    },
   ],
   "presets": [
     {
