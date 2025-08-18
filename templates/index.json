@@ -11,7 +11,13 @@
   "sections": {
     "section-hero": {
       "type": "section-hero",
-      "settings": {}
+      "settings": {
+        "label": "A TRIBUTE TO WHERE WE COME FROM",
+        "title": "A custom plate crafted for the way we eat",
+        "desc": "<p>Preserving texture, protecting flavour and honouring culture.</p>",
+        "cta_title": "Shop Now",
+        "cta_url": ""
+      }
     },
     "section-running": {
       "type": "section-running",
