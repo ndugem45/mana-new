@@ -184,8 +184,18 @@
         v.nextElementSibling.pause();
         v.parentElement.parentElement.classList.remove('active');
       })
-      console.log(currentSlide)
-      console.log(slick)
+
+      if(currentSlide+1 === slick.slideCount){
+        $('.slider-right').hide()
+      }else{
+        $('.slider-right').show()
+      }
+
+      if(currentSlide === 0){
+        $('.slider-left').hide()
+      }else{
+        $('.slider-left').show()
+      }
     });
 
     $('#shopify-section-{{section.id}} .slider').slick({
