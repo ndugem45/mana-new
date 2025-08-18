@@ -631,7 +631,7 @@ nav .right-group a {
 	opacity: 0;
 	transition: all 200ms ease-in-out;
 }
-.representation .content .btn{
+.representation .content:hover .btn{
 	transform: translateY(0%);
 	opacity: 1;
 }
