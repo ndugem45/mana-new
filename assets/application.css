@@ -752,11 +752,11 @@ nav .right-group a {
 	left: -17px;
 }
 .representation .slider-nav .slider-right.--mobile{
-	display: none;
+	visibility: hidden;
 }
 @media only screen and (max-width: 990px) {
 	.representation .slider-nav .slider-right.--mobile{
-		display: block;
+		visibility: visible;
 		position: relative;
 		bottom: unset;
 		left: unset;
