@@ -620,6 +620,7 @@ nav .right-group a {
 .representation .slide .content .icon-play,
 .representation .slide .content .icon-pause{
 	position: absolute;
+	z-index: 5;
 }
 
 .representation .slide .content video{
