@@ -146,6 +146,11 @@
     $('#shopify-section-{{section.id}} .slider').on('init', function(slick){
       $('#shopify-section-{{section.id}} .container.--full').css('height', $('#shopify-section-{{section.id}} .slider').height()+'px')
     });
+    $('#shopify-section-{{section.id}} .slider').on('afterChange', function(slick, currentSlide){
+      document.querySelectorAll('#shopify-section-{{section.id}} .slide video').forEach((v,i)=>{
+          v.pause()
+      })
+    }
 
     $('#shopify-section-{{section.id}} .slider').slick({
       centerMode: true,
