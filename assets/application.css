@@ -623,11 +623,19 @@ nav .right-group a {
 	object-fit: cover;
 }
 
-.representation .content a{
+.representation .content .btn{
 	position: absolute;
 	bottom: 24px;
 	right: 24px;
+	transform: translateY(-10%);
+	opacity: 0;
+	transition: all 200ms ease-in-out;
 }
+.representation .content .btn{
+	transform: translateY(0%);
+	opacity: 1;
+}
+
 
 .representation h3{
 	color: #E1A423;
