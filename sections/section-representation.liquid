@@ -155,6 +155,7 @@
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
           v.addEventListener('click',(elem)=>{
             let video = v.nextElementSibling;
+            let parent = v.parentElement.parentElement;
             if(video.paused){
               video.play();
             }else{
