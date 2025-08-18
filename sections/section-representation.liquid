@@ -154,10 +154,11 @@
       $('#shopify-section-{{section.id}} .container.--full').css('height', $('#shopify-section-{{section.id}} .slider').height()+'px')
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
           v.addEventListener('click',(elem)=>{
-            if(v.paused){
-              v.play();
+            let video = v.nextElementSibling
+            if(video.paused){
+              video.play();
             }else{
-              v.pause();
+              video.pause();
             }
 
             if(v.classList.includes('active')){
