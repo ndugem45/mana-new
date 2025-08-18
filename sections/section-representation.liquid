@@ -85,7 +85,7 @@
     <div>
       <div class="slide">
         <h3>
-          {{ item.settings.custom.italic }}
+          {{ item.italic }}
         </h3>
         <div class="content" style="
             background: url({{ 'representation-img.png' | asset_url }}) no-repeat;
@@ -94,15 +94,14 @@
           ">
           <div class="top">
             <span>
-              {{ item.settings.custom.title }}
-              {{ item | json }}
+              {{ item.title }}
             </span>
             <span>
               02
             </span>
           </div>
           <h3>
-            {{ item.settings.custom.italic }}
+            {{ item.italic }}
           </h3>
           <a href="" class="btn">
             <span>
@@ -116,7 +115,7 @@
           </a>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, exercitation ullamco laboris do eiusmod tempor incididunt enim ad minim veniam, quis nostrud exercitation.
+          {{ item.description }}
         </p>
       </div>
     </div>
