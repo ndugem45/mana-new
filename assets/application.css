@@ -824,7 +824,7 @@ nav .right-group a {
 	}
 }
 
-.founder .bottom p {
+.founder .bottom .desc {
 	color: #fff;
 	font-family: "Inter Display";
 	font-size: 16px;
@@ -834,7 +834,7 @@ nav .right-group a {
 	max-width: 328px;
 }
 @media only screen and (max-width: 990px) {
-	.founder .bottom p {
+	.founder .bottom .desc {
 		width: 100%;
 		max-width: 100%;
 	}
