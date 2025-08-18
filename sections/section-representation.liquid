@@ -161,7 +161,7 @@
     $('#shopify-section-{{section.id}} .slider').on('init', function(slick){
       $('#shopify-section-{{section.id}} .container.--full').css('height', $('#shopify-section-{{section.id}} .slider').height()+'px')
       if(window.innerWidth > 990){
-        $('.slider-left').hide()
+        $('#shopify-section-{{section.id}} .slider-left').hide()
       }
       document.querySelectorAll('#shopify-section-{{section.id}} .slide .play-control').forEach((v,i)=>{
           v.addEventListener('click',(elem)=>{
@@ -189,19 +189,19 @@
 
       if(window.innerWidth > 990){
         if(currentSlide+1 === slick.slideCount){
-          $('.slider-right').hide();
+          $('#shopify-section-{{section.id}} .slider-right').hide();
         }else{
-          $('.slider-right').show();
+          $('#shopify-section-{{section.id}} .slider-right').show();
         }
         
         if(currentSlide === 0){
-          $('.slider-left').hide();
+          $('#shopify-section-{{section.id}} .slider-left').hide();
         }else{
-          $('.slider-left').show();
+          $('#shopify-section-{{section.id}} .slider-left').show();
         }
       }else{
-        $('.slider-right.--mobile').show();
-        $('.slider-left').show();
+        $('#shopify-section-{{section.id}} .slider-right.--mobile').show();
+        $('#shopify-section-{{section.id}} .slider-left').show();
       }
     });
 
