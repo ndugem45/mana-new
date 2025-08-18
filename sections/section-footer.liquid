@@ -36,7 +36,7 @@
     </div>
     <div class="brand">Feenie's table</div>
     <div class="copy">
-      <span> © 2025 Feenie's Table. | All Rights Reserved </span>
+      <div> {{ section.settings.copyright }} </div>
       <div>
         <a href=""> Terms & Conditions </a>
         <a href=""> Privacy Policy </a>
@@ -50,6 +50,17 @@
   "tag": "footer",
   "class": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Copyright"
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Footer copyright text",
+      "default": "© <span>2025</span> Feenie's Table. | All Rights Reserved",
+      "info": "Use <span/> to show year automaticly"
+    }
   ],
 }
 {% endschema %}
