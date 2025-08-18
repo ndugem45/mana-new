@@ -88,10 +88,14 @@
           {{ item.label }}
         </h3>
         <div class="content" style="
-            background: url({{ 'representation-img.png' | asset_url }}) no-repeat;
+            {% comment %} background: url({{ 'representation-img.png' | asset_url }}) no-repeat;
             background-size: cover;
-            background-position: center center;
+            background-position: center center; {% endcomment %}
           ">
+          <video controls >
+            <source src="{{ item.thumbnail.value | file_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="top">
             <span>
               {{ item.name }}
