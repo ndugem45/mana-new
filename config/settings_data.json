@@ -18,7 +18,7 @@
         "type": "section-footer",
         "settings": {
           "copyright": "© <span>2025</span> Feenie's Table. | All Rights Reserved",
-          "product_menu": "",
+          "product_menu": "product-menu",
           "company_menu": "company-menu",
           "social_menu": "social-menu"
         }
