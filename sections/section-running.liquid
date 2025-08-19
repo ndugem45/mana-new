@@ -11,14 +11,16 @@
       <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
       <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
     </div> {% endcomment %}
-    {% for item in section.settings.metafields %}
-      <img src="{{ item.asset | asset_url }}" height="80" alt="">
-    {% endfor %}
+    <div class="slider" style="width: 100%;">
+      {% for item in section.settings.metafields %}
+        <img src="{{ item.asset | asset_url }}" height="80" alt="">
+      {% endfor %}
+    </div>
 </div>
 
 <script>
   $(document).ready(function(){
-    $('#shopify-section-{{section.id}} .container').slick({
+    $('#shopify-section-{{section.id}} .slider').slick({
       centerMode: true,
       variableWidth: true,
       arrows: false,
