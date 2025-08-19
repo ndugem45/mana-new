@@ -1,6 +1,6 @@
 
 <div class="container --full">
-  {% for a in (1..8) %}
+  {% comment %} {% for a in (1..8) %}
     <div class="group">
       <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
       <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
@@ -10,8 +10,23 @@
       <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
       <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
       <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-    </div>
+    </div> {% endcomment %}
+    {% for item in section.settings.metafields %}
+      <img src="{{ item.asset | asset_url }}" height="80" alt="">
+    {% endfor %}
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('#shopify-section-{{section.id}} .container').slick({
+      centerMode: true,
+      variableWidth: true,
+      arrows: false,
+      dots: false,
+      infinite: true,
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -19,6 +34,17 @@
   "tag": "section",
   "class": "running",
   "settings": [
+    {
+      "type": "header",
+      "content": "Slider"
+    },
+    {
+      "type": "metaobject_list",
+      "metaobject_type": "logo",
+      "id": "metafields",
+      "limit": 5,
+      "label": "Section logo",
+    }
   ],
   "presets": [
     {
