@@ -13,24 +13,21 @@
       <div class="menu-group">
         <div class="menu">
           <div class="menu-label">[Products]</div>
-          <a href=""> Everyday Plates </a>
-          <a href=""> Cultural Plate </a>
-          <a href=""> Holiday Plates </a>
-          <a href=""> Porcelain Plates </a>
-          <a href=""> The Artisan Series </a>
-          <a href=""> Minimalist & Modern </a>
+          {% for link in section.settings.product_menu.links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
         <div class="menu">
           <div class="menu-label">[Company]</div>
-          <a href=""> About Us </a>
-          <a href=""> Contact </a>
-          <a href=""> Shipping </a>
-          <a href=""> FAQ </a>
+          {% for link in section.settings.company_menu.links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
         <div class="menu">
           <div class="menu-label">[Social]</div>
-          <a href=""> Instagram </a>
-          <a href=""> Facebook </a>
+          {% for link in section.settings.social_menu.links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
       </div>
     </div>
