@@ -13,7 +13,7 @@
     </div> {% endcomment %}
     <div class="slider" style="width: 400px;">
       {% for item in section.settings.metafields %}
-        <img src="{{ item.asset.src }}" height="80" alt="">
+        <img src="{{ item.asset.src }}" height="80" alt="{{ item | json | escape }}">
       {% endfor %}
     </div>
 </div>
