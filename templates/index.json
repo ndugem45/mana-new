@@ -21,7 +21,12 @@
     },
     "section-running": {
       "type": "section-running",
-      "settings": {}
+      "settings": {
+        "metafields": [
+          "new-york-times",
+          "vogue"
+        ]
+      }
     },
     "section_about_UCNw7C": {
       "type": "section-about",
