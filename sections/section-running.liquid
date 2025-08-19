@@ -1,16 +1,5 @@
 
 <div class="container --full">
-  {% comment %} {% for a in (1..8) %}
-    <div class="group">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-    </div>
-  {% endfor %}
-  <div class="group --mobile">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
-      <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
-    </div> {% endcomment %}
     <div class="slider" style="width: 100%;">
       {% for item in section.settings.metafields %}
         <img src="{{ item.asset | img_url }}" height="80" alt="{{ item.title }}">
@@ -26,6 +15,8 @@
       arrows: false,
       dots: false,
       infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
     });
   });
 </script>
