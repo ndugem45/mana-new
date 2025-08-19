@@ -11,7 +11,7 @@
       <img src="{{ 'running-logo-2.svg' | asset_url }}" height="80" alt="">
       <img src="{{ 'running-logo.svg' | asset_url }}" height="80" alt="">
     </div> {% endcomment %}
-    <div class="slider" style="width: 100%;">
+    <div class="slider" style="width: 400px;">
       {% for item in section.settings.metafields %}
         <img src="{{ item.asset | asset_url }}" height="80" alt="">
       {% endfor %}
