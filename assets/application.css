@@ -164,6 +164,7 @@ nav .right-group a {
 	overflow: hidden;
 	margin-top: 64px;
 	padding-block: 24px;
+	border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
 @media only screen and (max-width: 990px) {
 	.hero .container.--full {
