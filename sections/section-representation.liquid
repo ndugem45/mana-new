@@ -4,6 +4,9 @@
     background-position: center 32%;
     background-size: 1717px auto;
   }
+  #shopify-section-{{section.id}} .slick-list{
+    margin-top: -100px;
+  }
   #shopify-section-{{section.id}} .slick-slide{
     padding-top: 0px;
     transition: all 200ms linear;
@@ -64,10 +67,12 @@
     background-size: 120% auto;
   }
   #shopify-section-{{section.id}} .slick-slide h3{
-    transform: translateY(100%);
+    transform: scale(0.8) translateY(100%);
+    opacity: 0;
   }
   #shopify-section-{{section.id}} .slick-slide.slick-current h3{
-    transform: translateY(0%);
+    transform: scale(1) translateY(0%);
+    opacity: 1;
   }
   #shopify-section-{{section.id}} .slick-current h3{
     transform: scale(1);
