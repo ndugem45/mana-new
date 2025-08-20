@@ -1,6 +1,6 @@
 {%style %}
   .products .content {
-    grid-template-columns: repeat({{ section.settings.products.length }}, 1fr);
+    grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
   }
 {% endstyle %}
 
