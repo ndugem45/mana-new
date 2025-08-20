@@ -159,6 +159,31 @@ nav .right-group a {
 		letter-spacing: -0.7px;
 	}
 }
+.hero .container.--full {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	overflow: hidden;
+}
+@media only screen and (max-width: 990px) {
+	.hero .container.--full {
+		gap: 0px;
+		padding-inline: 24px;
+	}
+}
+.hero .container.--full img {
+	width: auto;
+	object-fit: contain;
+	flex-shrink: 0;
+	padding: 24px 25px;
+	opacity: 0.5;
+}
+@media only screen and (max-width: 990px) {
+	.hero .container.--full img {
+		padding: unset;
+		height: 28px;
+	}
+}
 
 .running {
 	padding-block: 24px;
@@ -177,7 +202,7 @@ nav .right-group a {
 	}
 }
 
-.running .group:not(.--mobile){
+/* .running .group:not(.--mobile){
 	display: flex;
 	align-items: center;
 	gap: 32px;
@@ -186,8 +211,8 @@ nav .right-group a {
 }
 .running .group.--mobile{
 	display: none;
-}
-@media only screen and (max-width: 990px) {
+} */
+/* @media only screen and (max-width: 990px) {
 	.running .group:not(.--mobile){
 		animation: unset;
 		display: none;
@@ -199,16 +224,16 @@ nav .right-group a {
 		justify-content: center;
 		align-items: flex-start;
 	}
-}
+} */
 
-@keyframes marquee {
+/* @keyframes marquee {
   from {
     transform: translateX(0%);
   }
   to {
     transform: translateX(calc( -100% - 32px ));
   }
-}
+} */
 
 .running img {
 	width: auto;
