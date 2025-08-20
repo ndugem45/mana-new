@@ -90,6 +90,7 @@ nav .right-group a {
 .hero .content{
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 .hero .container {
@@ -98,6 +99,8 @@ nav .right-group a {
 	/* align-items: start; */
 	z-index: 2;
 	position: relative;
+	    justify-content: space-between;
+
 }
 
 .hero .label {
