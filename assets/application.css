@@ -167,7 +167,7 @@ nav .right-group a {
 		letter-spacing: -0.7px;
 	}
 }
-.hero .container.--full {
+.hero .container.second {
 	display: flex;
 	align-items: center;
 	gap: 32px;
@@ -177,12 +177,12 @@ nav .right-group a {
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
 @media only screen and (max-width: 990px) {
-	.hero .container.--full {
+	.hero .container.second {
 		gap: 0px;
 		padding-inline: 24px;
 	}
 }
-.hero .container.--full img {
+.hero .container.second img {
 	width: auto;
 	object-fit: contain;
 	flex-shrink: 0;
@@ -190,7 +190,7 @@ nav .right-group a {
 	opacity: 0.8;
 }
 @media only screen and (max-width: 990px) {
-	.hero .container.--full img {
+	.hero .container.second img {
 		padding: unset;
 		height: 28px;
 	}
