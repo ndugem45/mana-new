@@ -1191,7 +1191,7 @@ footer .brand {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-@media only screen and (max-width: 1204px) {
+@media only screen and (max-width: 1280px) {
 	footer .brand {
 		font-size: 120px;
 	}
