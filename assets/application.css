@@ -577,6 +577,15 @@ nav .right-group a {
 	flex-direction: column;
 	align-items: center;
 }
+.representation .slide::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30%;
+	background: linear-gradient(180deg, rgba(51, 39, 23, 0.00) 0%, #332717 125.11%);
+}
 @media only screen and (max-width: 990px) {
 	.representation .slide{
 		width: 320px;
