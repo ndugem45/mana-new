@@ -1,7 +1,7 @@
 {%style %}
-  .products .content {
-    grid-template-columns: repeat({{ section.settings.products.size | size }}, 1fr);
-  }
+  /* .products .content {
+    grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
+  } */
 {% endstyle %}
 
 <div class="container">
@@ -21,7 +21,9 @@
       </svg>
     </a> {% endcomment %}
   </div>
-  <div class="content">
+  <div class="content" style="
+      grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
+    ">
     {% for product in section.settings.products %}
       <div class="card">
         <img src="{{ product.featured_image.src | img_url: 'original' }}" alt="">
