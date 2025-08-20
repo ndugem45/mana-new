@@ -28,6 +28,9 @@
   </a>
 </div>
 <div class="container --full">
+    <div class="slideLabel">
+      As seen in:
+    </div>
     <div class="slider" style="width: 100%;">
       {% for item in section.settings.metafields %}
         <img src="{{ item.asset | img_url }}" height="80" alt="{{ item.title }}">
