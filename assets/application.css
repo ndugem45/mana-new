@@ -4,6 +4,11 @@ nav {
 	left: 0;
 	top: 0;
 	z-index: 10;
+	transition: all 200ms ease-out;
+}
+nav.active {
+	background-color: rgba(255,255,255, 0.5);
+	backdrop-filter: blur(10px);
 }
 
 nav .container {
