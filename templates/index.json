@@ -47,7 +47,8 @@
         "products": [
           "turkish-iznik-heritage-plate-2",
           "turkish-iznik-heritage-plate-3"
-        ]
+        ],
+        "grid": 2
       }
     },
     "section-representation": {
