@@ -430,7 +430,6 @@ nav .right-group a {
 
 .products .content {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
 }
 @media only screen and (max-width: 990px) {
 	.products .content {
