@@ -9,7 +9,7 @@ nav {
 nav.active {
 	background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
-	padding-block: 4px;
+	padding-block: 8px;
 }
 
 nav .container {
