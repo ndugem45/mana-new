@@ -8,6 +8,13 @@
     <meta name="description" content="{{ page_description | escape }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:site_name" content="{{ shop.name }}">
+    <meta property="og:url" content="{{ request.path }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ 'fennie_og.png' | asset_url }}">
+
     {{ content_for_header }}
     <!-- Header hook for plugins -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
