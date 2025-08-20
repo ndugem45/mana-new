@@ -234,8 +234,10 @@
 
     $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
       event.stopPropagation();
-      if($('#shopify-section-{{section.id}} .slider').slick.currentSlide+1 == $('#shopify-section-{{section.id}} .slider').slick.slideCount){
-        console.log('sdada')
+      var slider = $('#shopify-section-{{section.id}} .slider');
+      console.log(slider.slick.slideCount)
+      console.log(slider.slick.currentSlide)
+      if(slider.slick.currentSlide+1 == slider.slick.slideCount){
         $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
       }else{
         $('#shopify-section-{{section.id}} .slider').slick('slickNext');
