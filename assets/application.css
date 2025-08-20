@@ -118,6 +118,10 @@ nav .right-group a {
 	text-transform: uppercase;
 }
 
+.hero .slideLabel{
+
+}
+
 .hero .desc {
 	color: rgba(255, 255, 255, 0.8);
 	font-family: "Inter Display";
