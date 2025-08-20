@@ -11,18 +11,18 @@
         <form action=""></form>
       </div>
       <div class="menu-group">
-        <div class="menu">
+        {% comment %} <div class="menu">
           <div class="menu-label">[Products]</div>
           {% for link in section.settings.product_menu.links %}
             <a href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
-        </div>
-        <div class="menu">
+        </div> {% endcomment %}
+        {% comment %} <div class="menu">
           <div class="menu-label">[Company]</div>
           {% for link in section.settings.company_menu.links %}
             <a href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
-        </div>
+        </div> {% endcomment %}
         <div class="menu">
           <div class="menu-label">[Social]</div>
           {% for link in section.settings.social_menu.links %}
