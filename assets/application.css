@@ -186,7 +186,7 @@ nav .right-group a {
 	content: '';
 	width: 100vw;
 	position: absolute;
-	left: 100vw;
+	left: 0;
 	top: 0;
 	height: 1px;
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
