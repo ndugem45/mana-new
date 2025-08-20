@@ -163,6 +163,7 @@ nav .right-group a {
 	gap: 32px;
 	overflow: hidden;
 	margin-top: 64px;
+	padding-block: 24px;
 }
 @media only screen and (max-width: 990px) {
 	.hero .container.--full {
@@ -174,7 +175,7 @@ nav .right-group a {
 	width: auto;
 	object-fit: contain;
 	flex-shrink: 0;
-	padding: 24px 25px;
+	padding: 18px;
 	opacity: 0.5;
 }
 @media only screen and (max-width: 990px) {
