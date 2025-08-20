@@ -235,9 +235,6 @@
     $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
       event.stopPropagation();
       var slider = $('#shopify-section-{{section.id}} .slider')[0];
-      console.log(slider)
-      console.log(slider.slick.slideCount)
-      console.log(slider.slick.currentSlide)
       if(slider.slick.currentSlide+1 == slider.slick.slideCount){
         $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
       }else{
