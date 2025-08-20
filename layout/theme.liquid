@@ -26,6 +26,13 @@
         font-display: swap;
         src: url("{{ 'Farmhouse.ttf' | asset_url }}") format("truetype-variations");
       }
+      @font-face {
+        font-family: "Frank Ruhl Libre";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("{{ 'FrankRuhlLibre.ttf' | asset_url }}") format("truetype-variations");
+      }
     {% endstyle %}
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'global.css' | asset_url | stylesheet_tag }}
