@@ -110,6 +110,7 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.hero .container {
 		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 
