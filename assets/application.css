@@ -245,6 +245,7 @@ nav .right-group a {
 .about .container .content {
 	flex: 1;
 	padding-inline: 64px;
+	padding-block: 32px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
