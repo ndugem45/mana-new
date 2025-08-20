@@ -234,7 +234,7 @@
 
     $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
       event.stopPropagation();
-      var slider = $('#shopify-section-{{section.id}} .slider');
+      var slider = $('#shopify-section-{{section.id}} .slider')[0];
       console.log(slider)
       console.log(slider.slick.slideCount)
       console.log(slider.slick.currentSlide)
