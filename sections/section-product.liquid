@@ -1,6 +1,7 @@
 {%style %}
   .products .content {
-    grid-template-columns: repeat({{section.settings.grid }}, 1fr);
+    width: {{ section.settings.grid_width }};
+    grid-template-columns: repeat({{ section.settings.grid }}, 1fr);
   }
 {% endstyle %}
 
@@ -99,6 +100,13 @@
       "id" : "grid",
       "label": "Section Product grid",
       "default": 4
+    },
+    {
+      "type": "number",
+      "id" : "grid_width",
+      "label": "Section Product grid width",
+      "placeholder": "100%",
+      "default": 100
     }
   ],
   "presets": [
