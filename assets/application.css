@@ -589,6 +589,9 @@ nav .right-group a {
 	width: calc( 100% - calc( 24px * 2 ) );
 	bottom: 24px;
 	left: 24px;
+	display: flex;
+    gap: 40px;
+	align-items: flex-end;
 }
 
 .representation .slide p{
@@ -638,6 +641,7 @@ nav .right-group a {
 	height: 64px;
 	/* bottom: 24px; */
 	/* left: 24px; */
+	flex-shrink: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
