@@ -1196,6 +1196,11 @@ footer .brand {
 		font-size: 190px;
 	}
 }
+@media only screen and (max-width: 1140px) {
+	footer .brand {
+		font-size: 150px;
+	}
+}
 @media only screen and (max-width: 990px) {
 	footer .brand {
 		font-size: 54px;
