@@ -107,6 +107,11 @@ nav .right-group a {
 	position: relative;
 	justify-content: space-between;
 }
+@media only screen and (max-width: 990px) {
+	.hero .container {
+		flex-direction: column;
+	}
+}
 
 .hero .label {
 	color: #ffe4ac;
