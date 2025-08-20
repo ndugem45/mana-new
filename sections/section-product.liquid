@@ -1,7 +1,9 @@
 {%style %}
-  /* .products .content {
-    grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
-  } */
+  .products .content {
+    {% if section.settings.products != blank %}
+      grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
+    {%endif %}
+  }
 {% endstyle %}
 
 <div class="container">
@@ -21,11 +23,7 @@
       </svg>
     </a> {% endcomment %}
   </div>
-  {% assign my_array = section.settings.products %}
-  {{ my_array | json | escape }}
-  <div class="content" style="
-      grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
-    ">
+  <div class="content">
     {% for product in section.settings.products %}
       <div class="card">
         <img src="{{ product.featured_image.src | img_url: 'original' }}" alt="">
