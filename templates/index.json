@@ -16,7 +16,11 @@
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Preserving texture, protecting flavour and honouring culture.</p>",
         "cta_title": "Shop Now",
-        "cta_url": ""
+        "cta_url": "",
+        "metafields": [
+          "new-york-times",
+          "vogue"
+        ]
       }
     },
     "section_about_UCNw7C": {
