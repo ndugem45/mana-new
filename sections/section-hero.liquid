@@ -35,6 +35,24 @@
     </div>
 </div>
 
+<script>
+  $(document).ready(function(){
+    $('#shopify-section-{{section.id}} .slider').slick({
+      centerMode: true,
+      variableWidth: true,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 4000,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      cssEase: 'linear'
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Hero",
@@ -87,6 +105,17 @@
       "id": "cta_url",
       "label": "Section CTA URL",
     },
+    {
+      "type": "header",
+      "content": "Slider"
+    },
+    {
+      "type": "metaobject_list",
+      "metaobject_type": "running_logo",
+      "id": "metafields",
+      "limit": 5,
+      "label": "Section logo",
+    }
   ],
   "presets": [
     {
