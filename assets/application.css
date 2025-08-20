@@ -192,7 +192,7 @@ nav .right-group a {
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
 @media only screen and (min-width: 1441px) {
-	.hero .container.second {
+	.hero .container.second::before {
 		left: calc( calc( 100vw - 1440px ) / -2 );
 	}
 }
