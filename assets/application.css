@@ -177,7 +177,7 @@ nav .right-group a {
 	object-fit: contain;
 	flex-shrink: 0;
 	padding: 18px;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 @media only screen and (max-width: 990px) {
 	.hero .container.--full img {
