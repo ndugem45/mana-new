@@ -48,7 +48,8 @@
           "turkish-iznik-heritage-plate-2",
           "turkish-iznik-heritage-plate-3"
         ],
-        "grid": 2
+        "grid": 2,
+        "grid_width": 70
       }
     },
     "section-representation": {
