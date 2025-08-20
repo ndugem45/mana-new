@@ -229,7 +229,13 @@
     });
 
     $('#shopify-section-{{section.id}} .slider-left').on('click', function () {
-      $('#shopify-section-{{section.id}} .slider').slick('slickPrev');
+      event.stopPropagation();
+      var slider = $('#shopify-section-{{section.id}} .slider')[0];
+      if(slider.slick.currentSlide == 0){
+        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', slider.slick.slideCount-1);
+      }else{
+        $('#shopify-section-{{section.id}} .slider').slick('slickPrev');
+      }
     });
 
     $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
