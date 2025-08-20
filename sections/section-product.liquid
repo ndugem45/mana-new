@@ -1,3 +1,8 @@
+{%style %}
+  .products .content {
+    grid-template-columns: repeat({{ section.settings.products.length }}, 1fr);
+  }
+{% endstyle %}
 
 <div class="container">
   <div class="head">
