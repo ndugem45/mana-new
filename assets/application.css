@@ -179,7 +179,6 @@ nav .right-group a {
 	align-items: center;
 	gap: 32px;
 	position: relative;
-	overflow: hidden;
 	margin-top: 64px;
 	padding-block: 24px;
 }
@@ -187,7 +186,7 @@ nav .right-group a {
 	content: '';
 	width: 100vw;
 	position: absolute;
-	left: 0;
+	left: -64px;
 	top: 0;
 	height: 1px;
 	border-top: 1px solid rgba(255, 255, 255, 0.20);
