@@ -4,6 +4,10 @@
     background-position: center 32%;
     background-size: 1717px auto;
   }
+  #shopify-section-{{section.id}} .slick-slide{
+    padding-top: 0px;
+    transition: all 200ms linear;
+  }
   #shopify-section-{{section.id}} .slick-slide .slide{
     padding-inline: 120px;
     padding-top: 133px;
@@ -18,6 +22,9 @@
   #shopify-section-{{section.id}} .slick-current .slide{
     padding-inline: 0px;
     padding-top: 0px;
+  }
+  #shopify-section-{{section.id}} .slick-current{
+    padding-top: 100px;
   }
   @media only screen and (max-width: 990px) {
     #shopify-section-{{section.id}} .slick-current .slide{
