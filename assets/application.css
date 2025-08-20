@@ -184,7 +184,7 @@ nav .right-group a {
 }
 @media only screen and (max-width: 990px) {
 	.hero .container.second {
-		gap: 0px;
+		gap: 12px;
 		padding-inline: 24px;
 	}
 }
