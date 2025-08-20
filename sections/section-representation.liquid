@@ -61,7 +61,7 @@
     transition-delay: all 0ms;
   }
   #shopify-section-{{section.id}} .slick-current h3{
-    transform: scale(1);
+    transform: scale(1) translateY(0%);
     transition-delay: 0ms;
   }
   #shopify-section-{{section.id}} .slide:hover .content{
@@ -70,7 +70,7 @@
 
   #shopify-section-{{section.id}} .slick-current .slide.active h3{
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) translateY(100%);
     transition-delay: 0ms;
   }
 {% endstyle %}
