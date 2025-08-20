@@ -87,10 +87,15 @@ nav .right-group a {
 	z-index: 1;
 }
 
-.hero .container {
+.hero .content{
 	display: flex;
 	flex-direction: column;
-	align-items: start;
+}
+
+.hero .container {
+	display: flex;
+	flex-direction: row;
+	/* align-items: start; */
 	z-index: 2;
 	position: relative;
 }
