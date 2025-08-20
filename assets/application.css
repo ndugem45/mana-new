@@ -49,7 +49,6 @@ nav .menu-group a {
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
-	padding: 16px 22px;
 }
 nav a:hover {
 	text-decoration: underline;
@@ -69,6 +68,7 @@ nav .right-group a {
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
+	padding: 16px 22px;
 }
 
 .hero {
