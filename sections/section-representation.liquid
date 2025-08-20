@@ -233,7 +233,12 @@
     });
 
     $('#shopify-section-{{section.id}} .slider-right').on('click', function () {
-      $('#shopify-section-{{section.id}} .slider').slick('slickNext');
+      let slider = $('#shopify-section-{{section.id}} .slider')
+      if(slider.slick.currentSlide+1 == slider.slick.slideCount){
+        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
+      }else{
+        $('#shopify-section-{{section.id}} .slider').slick('slickNext');
+      }
     });
   });
 </script>
