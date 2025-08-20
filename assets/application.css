@@ -119,7 +119,7 @@ nav .right-group a {
 }
 
 .hero .slideLabel{
-
+	flex-shrink: 0;
 }
 
 .hero .desc {
