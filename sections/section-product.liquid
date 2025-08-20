@@ -21,8 +21,8 @@
       </svg>
     </a> {% endcomment %}
   </div>
-  {% assign my_array = section.settings.products | split: ", " %}
-  {{ my_array | json }}
+  {% assign my_array = section.settings.products | size %}
+  {{ my_array | json | escape }}
   <div class="content" style="
       grid-template-columns: repeat({{ section.settings.products | size }}, 1fr);
     ">
