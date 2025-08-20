@@ -96,10 +96,10 @@ nav .right-group a {
 .hero .container {
 	display: flex;
 	flex-direction: row;
-	/* align-items: start; */
+	align-items: flex-end;
 	z-index: 2;
 	position: relative;
-	    justify-content: space-between;
+	justify-content: space-between;
 
 }
 
