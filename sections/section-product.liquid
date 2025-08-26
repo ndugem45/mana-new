@@ -33,7 +33,7 @@
             <p>{{ product.price | money }}</p>
           {% endif %}
         </div>
-        {% if section.settings.show_custom_cta %}
+        {% if section.settings.show_custom_cta == true %}
           {% if product.available %}
             <a href="{{ product.variants.first.url }}" class="btn --brown"> 
               ADD CART 
