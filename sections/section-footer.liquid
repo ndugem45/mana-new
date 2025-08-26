@@ -11,25 +11,13 @@
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
-          {% form 'customer', id: 'NewsletterForm', class: 'newsletter__form' %}
-            <input type="hidden" name="contact[tags]" value="newsletter">
+          {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
-            <input
-              id="NewsletterEmail"
-              class="newsletter__input"
-              type="email"
-              name="contact[email]"
-              placeholder="Enter Your Email"
-              required
-              aria-required="true"
-              autocomplete="email"
-            />
-
-            <button class="newsletter__button" type="submit">
-              SEND
-            </button>
-
-            {%- if form.errors -%}
+            {%- if form.posted_successfully? -%} 
+              <div class="newsletter__message newsletter__message--success" role="status">
+                Thankyou
+              </div>
+            {%- elsif form.errors -%}
               <div class="newsletter__message newsletter__message--error" role="alert">
                 {% for field in form.errors %}
                   {%- if field == 'email' -%}
@@ -39,13 +27,23 @@
                   {%- endif -%}
                 {% endfor %}
               </div>
-            {%- endif -%}
+            {% else %}
+              <input type="hidden" name="contact[tags]" value="newsletter">
 
-            {%- if form.posted_successfully? -%} 
-              <div class="newsletter__message newsletter__message--success" role="status">
-                Thankyou
-              </div>
-            {%- endif -%}
+              <input
+                id="NewsletterEmail"
+                type="email"
+                name="contact[email]"
+                placeholder="Enter Your Email"
+                required
+                aria-required="true"
+                autocomplete="email"
+              />
+
+              <button class="newsletter__button" type="submit">
+                SEND
+              </button>
+            {% endif %}
           {% endform %}
         </div>
       </div>
