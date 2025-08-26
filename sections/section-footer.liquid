@@ -33,7 +33,7 @@
               <div class="newsletter__message newsletter__message--error" role="alert">
                 {% for field in form.errors %}
                   {%- if field == 'email' -%}
-                    Email tidak valid atau sudah terdaftar.
+                    Invalid Email Address
                   {%- else -%}
                     {{ form.errors.messages[field] }}
                   {%- endif -%}
@@ -41,9 +41,9 @@
               </div>
             {%- endif -%}
 
-            {%- if form.posted_successfully? -%}
+            {%- if form.posted_successfully? -%} 
               <div class="newsletter__message newsletter__message--success" role="status">
-                Terima kasih! Cek email kamu untuk konfirmasi.
+                Thankyou
               </div>
             {%- endif -%}
           {% endform %}
