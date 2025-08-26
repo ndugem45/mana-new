@@ -114,7 +114,7 @@
         <div class="content">
           
 
-          <video playinline poster="{{ item.video_cover.src | file_url }}">
+          <video playinline poster="{{ item.video_cover | file_url }}">
             <source src="{{ item.thumbnail | file_url }}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
