@@ -44,7 +44,9 @@
           "turkish-iznik-heritage-plate-3"
         ],
         "grid": 2,
-        "grid_width": 60
+        "grid_width": 60,
+        "hide_price": true,
+        "show_custom_cta": true
       }
     },
     "section-representation": {
