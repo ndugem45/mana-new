@@ -14,20 +14,19 @@
           {% form 'customer', id: 'NewsletterForm', class: 'newsletter__form' %}
             <input type="hidden" name="contact[tags]" value="newsletter">
 
-            <label class="sr-only" for="NewsletterEmail">Email address</label>
             <input
               id="NewsletterEmail"
               class="newsletter__input"
               type="email"
               name="contact[email]"
-              placeholder="Masukkan email kamu"
+              placeholder="Enter Your Email"
               required
               aria-required="true"
               autocomplete="email"
             />
 
             <button class="newsletter__button" type="submit">
-              Berlangganan
+              SEND
             </button>
 
             {%- if form.errors -%}
