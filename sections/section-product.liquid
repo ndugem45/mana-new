@@ -44,8 +44,8 @@
             </div>
           {% endif %}
         {% else %}
-          <a href="{{ product.variants.first.url }}" class="btn --brown"> 
-            ADD CART 
+          <a href="{{ product.metafields.custom.cta_url }}" class="btn --brown"> 
+            {{  product.metafields.custom.cta_title }}
           </a>
         {% endif %}
       </div>
