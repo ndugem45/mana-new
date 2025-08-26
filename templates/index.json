@@ -46,7 +46,7 @@
         "grid": 2,
         "grid_width": 60,
         "hide_price": true,
-        "show_custom_cta": false
+        "show_custom_cta": true
       }
     },
     "section-representation": {
