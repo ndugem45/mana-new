@@ -29,17 +29,25 @@
         <img src="{{ product.featured_image.src | img_url: 'original' }}" alt="">
         <div class="info">
           <h3>{{ product.title }}</h3>
-          <p>{{ product.price | money }}</p>
+          {% if section.settings.hide_price == false%}
+            <p>{{ product.price | money }}</p>
+          {% endif %}
         </div>
-        {% if product.available %}
-          <a href="{{ product.variants.first.url }}" class="btn --brown"> 
-            ADD CART 
-          </a>
-        {% else %} 
+        {% if section.settings.show_custom_cta %}
+          {% if product.available %}
+            <a href="{{ product.variants.first.url }}" class="btn --brown"> 
+              ADD CART 
+            </a>
+          {% else %} 
             <div class="btn --brown --disable"> 
               OUT OF STOCK
             </div>
           {% endif %}
+        {% else %}
+          <a href="{{ product.variants.first.url }}" class="btn --brown"> 
+            ADD CART 
+          </a>
+        {% endif %}
       </div>
     {% endfor %}
   </div>
@@ -111,7 +119,19 @@
       "unit": "%",
       "label": "Section Product grid",
       "default": 100
-    }
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_price",
+      "label": "Hide price",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_custom_cta",
+      "label": "Show custom CTA",
+      "default": false
+    },
   ],
   "presets": [
     {
