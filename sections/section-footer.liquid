@@ -14,11 +14,11 @@
           {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
             {%- if form.posted_successfully? -%} 
-              <div class="newsletter__message newsletter__message--success" role="status">
+              <div role="status">
                 Thankyou
               </div>
             {%- elsif form.errors -%}
-              <div class="newsletter__message newsletter__message--error" role="alert">
+              <div role="alert">
                 {% for field in form.errors %}
                   {%- if field == 'email' -%}
                     Invalid Email Address
