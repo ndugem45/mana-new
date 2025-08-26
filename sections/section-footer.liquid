@@ -10,7 +10,45 @@
     <div class="top">
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
-        <form action=""></form>
+        <div class="newsletter">
+          {% form 'customer', id: 'NewsletterForm', class: 'newsletter__form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            <label class="sr-only" for="NewsletterEmail">Email address</label>
+            <input
+              id="NewsletterEmail"
+              class="newsletter__input"
+              type="email"
+              name="contact[email]"
+              placeholder="Masukkan email kamu"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+
+            <button class="newsletter__button" type="submit">
+              Berlangganan
+            </button>
+
+            {%- if form.errors -%}
+              <div class="newsletter__message newsletter__message--error" role="alert">
+                {% for field in form.errors %}
+                  {%- if field == 'email' -%}
+                    Email tidak valid atau sudah terdaftar.
+                  {%- else -%}
+                    {{ form.errors.messages[field] }}
+                  {%- endif -%}
+                {% endfor %}
+              </div>
+            {%- endif -%}
+
+            {%- if form.posted_successfully? -%}
+              <div class="newsletter__message newsletter__message--success" role="status">
+                Terima kasih! Cek email kamu untuk konfirmasi.
+              </div>
+            {%- endif -%}
+          {% endform %}
+        </div>
       </div>
       <div class="menu-group">
         {% comment %} <div class="menu">
