@@ -669,7 +669,11 @@ nav .right-group a {
     gap: 40px;
 	align-items: flex-end;
 }
-
+@media only screen and (max-width: 990px) {
+	.representation .floater{
+		gap: 20px;
+	}
+}
 .representation .slide p{
 	color: white;
 	font-family: "Inter Display";
