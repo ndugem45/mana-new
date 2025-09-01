@@ -585,7 +585,12 @@ nav .right-group a {
 	transition: all 200ms ease-in-out;
 	transition-delay: 50ms;
 }
-
+@media only screen and (max-width: 990px) {
+	.products .content .card .btn,
+	.products .content .card .btn.--disable {
+		opacity: 1;
+	}
+}
 .products .content .card:hover .btn:not(.--disable) {
 	opacity: 1;
 }
