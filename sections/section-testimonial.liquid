@@ -33,7 +33,7 @@
           "{{ item.message }}"
         </p>
         <div class="user">
-          <img src="{{ item.user_image }}" alt="">
+          <img src="{{ item.user_image | img_url }}" alt="">
           <div>
             <span class="name"> {{ item.user_name }} </span>
             <span>
