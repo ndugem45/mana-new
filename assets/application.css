@@ -786,6 +786,11 @@ nav .right-group a {
 		font-size: 150px;
 	}
 }
+@media only screen and (max-width: 480px) {
+	.representation h3{
+		font-size: 100px;
+	}
+}
 .representation .content h3{
 	color: white;
 }
