@@ -15,6 +15,7 @@
         "label": "A TRIBUTE TO WHERE WE COME FROM",
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Preserving texture, protecting flavour and honouring culture</p>",
+        "enable_cta": false,
         "cta_title": "Shop Now",
         "cta_url": "",
         "enable_slider": false,
