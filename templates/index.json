@@ -17,6 +17,7 @@
         "desc": "<p>Preserving texture, protecting flavour and honouring culture</p>",
         "cta_title": "Shop Now",
         "cta_url": "",
+        "enable_slider": false,
         "metafields": [
           "new-york-times",
           "vogue"
