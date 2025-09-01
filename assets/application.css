@@ -514,7 +514,7 @@ nav .right-group a {
 		overflow: auto;
 		margin-left: -20px;
 		width: 100vw !important;
-		padding-inline: 20px;
+		/* padding-inline: 20px; */
 	}
 }
 
