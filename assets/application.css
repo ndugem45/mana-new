@@ -513,7 +513,7 @@ nav .right-group a {
 		display: flex;
 		overflow: auto;
 		margin-left: -20px;
-		width: 100vw !important;
+		width: calc( 100vw - 20px ) !important;
 		/* padding-inline: 20px; */
 	}
 }
