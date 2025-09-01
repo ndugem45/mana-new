@@ -3,6 +3,9 @@
     /* background: url("{{ 'hero-bg.png' | asset_url}}") no-repeat;
     background-size: cover;
     background-position: center; */
+    {% if section.settings.enable_slider == false %}
+      padding-bottom: 64px;
+    {% endif %}
   }
 {% endstyle %}
 
