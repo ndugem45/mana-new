@@ -512,8 +512,8 @@ nav .right-group a {
 	.products .content {
 		display: flex;
 		overflow: auto;
-		margin-left: -20px;
-		width: calc( 100vw - 20px ) !important;
+		/* margin-left: -20px; */
+		width: auto !important;
 		/* padding-inline: 20px; */
 	}
 }
