@@ -45,22 +45,24 @@
               </button>
             {% endif %}
           {% endform %} {% endcomment %}
-          <div id="newsletter-wrapper" class="newsletter">
-            <input type="hidden" id="newsletter-tag" value="newsletter">
+          <!-- Hidden real form from Shopify -->
+          <form id="HiddenNewsletterForm" action="/contact" method="post" style="display:none;">
+            {% form 'customer' %}
+              <input type="hidden" name="contact[tags]" value="newsletter">
+            {% endform %}
+          </form>
 
+          <!-- Your visible custom form -->
+          <div id="newsletter-wrapper">
             <input
-              id="NewsletterEmail"
               type="email"
-              placeholder="Enter Your Email"
+              id="NewsletterEmail"
+              placeholder="Enter your email"
               required
               aria-required="true"
               autocomplete="email"
             />
-
-            <button id="newsletter-submit" class="newsletter__button" type="button">
-              SEND
-            </button>
-
+            <button id="newsletter-submit" type="button">SEND</button>
             <div id="newsletter-message"></div>
           </div>
 
