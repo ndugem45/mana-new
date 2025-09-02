@@ -184,6 +184,9 @@ nav .right-group a {
 	padding-block: 24px;
 	z-index: 2;
 }
+.hero .running{
+	gap: 0;
+}
 .hero .container.second::before,
 .hero .running::before {
 	content: '';
