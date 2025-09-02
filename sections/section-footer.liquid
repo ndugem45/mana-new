@@ -45,18 +45,18 @@
               </button>
             {% endif %}
           {% endform %} {% endcomment %}
-          {% comment %} <div id="NewsletterForm"> {% endcomment %}
+
+          <div id="newsletter-wrapper">
             <input 
               type="email" 
               id="newsletter-email" 
               placeholder="Enter your email" 
-              required
-            >
+              aria-label="Email address"
+            />
             <button id="newsletter-submit">SEND</button>
-
             <div id="newsletter-message"></div>
           </div>
-        {% comment %} </div> {% endcomment %}
+
       </div>
       <div class="menu-group">
         {% comment %} <div class="menu">
@@ -90,40 +90,38 @@
   </div>
 
 <script>
-  $(document).ready(function () {
-    $("#newsletter-submit").on("click", function (e) {
+  $(document).ready(function() {
+    $('#newsletter-submit').on('click', function(e) {
       e.preventDefault();
 
-      var email = $("#newsletter-email").val();
-
+      var email = $('#newsletter-email').val();
+      var $message = $('#newsletter-message');
+      
       if (!email) {
-        $("#newsletter-message").html("<p style='color:red;'>Please enter your email.</p>");
+        $message.text("Please enter your email").css("color", "red");
         return;
       }
 
       $.ajax({
-        type: "POST",
-        url: "/contact",
+        type: 'POST',
+        url: '/contact',
         data: {
-          form_type: "customer",
-          "contact[email]": email,
-          "contact[tags]": "newsletter"
+          form_type: 'customer',
+          utf8: '✓',
+          'contact[email]': email
         },
-        success: function (response) {
-          if (response.indexOf("newsletter__confirmation") > -1 || response.indexOf("Thank you") > -1) {
-            $("#newsletter-message").html("<p style='color:green;'>Thank you for subscribing!</p>");
-            $("#newsletter-email").val("");
-          } else {
-            $("#newsletter-message").html("<p style='color:red;'>Subscription failed. Try again.</p>");
-          }
+        success: function() {
+          $message.text("Thanks for subscribing!").css("color", "green");
+          $('#newsletter-email').val('');
         },
-        error: function () {
-          $("#newsletter-message").html("<p style='color:red;'>Server error. Please try again later.</p>");
+        error: function() {
+          $message.text("Something went wrong. Please try again.").css("color", "red");
         }
       });
     });
   });
 </script>
+
 
 
 
