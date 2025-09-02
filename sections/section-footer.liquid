@@ -78,8 +78,45 @@
     </div>
   </div>
 
+<script>
+  $(document).ready(function () {
+    $('#newsletter-submit').on('click', function (e) {
+      e.preventDefault();
 
+      var email = $('#NewsletterEmail').val();
+      var tag   = $('#newsletter-tag').val();
+      var $message = $('#newsletter-message');
 
+      if (!email) {
+        $message.text("⚠️ Please enter your email").css("color", "red");
+        return;
+      }
+
+      $.ajax({
+        type: 'POST',
+        url: '/contact',
+        data: {
+          form_type: 'customer',
+          utf8: '✓',
+          'contact[email]': email,
+          'contact[tags]': tag
+        },
+        dataType: 'html', // Shopify responds with HTML, not JSON
+        success: function (res) {
+          if ($(res).find('.errors').length) {
+            $message.text("⚠️ Invalid email or already subscribed.").css("color", "red");
+          } else {
+            $message.text("✅ Thanks for subscribing!").css("color", "green");
+            $('#NewsletterEmail').val('');
+          }
+        },
+        error: function () {
+          $message.text("❌ Something went wrong. Please try again.").css("color", "red");
+        }
+      });
+    });
+  });
+</script>
 
 
 
