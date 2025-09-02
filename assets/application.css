@@ -215,6 +215,8 @@ nav .right-group a {
 	animation: marquee 10s linear infinite;
 	position: relative;
 	padding-inline: 24px;
+	display: flex;
+	align-items: center;
 }
 .hero .running > div::before{
 	content: '';
