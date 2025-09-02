@@ -11,7 +11,7 @@
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
-          {% comment %} {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
+          {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
             {%- if form.posted_successfully? -%} 
               <div role="status">
@@ -44,27 +44,7 @@
                 SEND
               </button>
             {% endif %}
-          {% endform %} {% endcomment %}
-          <!-- Hidden real form from Shopify -->
-          <form id="HiddenNewsletterForm" action="/contact" method="post" style="display:none;">
-            {% form 'customer' %}
-              <input type="hidden" name="contact[tags]" value="newsletter">
-            {% endform %}
-          </form>
-
-          <!-- Your visible custom form -->
-          <div id="newsletter-wrapper">
-            <input
-              type="email"
-              id="NewsletterEmail"
-              placeholder="Enter your email"
-              required
-              aria-required="true"
-              autocomplete="email"
-            />
-            <button id="newsletter-submit" type="button">SEND</button>
-            <div id="newsletter-message"></div>
-          </div>
+          {% endform %}
 
         </div>
       </div>
@@ -98,47 +78,6 @@
       </div>
     </div>
   </div>
-
-<script>
-  document.getElementById('newsletter-submit').addEventListener('click', function(e) {
-    e.preventDefault();
-
-    var email = document.getElementById('NewsletterEmail').value;
-    var messageBox = document.getElementById('newsletter-message');
-
-    if (!email) {
-      messageBox.textContent = "⚠️ Please enter your email";
-      messageBox.style.color = "red";
-      return;
-    }
-
-    // Build form data from hidden Shopify form
-    var form = document.getElementById('HiddenNewsletterForm');
-    var formData = new FormData(form);
-    formData.set('contact[email]', email);
-
-    fetch('/contact', {
-      method: 'POST',
-      body: formData,
-    })
-    .then(res => res.text())
-    .then(html => {
-      if (html.includes('errors')) {
-        messageBox.textContent = "⚠️ Invalid email or already subscribed.";
-        messageBox.style.color = "red";
-      } else {
-        messageBox.textContent = "✅ Thanks for subscribing!";
-        messageBox.style.color = "green";
-        document.getElementById('NewsletterEmail').value = '';
-      }
-    })
-    .catch(err => {
-      console.error("Error:", err);
-      messageBox.textContent = "❌ Something went wrong.";
-      messageBox.style.color = "red";
-    });
-  });
-</script>
 
 
 {% schema %}
