@@ -183,7 +183,8 @@ nav .right-group a {
 	margin-top: 64px;
 	padding-block: 24px;
 }
-.hero .container.second::before {
+.hero .container.second::before,
+.hero .running::before {
 	content: '';
 	width: 100vw;
 	position: absolute;
