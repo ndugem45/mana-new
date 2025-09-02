@@ -215,6 +215,9 @@ nav .right-group a {
 	animation: marquee 10s linear infinite;
 	position: relative;
 }
+.hero .running > div{
+	
+}
 .hero .container.second img {
 	width: auto;
 	object-fit: contain;
