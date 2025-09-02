@@ -213,6 +213,7 @@ nav .right-group a {
 	line-height: normal;
 	text-transform: uppercase;
 	animation: marquee 10s linear infinite;
+	position: relative;
 }
 .hero .container.second img {
 	width: auto;
