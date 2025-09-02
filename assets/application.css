@@ -174,7 +174,8 @@ nav .right-group a {
 		letter-spacing: -0.7px;
 	}
 }
-.hero .container.second {
+.hero .container.second,
+.hero .running {
 	display: flex;
 	align-items: center;
 	gap: 32px;
