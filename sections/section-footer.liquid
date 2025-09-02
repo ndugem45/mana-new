@@ -46,17 +46,11 @@
             {% endif %}
           {% endform %} {% endcomment %}
 
-          {% comment %} <div id="newsletter-wrapper"> {% endcomment %}
-            <input 
-              type="email" 
-              id="newsletter-email" 
-              placeholder="Enter your email" 
-              aria-label="Email address"
-            />
-            <div id="newsletter-message"></div>
-            <button id="newsletter-submit">SEND</button>
-          </div>
-          {% comment %}  {% endcomment %}
+          <div id="mc-form">
+          <input type="email" id="mc-email" placeholder="Enter your email" />
+          <button id="mc-submit">Subscribe</button>
+          <div id="mc-response"></div>
+        </div>
       </div>
       <div class="menu-group">
         {% comment %} <div class="menu">
@@ -91,43 +85,40 @@
 
 <script>
   $(document).ready(function () {
-    $('#newsletter-submit').on('click', function (e) {
-      e.preventDefault();
+    var mailchimpUrl = "https://xxxxxx.us21.list-manage.com/subscribe/post-json?u=abc123&id=456def&c=?";
 
-      var email = $('#newsletter-email').val();
-      var $message = $('#newsletter-message');
+    $('#mc-submit').on('click', function (e) {
+      e.preventDefault();
+      var email = $('#mc-email').val();
+      var $response = $('#mc-response');
 
       if (!email) {
-        $message.text("Please enter your email").css("color", "red");
+        $response.text("Please enter your email").css("color", "red");
         return;
       }
 
       $.ajax({
-        type: 'POST',
-        url: '/account/subscribe', 
+        url: mailchimpUrl,
         data: {
-          email: email
+          EMAIL: email
         },
-        headers: {
-          'Accept': 'application/json'  // force JSON response
-        },
-        success: function (res) {
-          if (res && res.ok) {
-            $message.text("Thanks for subscribing!").css("color", "green");
-            $('#newsletter-email').val('');
+        dataType: "jsonp", // must be jsonp for cross-domain
+        success: function (data) {
+          if (data.result === "success") {
+            $response.text("Thanks for subscribing!").css("color", "green");
+            $('#mc-email').val('');
           } else {
-            $message.text("This email may already be subscribed.").css("color", "red");
+            $response.text(data.msg).css("color", "red");
           }
         },
-        error: function (xhr) {
-          let err = xhr.responseJSON?.errors || "Something went wrong.";
-          $message.text(err).css("color", "red");
-          console.log("Error:", xhr.responseJSON);
+        error: function () {
+          $response.text("Could not connect to server. Please try again.").css("color", "red");
         }
       });
     });
   });
 </script>
+
 
 
 
