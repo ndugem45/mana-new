@@ -94,6 +94,37 @@
     </div>
   </div>
 
+<script>
+  $(document).ready(function () {
+    $("#newsletter-form").on("submit", function (e) {
+      e.preventDefault();
+
+      var form = $(this);
+      var formData = form.serialize();
+
+      $.ajax({
+        type: "POST",
+        url: form.attr("action"),
+        data: formData,
+        dataType: "html",
+        success: function (response) {
+          // Shopify return HTML, jadi kita cek apakah ada pesan sukses
+          if (response.indexOf("newsletter__confirmation") > -1 || response.indexOf("Thank you") > -1) {
+            $("#newsletter-message").html("<p style='color:green;'>Thank you for subscribing!</p>");
+            form[0].reset();
+          } else {
+            $("#newsletter-message").html("<p style='color:red;'>Something went wrong. Please try again.</p>");
+          }
+        },
+        error: function () {
+          $("#newsletter-message").html("<p style='color:red;'>Server error. Please try again later.</p>");
+        }
+      });
+    });
+  });
+</script>
+
+
 {% schema %}
 {
   "name": "Footer",
