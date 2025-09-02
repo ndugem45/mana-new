@@ -104,30 +104,31 @@
 
       $.ajax({
         type: 'POST',
-        url: '/contact',
+        url: '/account/subscribe', 
         data: {
-          form_type: 'customer',
-          utf8: '✓',
-          'contact[email]': email
+          email: email
         },
-        dataType: 'html', // Shopify responds with HTML, not JSON
+        headers: {
+          'Accept': 'application/json'  // force JSON response
+        },
         success: function (res) {
-          // Shopify always returns a HTML page (not JSON)
-          if ($(res).find('.errors').length) {
-            $message.text("Invalid email or already subscribed.").css("color", "red");
-          } else {
+          if (res && res.ok) {
             $message.text("Thanks for subscribing!").css("color", "green");
             $('#newsletter-email').val('');
+          } else {
+            $message.text("This email may already be subscribed.").css("color", "red");
           }
         },
         error: function (xhr) {
-          $message.text("Something went wrong. Please try again.").css("color", "red");
-          console.log("Error:", xhr.responseText);
+          let err = xhr.responseJSON?.errors || "Something went wrong.";
+          $message.text(err).css("color", "red");
+          console.log("Error:", xhr.responseJSON);
         }
       });
     });
   });
 </script>
+
 
 
 
