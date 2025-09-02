@@ -44,12 +44,12 @@
       </div>
   </div>
 {% endif %}
-<div class="container second">
-      <div class="slider" style="width: 100%;">
-        {% for a in (1..5) %}
-          Loved by chefs and foodies across the world
-        {% endfor %}
-      </div>
+<div class="container second running">
+  {% for a in (1..5) %}
+    <div class="slider" style="flex-shrink: 0;">
+      Loved by chefs and foodies across the world
+    </div>
+  {% endfor %}
   </div>
 
 <script>
