@@ -216,7 +216,7 @@ nav .right-group a {
 	position: relative;
 	padding-inline: 24px;
 }
-.hero .running > div{
+.hero .running > div::before{
 	content: '';
 	width: 8px;
 	height: 8px;
