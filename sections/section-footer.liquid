@@ -45,23 +45,17 @@
               </button>
             {% endif %}
           {% endform %} {% endcomment %}
-          <form id="newsletter-form" method="post" action="/contact#newsletter">
-            <input type="hidden" name="form_type" value="customer">
-            <input type="hidden" name="contact[tags]" value="newsletter">
-
+          <div id="newsletter-box">
             <input 
               type="email" 
-              name="contact[email]" 
-              id="NewsletterEmail"
+              id="newsletter-email" 
               placeholder="Enter your email" 
-              autocomplete="email"
               required
             >
+            <button id="newsletter-submit">SEND</button>
 
-            <button type="submit">SEND</button>
-            
             <div id="newsletter-message"></div>
-          </form>
+          </div>
         </div>
       </div>
       <div class="menu-group">
