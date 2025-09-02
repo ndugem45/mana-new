@@ -122,5 +122,6 @@ p {
 }
 .toast{
 	position: absolute;
-	bottom: 
+	bottom: 64px;
+	right: 64px;
 }
