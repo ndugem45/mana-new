@@ -1372,6 +1372,9 @@ footer input[type='email']{
 	background: unset;
 	appearance: none;
 }
+footer input[type='email']:focus{
+	outline: none;
+}
 footer button{
 	display: flex;
 	height: 56px;
