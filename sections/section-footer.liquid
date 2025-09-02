@@ -85,9 +85,9 @@
   $(document).ready(function(){
     $('footer .copy span').text(new Date().getFullYear())
     if( window.location.search.includes('customer_posted=true') ){
-      setTimeout(()=>{
+      {% comment %} setTimeout(()=>{
         $('footer .toast').addClass('remove')
-      },2000)
+      },2000) {% endcomment %}
     }
   });
 </script>
