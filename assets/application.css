@@ -206,7 +206,12 @@ nav .right-group a {
 	}
 }
 .hero .running > div{
-	
+	font-family: "Inter Display";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
 }
 .hero .container.second img {
 	width: auto;
