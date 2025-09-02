@@ -205,6 +205,9 @@ nav .right-group a {
 		padding-inline: 24px;
 	}
 }
+.hero .running > div{
+	
+}
 .hero .container.second img {
 	width: auto;
 	object-fit: contain;
