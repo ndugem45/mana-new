@@ -1388,4 +1388,5 @@ footer button{
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
+	cursor: pointer;
 }
