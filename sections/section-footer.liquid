@@ -100,48 +100,45 @@
   </div>
 
 <script>
-  $(document).ready(function () {
-    $('#newsletter-submit').on('click', function (e) {
-      e.preventDefault();
+  document.getElementById('newsletter-submit').addEventListener('click', function(e) {
+    e.preventDefault();
 
-      var email = $('#NewsletterEmail').val();
-      var tag   = $('#newsletter-tag').val();
-      var $message = $('#newsletter-message');
+    var email = document.getElementById('NewsletterEmail').value;
+    var messageBox = document.getElementById('newsletter-message');
 
-      if (!email) {
-        $message.text("⚠️ Please enter your email").css("color", "red");
-        return;
+    if (!email) {
+      messageBox.textContent = "⚠️ Please enter your email";
+      messageBox.style.color = "red";
+      return;
+    }
+
+    // Build form data from hidden Shopify form
+    var form = document.getElementById('HiddenNewsletterForm');
+    var formData = new FormData(form);
+    formData.set('contact[email]', email);
+
+    fetch('/contact', {
+      method: 'POST',
+      body: formData,
+    })
+    .then(res => res.text())
+    .then(html => {
+      if (html.includes('errors')) {
+        messageBox.textContent = "⚠️ Invalid email or already subscribed.";
+        messageBox.style.color = "red";
+      } else {
+        messageBox.textContent = "✅ Thanks for subscribing!";
+        messageBox.style.color = "green";
+        document.getElementById('NewsletterEmail').value = '';
       }
-
-      $.ajax({
-        type: 'POST',
-        url: '/contact',
-        data: $.param({   // 🔑 force URL-encoded form data
-          form_type: 'customer',
-          utf8: '✓',
-          'contact[email]': email,
-          'contact[tags]': tag
-        }),
-        contentType: "application/x-www-form-urlencoded; charset=UTF-8", // 🔑 penting
-        success: function (res) {
-          if ($(res).find('.errors').length) {
-            $message.text("⚠️ Invalid email or already subscribed.").css("color", "red");
-          } else {
-            $message.text("✅ Thanks for subscribing!").css("color", "green");
-            $('#NewsletterEmail').val('');
-          }
-        },
-        error: function (xhr) {
-          console.log("XHR:", xhr.responseText);
-          $message.text("❌ Something went wrong.").css("color", "red");
-        }
-      });
+    })
+    .catch(err => {
+      console.error("Error:", err);
+      messageBox.textContent = "❌ Something went wrong.";
+      messageBox.style.color = "red";
     });
   });
 </script>
-
-
-
 
 
 {% schema %}
