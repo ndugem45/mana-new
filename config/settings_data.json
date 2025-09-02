@@ -24,7 +24,36 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "13259502948195434395": {
+        "type": "shopify://apps/comingsoon/blocks/comingsoon/fc4b774b-7b88-488d-91a2-5dd1f6d449a9",
+        "disabled": true,
+        "settings": {
+          "template_choice": "blue",
+          "heading": "Coming Soon",
+          "subheading": "We're working on something exciting. Stay tuned!",
+          "show_countdown": true,
+          "end_time": "01/01/2025 23:00:00",
+          "bg_color": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) 100%)",
+          "isBlackIcons": true,
+          "show_comingsoon_facebook_icon": false,
+          "comingsoon_facebook_link": "",
+          "show_comingsoon_twitter_icon": false,
+          "comingsoon_twitter_link": "",
+          "show_comingsoon_instagram_icon": false,
+          "comingsoon_instagram_link": "",
+          "show_comingsoon_linkedin_icon": false,
+          "comingsoon_linkedin_link": "",
+          "show_comingsoon_youtube_icon": false,
+          "comingsoon_youtube_link": "",
+          "show_comingsoon_tiktok_icon": false,
+          "comingsoon_tiktok_link": "",
+          "show_comingsoon_pinterest_icon": false,
+          "comingsoon_pinterest_link": ""
+        }
+      }
+    }
   },
   "presets": {
     "Default": {}
