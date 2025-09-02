@@ -123,12 +123,13 @@ p {
 .toast{
 	position: fixed;
     bottom: 64px;
-    right: 64px;
+    left: 64px;
     background: white;
     padding: 12px 24px;
     border-radius: 4px;
     color: black;
-	transition: all 200ms ease;
+	transition: all 400ms ease;
+	z-index: 5;
 }
 .toast.remove{
 	transform: translateY(400%);
