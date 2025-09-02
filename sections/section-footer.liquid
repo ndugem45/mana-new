@@ -12,38 +12,40 @@
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
           {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
+            
+            <div class="toast">
+              {%- if form.posted_successfully? -%} 
+                <div role="status">
+                  Thankyou
+                </div>
+              {%- elsif form.errors -%}
+                <div role="alert">
+                  {% for field in form.errors %}
+                    {%- if field == 'email' -%}
+                      Invalid Email Address
+                    {%- else -%}
+                      {{ form.errors.messages[field] }}
+                    {%- endif -%}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
 
-            {%- if form.posted_successfully? -%} 
-              <div role="status">
-                Thankyou
-              </div>
-            {%- elsif form.errors -%}
-              <div role="alert">
-                {% for field in form.errors %}
-                  {%- if field == 'email' -%}
-                    Invalid Email Address
-                  {%- else -%}
-                    {{ form.errors.messages[field] }}
-                  {%- endif -%}
-                {% endfor %}
-              </div>
-            {% else %}
-              <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="hidden" name="contact[tags]" value="newsletter">
 
-              <input
-                id="NewsletterEmail"
-                type="email"
-                name="contact[email]"
-                placeholder="Enter Your Email"
-                required
-                aria-required="true"
-                autocomplete="email"
-              />
+            <input
+              id="NewsletterEmail"
+              type="email"
+              name="contact[email]"
+              placeholder="Enter Your Email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
 
-              <button class="newsletter__button" type="submit">
-                SEND
-              </button>
-            {% endif %}
+            <button class="newsletter__button" type="submit">
+              SEND
+            </button>
           {% endform %}
 
         </div>
