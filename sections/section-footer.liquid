@@ -91,24 +91,30 @@
 
 <script>
   $(document).ready(function () {
-    $("#newsletter-form").on("submit", function (e) {
+    $("#newsletter-submit").on("click", function (e) {
       e.preventDefault();
 
-      var form = $(this);
-      var formData = form.serialize();
+      var email = $("#newsletter-email").val();
+
+      if (!email) {
+        $("#newsletter-message").html("<p style='color:red;'>Please enter your email.</p>");
+        return;
+      }
 
       $.ajax({
         type: "POST",
-        url: form.attr("action"),
-        data: formData,
-        dataType: "html",
+        url: "/contact",
+        data: {
+          form_type: "customer",
+          "contact[email]": email,
+          "contact[tags]": "newsletter"
+        },
         success: function (response) {
-          // Shopify return HTML, jadi kita cek apakah ada pesan sukses
           if (response.indexOf("newsletter__confirmation") > -1 || response.indexOf("Thank you") > -1) {
             $("#newsletter-message").html("<p style='color:green;'>Thank you for subscribing!</p>");
-            form[0].reset();
+            $("#newsletter-email").val("");
           } else {
-            $("#newsletter-message").html("<p style='color:red;'>Something went wrong. Please try again.</p>");
+            $("#newsletter-message").html("<p style='color:red;'>Subscription failed. Try again.</p>");
           }
         },
         error: function () {
@@ -118,6 +124,7 @@
     });
   });
 </script>
+
 
 
 {% schema %}
