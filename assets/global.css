@@ -128,4 +128,8 @@ p {
     padding: 12px 24px;
     border-radius: 4px;
     color: black;
+	transition: all 200ms ease;
+}
+.toast.remove{
+	transform: translateY(100%);
 }
