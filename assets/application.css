@@ -214,8 +214,10 @@ nav .right-group a {
 	text-transform: uppercase;
 	animation: marquee 10s linear infinite;
 	position: relative;
+	padding-inline: 24px;
 }
 .hero .running > div{
+	content: '';
 	
 }
 .hero .container.second img {
