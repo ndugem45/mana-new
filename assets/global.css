@@ -121,15 +121,11 @@ p {
 	margin: unset;
 }
 .toast{
-	position: fixed;
-    bottom: 64px;
-    left: 64px;
-    background: white;
-    padding: 12px 24px;
+	position: absolute;
+    top: calc(100% + 16px);
     border-radius: 4px;
-    color: black;
-	transition: all 400ms ease;
-	z-index: 5;
+    transition: all .4s ease;
+    z-index: 5;
 }
 .toast.remove{
 	transform: translateY(400%);
