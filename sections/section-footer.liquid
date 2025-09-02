@@ -90,13 +90,13 @@
   </div>
 
 <script>
-  $(document).ready(function() {
-    $('#newsletter-submit').on('click', function(e) {
+  $(document).ready(function () {
+    $('#newsletter-submit').on('click', function (e) {
       e.preventDefault();
 
       var email = $('#newsletter-email').val();
       var $message = $('#newsletter-message');
-      
+
       if (!email) {
         $message.text("Please enter your email").css("color", "red");
         return;
@@ -110,17 +110,25 @@
           utf8: '✓',
           'contact[email]': email
         },
-        success: function() {
-          $message.text("Thanks for subscribing!").css("color", "green");
-          $('#newsletter-email').val('');
+        dataType: 'html', // Shopify responds with HTML, not JSON
+        success: function (res) {
+          // Shopify always returns a HTML page (not JSON)
+          if ($(res).find('.errors').length) {
+            $message.text("Invalid email or already subscribed.").css("color", "red");
+          } else {
+            $message.text("Thanks for subscribing!").css("color", "green");
+            $('#newsletter-email').val('');
+          }
         },
-        error: function() {
+        error: function (xhr) {
           $message.text("Something went wrong. Please try again.").css("color", "red");
+          console.log("Error:", xhr.responseText);
         }
       });
     });
   });
 </script>
+
 
 
 
