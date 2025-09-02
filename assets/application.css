@@ -212,6 +212,7 @@ nav .right-group a {
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
+	animation: marquee 5s linear infinite;
 }
 .hero .container.second img {
 	width: auto;
@@ -268,14 +269,14 @@ nav .right-group a {
 	}
 } */
 
-/* @keyframes marquee {
+@keyframes marquee {
   from {
     transform: translateX(0%);
   }
   to {
     transform: translateX(calc( -100% - 32px ));
   }
-} */
+}
 
 .running img {
 	width: auto;
