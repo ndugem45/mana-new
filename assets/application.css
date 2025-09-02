@@ -222,7 +222,8 @@ nav .right-group a {
 	height: 8px;
 	border-radius: 50%;
 	background: white;
-	position: relative;
+	position: absolute;
+	left: 0;
 }
 .hero .container.second img {
 	width: auto;
