@@ -121,7 +121,11 @@ p {
 	margin: unset;
 }
 .toast{
-	position: absolute;
-	bottom: 64px;
-	right: 64px;
+	position: fixed;
+    bottom: 64px;
+    right: 64px;
+    background: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: black;
 }
