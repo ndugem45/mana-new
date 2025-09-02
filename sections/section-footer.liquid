@@ -11,7 +11,7 @@
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
-          {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
+          {% comment %} {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
             {%- if form.posted_successfully? -%} 
               <div role="status">
@@ -44,7 +44,7 @@
                 SEND
               </button>
             {% endif %}
-          {% endform %}
+          {% endform %} {% endcomment %}
           <form id="newsletter-form" method="post" action="/contact#newsletter">
             <input type="hidden" name="form_type" value="customer">
             <input type="hidden" name="contact[tags]" value="newsletter">
@@ -54,6 +54,7 @@
               name="contact[email]" 
               id="NewsletterEmail"
               placeholder="Enter your email" 
+              autocomplete="email"
               required
             >
 
