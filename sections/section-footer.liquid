@@ -11,7 +11,7 @@
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
-          {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
+          {% comment %} {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
             {%- if form.posted_successfully? -%} 
               <div role="status">
@@ -44,7 +44,26 @@
                 SEND
               </button>
             {% endif %}
-          {% endform %}
+          {% endform %} {% endcomment %}
+          <div id="newsletter-wrapper" class="newsletter">
+            <input type="hidden" id="newsletter-tag" value="newsletter">
+
+            <input
+              id="NewsletterEmail"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+
+            <button id="newsletter-submit" class="newsletter__button" type="button">
+              SEND
+            </button>
+
+            <div id="newsletter-message"></div>
+          </div>
+
         </div>
       </div>
       <div class="menu-group">
