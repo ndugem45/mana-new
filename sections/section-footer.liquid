@@ -11,7 +11,7 @@
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
         <div class="newsletter">
-          {% comment %} {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
+          {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
 
             {%- if form.posted_successfully? -%} 
               <div role="status">
@@ -44,12 +44,7 @@
                 SEND
               </button>
             {% endif %}
-          {% endform %} {% endcomment %}
-
-          {% comment %} <div id="mc-form"> {% endcomment %}
-          <input type="email" id="mc-email" placeholder="Enter your email" />
-          <div id="mc-response"></div>
-          <button id="mc-submit">SEND</button>
+          {% endform %}
         </div>
       </div>
       <div class="menu-group">
@@ -82,42 +77,6 @@
       </div>
     </div>
   </div>
-
-<script>
-  $(document).ready(function () {
-    var mailchimpUrl = "https://xxxxxx.us21.list-manage.com/subscribe/post-json?u=abc123&id=456def&c=?";
-
-    $('#mc-submit').on('click', function (e) {
-      e.preventDefault();
-      var email = $('#mc-email').val();
-      var $response = $('#mc-response');
-
-      if (!email) {
-        $response.text("Please enter your email").css("color", "red");
-        return;
-      }
-
-      $.ajax({
-        url: mailchimpUrl,
-        data: {
-          EMAIL: email
-        },
-        dataType: "jsonp", // must be jsonp for cross-domain
-        success: function (data) {
-          if (data.result === "success") {
-            $response.text("Thanks for subscribing!").css("color", "green");
-            $('#mc-email').val('');
-          } else {
-            $response.text(data.msg).css("color", "red");
-          }
-        },
-        error: function () {
-          $response.text("Could not connect to server. Please try again.").css("color", "red");
-        }
-      });
-    });
-  });
-</script>
 
 
 
