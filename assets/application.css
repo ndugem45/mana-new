@@ -214,7 +214,8 @@ nav .right-group a {
 	text-transform: uppercase;
 	animation: marquee 10s linear infinite;
 	position: relative;
-	padding-inline: 24px;
+	padding-left: calc( 12px + 8px );
+	padding-right: 12px;
 	display: flex;
 	align-items: center;
 }
