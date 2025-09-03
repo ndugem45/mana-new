@@ -42,10 +42,11 @@
         "cta_title": "VIEW ALL PRODUCTS",
         "cta_url": "",
         "products": [
-          "turkish-iznik-heritage-plate-2"
+          "turkish-iznik-heritage-plate-2",
+          "turkish-iznik-heritage-plate-3"
         ],
-        "grid": 1,
-        "grid_width": 30,
+        "grid": 2,
+        "grid_width": 50,
         "hide_price": true,
         "show_custom_cta": true
       }
