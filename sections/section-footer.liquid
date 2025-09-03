@@ -13,10 +13,10 @@
         <div class="newsletter">
           {% form 'customer', id: 'NewsletterForm', class: 'newsletter' %}
             
-            <div class="toast">
+            <div class="info">
               {%- if form.posted_successfully? -%} 
                 <div role="status">
-                  Email Sent. Thank you!
+                  Thank you for subscribing!
                 </div>
               {%- elsif form.errors -%}
                 <div role="alert">
