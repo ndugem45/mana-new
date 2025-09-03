@@ -22,7 +22,7 @@
                 <div role="alert">
                   {% for field in form.errors %}
                     {%- if field == 'email' -%}
-                      Invalid Email Address
+                      Invalid email address. Please check and try again.
                     {%- else -%}
                       {{ form.errors.messages[field] }}
                     {%- endif -%}
