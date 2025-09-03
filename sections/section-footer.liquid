@@ -13,7 +13,7 @@
         <div class="newsletter">
           {% form 'customer', id: 'NewsletterForm' %}
             
-            <div class="info">
+            <div class="info" {%- if form.errors -%} disabled {% endif %}>
               {%- if form.posted_successfully? -%} 
                 <div role="status">
                   Thank you for subscribing!
@@ -95,7 +95,7 @@
     $('#NewsletterEmail').on('focusout', ()=>{
       $('.newsletter').removeClass('focus')
     });
-    if($('.newsletter__button').attr('disabled')){
+    if($('.info').attr('disabled')){
       $('.newsletter').addClass('error')
     }
   });
