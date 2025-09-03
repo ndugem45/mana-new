@@ -19,7 +19,6 @@
                   Thank you for subscribing!
                 </div>
               {%- elsif form.errors -%}
-                <div role="alert">
                   {% for field in form.errors %}
                     {%- if field == 'email' -%}
                       Invalid email address. Please check and try again.
@@ -27,7 +26,6 @@
                       {{ form.errors.messages[field] }}
                     {%- endif -%}
                   {% endfor %}
-                </div>
               {% endif %}
             </div>
 
