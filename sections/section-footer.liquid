@@ -10,7 +10,7 @@
     <div class="top">
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
-        <div class="newsletter">
+        <div class="newsletter" {%- if form.errors -%} error {% endif %}>
           {% form 'customer', id: 'NewsletterForm' %}
             
             <div class="info">
