@@ -93,8 +93,11 @@
 <script>
   $(document).ready(function(){
     $('footer .copy span').text(new Date().getFullYear())
-    $('#NewsletterEmail').on('input', ()=>{
-      console.log(1)
+    $('#NewsletterEmail').on('focus', ()=>{
+      $('.newsletter').addClass('focus')
+    });
+    $('#NewsletterEmail').on('outfocus', ()=>{
+      $('.newsletter').addClass('focus')
     });
     {% comment %} if( window.location.search.includes('customer_posted=true') ){ {% endcomment %}
       {% comment %} setTimeout(()=>{
