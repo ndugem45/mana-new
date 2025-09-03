@@ -96,8 +96,8 @@
     $('#NewsletterEmail').on('focus', ()=>{
       $('.newsletter').addClass('focus')
     });
-    $('#NewsletterEmail').on('outfocus', ()=>{
-      $('.newsletter').addClass('focus')
+    $('#NewsletterEmail').on('focusout', ()=>{
+      $('.newsletter').removeClass('focus')
     });
     {% comment %} if( window.location.search.includes('customer_posted=true') ){ {% endcomment %}
       {% comment %} setTimeout(()=>{
