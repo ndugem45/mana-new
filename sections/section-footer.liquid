@@ -10,7 +10,7 @@
     <div class="top">
       <div class="form">
         <p>Join our table to receive updates, campaign stories and more</p>
-        <div class="newsletter" {%- if form.errors -%} error {% endif %}>
+        <div class="newsletter">
           {% form 'customer', id: 'NewsletterForm' %}
             
             <div class="info">
@@ -40,8 +40,6 @@
               aria-required="true"
               autocomplete="email"
             />
-            
-
             
             {%- if form.posted_successfully? -%} 
                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
