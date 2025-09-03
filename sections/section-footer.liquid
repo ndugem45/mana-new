@@ -95,6 +95,8 @@
     $('#NewsletterEmail').on('focusout', ()=>{
       $('.newsletter').removeClass('focus')
     });
+    if($('.newsletter__button').has){
+    }
     {% comment %} if( window.location.search.includes('customer_posted=true') ){ {% endcomment %}
       {% comment %} setTimeout(()=>{
         $('footer .toast').addClass('remove')
