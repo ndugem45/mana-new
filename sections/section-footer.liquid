@@ -95,13 +95,9 @@
     $('#NewsletterEmail').on('focusout', ()=>{
       $('.newsletter').removeClass('focus')
     });
-    if($('.newsletter__button').has){
+    if($('.newsletter__button').attr('disabled')){
+      $('.newsletter').addClass('error')
     }
-    {% comment %} if( window.location.search.includes('customer_posted=true') ){ {% endcomment %}
-      {% comment %} setTimeout(()=>{
-        $('footer .toast').addClass('remove')
-      },2000) {% endcomment %}
-    {% comment %} } {% endcomment %}
   });
 </script>
 
