@@ -49,6 +49,7 @@ nav .menu-group .menu-link {
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 nav .menu-link:hover {
 	text-decoration: underline;
