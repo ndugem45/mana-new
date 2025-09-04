@@ -1,5 +1,9 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*:focus {
+	outline: none;
 }
 
 body {
@@ -120,13 +124,15 @@ p {
 	line-height: 150%;
 	margin: unset;
 }
-.toast{
-	position: absolute;
-    top: calc(100% + 16px);
-    border-radius: 4px;
-    transition: all .4s ease;
-    z-index: 5;
+button[disabled]{
+	background: rgba(255, 255, 255, 0.60);
+	backdrop-filter: blur(6px);
+	cursor: auto;
 }
-.toast.remove{
-	transform: translateY(400%);
+input:focus,
+input:autofill,
+input:-webkit-autofill,
+input:-internal-autofill-selected{
+	outline: none;
+	background-color: transparent;
 }
