@@ -535,13 +535,12 @@ nav .right-group a {
 @media only screen and (max-width: 990px) {
 	.products .head h2 span {
 		font-size: 62px;
-		bottom: -24px;
+		bottom: 0px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.products .head h2 span {
 		font-size: 54px;
-		bottom: -44px;
 	}
 }
 
