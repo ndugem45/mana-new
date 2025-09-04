@@ -208,6 +208,10 @@ nav .right-group a {
 		padding-inline: 24px;
 	}
 }
+.hero .running .group{
+	animation: marquee 10s linear infinite;
+	flex-shrink: 0;
+}
 .hero .running > div{
 	font-family: "Inter Display";
 	font-size: 14px;
@@ -215,7 +219,6 @@ nav .right-group a {
 	font-weight: 500;
 	line-height: normal;
 	text-transform: uppercase;
-	animation: marquee 10s linear infinite;
 	position: relative;
 	padding-left: calc( 12px + 8px );
 	padding-right: 12px;
@@ -1376,7 +1379,7 @@ footer .copy div:last-child {
 	gap: 32px;
 }
 
-footer .newsletter:not(form){
+footer .newsletter{
 	display: flex;
 	padding: 8px 8px 8px 24px;
 	align-items: center;
@@ -1386,6 +1389,12 @@ footer .newsletter:not(form){
 	border: 1px solid rgba(255, 255, 255, 0.50);
 	background: #132142;
 	position: relative;
+}
+footer .newsletter.focus{
+	border: 1px solid rgba(255, 255, 255, 1);
+}
+footer .newsletter.error{
+	border: 1px solid #FF5B5B;
 }
 footer .newsletter form{
 	display: flex;
@@ -1401,9 +1410,7 @@ footer input[type='email']{
 	border: unset;
 	background: unset;
 	appearance: none;
-}
-footer input[type='email']:focus{
-	outline: none;
+	width: 290px;
 }
 footer button{
 	display: flex;
@@ -1422,4 +1429,15 @@ footer button{
 	line-height: normal;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+footer .info{
+	position: absolute;
+    top: calc(100% + 16px);
+    border-radius: 4px;
+    transition: all .4s ease;
+    z-index: 5;
+	width: 100%;
+    left: 0;
+    padding-inline: 24px;
+	font-size: 16px;
 }
