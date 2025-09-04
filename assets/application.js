@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    function scrollTo(target, offset){
+
+    function scrollToSection(target, offset){
         var element = document.getElementById(target);
         var headerOffset = offset;
         var elementPosition = element.getBoundingClientRect().top;
@@ -10,4 +10,3 @@ document.addEventListener('DOMContentLoaded', ()=>{
             behavior: "smooth"
         });
     }
-}, false);
