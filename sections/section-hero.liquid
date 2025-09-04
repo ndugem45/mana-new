@@ -45,29 +45,31 @@
   </div>
 {% endif %}
 <div class="running">
-    <div class="group">
-      <div style="flex-shrink: 0;">
-        New bone china
+    {% for a in (1..3) %}
+      <div class="group">
+        <div style="flex-shrink: 0;">
+          New bone china
+        </div>
+        <div style="flex-shrink: 0;">
+          Dedicated section
+        </div>
+        <div style="flex-shrink: 0;">
+          Dishwasher safe
+        </div>
+        <div style="flex-shrink: 0;">
+          Microwave friendly
+        </div>
+        <div style="flex-shrink: 0;">
+          Vegan and animal-free
+        </div>
+        <div style="flex-shrink: 0;">
+          Distinctive craft and design
+        </div>
+        <div style="flex-shrink: 0;">
+          Loved by chefs and foodies worldwide
+        </div>
       </div>
-      <div style="flex-shrink: 0;">
-        Dedicated section
-      </div>
-      <div style="flex-shrink: 0;">
-        Dishwasher safe
-      </div>
-      <div style="flex-shrink: 0;">
-        Microwave friendly
-      </div>
-      <div style="flex-shrink: 0;">
-        Vegan and animal-free
-      </div>
-      <div style="flex-shrink: 0;">
-        Distinctive craft and design
-      </div>
-      <div style="flex-shrink: 0;">
-        Loved by chefs and foodies worldwide
-      </div>
-    </div>
+    {% endfor %}
   </div>
 
 <script>
