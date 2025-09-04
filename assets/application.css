@@ -517,21 +517,19 @@ nav .right-group a {
 	font-weight: 400;
 	position: absolute;
 	width: fit-content;
-	right: -320px;
+	left: 0;
 	bottom: -80px;
 }
 @media only screen and (max-width: 990px) {
 	.products .head h2 span {
 		font-size: 62px;
 		bottom: -58px;
-		right: 0;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.products .head h2 span {
 		font-size: 54px;
 		bottom: -44px;
-		right: 0;
 	}
 }
 
