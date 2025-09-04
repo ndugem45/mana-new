@@ -225,7 +225,7 @@ nav .right-group a {
 	display: flex;
 	align-items: center;
 }
-.hero .running > div::before{
+.hero .running .group > div::before{
 	content: '';
 	width: 8px;
 	height: 8px;
