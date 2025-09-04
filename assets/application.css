@@ -41,7 +41,7 @@ nav .menu-group {
 	}
 }
 
-nav .menu-group a {
+nav .menu-group .menu-link {
 	color: #fff;
 	font-family: "Inter Display";
 	font-size: 16px;
@@ -50,7 +50,7 @@ nav .menu-group a {
 	line-height: normal;
 	text-transform: uppercase;
 }
-nav a:hover {
+nav .menu-link:hover {
 	text-decoration: underline;
 }
 
