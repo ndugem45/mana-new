@@ -450,6 +450,7 @@ nav .right-group a {
 .products .container{
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
 }
 
 .products .head {
