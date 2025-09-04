@@ -521,7 +521,7 @@ nav .right-group a {
 	font-size: 120px;
 	font-style: normal;
 	font-weight: 400;
-	position: absolute;
+	position: relative;
 	width: fit-content;
 	left: 0;
 	bottom: -80px;
