@@ -212,7 +212,7 @@ nav .right-group a {
 	animation: marquee 100s linear infinite;
 	flex-shrink: 0;
 }
-.hero .running > div{
+.hero .running .group > div{
 	font-family: "Inter Display";
 	font-size: 14px;
 	font-style: normal;
