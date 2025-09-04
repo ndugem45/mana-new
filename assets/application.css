@@ -209,7 +209,7 @@ nav .right-group a {
 	}
 }
 .hero .running .group{
-	animation: marquee 10s linear infinite;
+	animation: marquee 100s linear infinite;
 	flex-shrink: 0;
 }
 .hero .running > div{
