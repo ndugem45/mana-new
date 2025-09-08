@@ -46,10 +46,13 @@
    $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video')[0];
-      vid.toggleClass('active')
       if(vid.paused){
+        event.currentTarget.querySelector('#play').display = 'none'
+        event.currentTarget.querySelector('#pause').display = 'block'
         vid.play()
       }else{
+        event.currentTarget.querySelector('#pause').display = 'none'
+        event.currentTarget.querySelector('#play').display = 'block'
         vid.pause()
       }
     });
