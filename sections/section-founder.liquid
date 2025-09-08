@@ -46,13 +46,15 @@
    $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video')[0];
+      var playIco = event.currentTarget.querySelector('#play')
+      var pauseIco = event.currentTarget.querySelector('#pause')
       if(vid.paused){
-        event.currentTarget.querySelector('#pause').display = 'none'
-        event.currentTarget.querySelector('#play').display = 'block'
+        pauseIco).style.display = 'none'
+        playIco.style.display = 'block'
         vid.play()
       }else{
-        event.currentTarget.querySelector('#play').display = 'none'
-        event.currentTarget.querySelector('#pause').display = 'block'
+        playIco.style.display = 'none'
+        pauseIco.style.display = 'block'
         vid.pause()
       }
     });
