@@ -332,10 +332,11 @@ nav .right-group a {
 
 .about .container .cover {
 	flex: 1;
-	height: auto;
-	object-fit: cover;
-	aspect-ratio: 3 / 4;
-	max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 4;
+    max-width: 50%;
+    object-position: top;
 }
 @media only screen and (max-width: 990px) {
 	.about .container .cover {
