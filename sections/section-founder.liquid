@@ -43,10 +43,10 @@
    $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video')[0];
-      if(vid.si){
-        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
+      if(vid.paused){
+        vid.play()
       }else{
-        $('#shopify-section-{{section.id}} .slider').slick('slickNext');
+        vid.pause()
       }
     });
 </script>
