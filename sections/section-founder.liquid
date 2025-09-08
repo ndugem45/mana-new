@@ -40,7 +40,15 @@
 </div>
 
 <script>
-  
+   $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
+      event.stopPropagation();
+      var vid = $('#shopify-section-{{section.id}} video')[0];
+      if(vid.si){
+        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
+      }else{
+        $('#shopify-section-{{section.id}} .slider').slick('slickNext');
+      }
+    });
 </script>
 
 {% schema %}
