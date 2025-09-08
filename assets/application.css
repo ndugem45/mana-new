@@ -950,6 +950,11 @@ nav .right-group a {
 	}
 }
 
+.founder .container{
+	position: relative;
+	z-index: 2;
+}
+
 .founder video{
 	position: absolute;
 	left: 0;
