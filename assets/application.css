@@ -1475,11 +1475,12 @@ footer .info{
     padding-inline: 24px;
 	font-size: 16px;
 }
-footer .copyright{
+footer .copyright,
+footer .label{
 	color: rgba(255, 255, 255, 0.60);
 }
 footer .label{
-	
+
 }
 
 #info{
