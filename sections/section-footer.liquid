@@ -9,12 +9,12 @@
   <div id="contact" class="container">
     <div class="left">
       <div class="brand">Feenie's table</div>
-      <div> {{ section.settings.copyright }} </div>
       <div class="menu">
         {% for link in section.settings.social_menu.links %}
           <a href="{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
       </div>
+      <div> {{ section.settings.copyright }} </div>
     </div>
   </div>
 
