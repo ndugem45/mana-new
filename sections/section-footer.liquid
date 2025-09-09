@@ -12,6 +12,7 @@
       <div class="menu">
         {% for link in section.settings.social_menu.links %}
           <a href="{{ link.url }}">{{ link.title }}</a>
+          <div class="dot"></div>
         {% endfor %}
       </div>
       <div> {{ section.settings.copyright }} </div>
