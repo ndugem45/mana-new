@@ -1319,8 +1319,6 @@ footer .form {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	width: 100%;
-	max-width: 290px;
 }
 
 footer .form p {
