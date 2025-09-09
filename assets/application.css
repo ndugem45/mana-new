@@ -1475,6 +1475,9 @@ footer .info{
     padding-inline: 24px;
 	font-size: 16px;
 }
+footer .copyright{
+	color: rgba(255, 255, 255, 0.60);
+}
 
 #info{
 	background-color: white;
