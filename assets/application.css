@@ -1285,7 +1285,10 @@ footer .menu{
 }
 
 footer .menu .dot{
-	
+	width: 4px;
+	height: 4px;
+	background: white;
+	border-radius: 50%;
 }
 
 footer .top {
