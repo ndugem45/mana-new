@@ -31,7 +31,6 @@
 </nav>
 
 <script>
-
   const navbar = document.querySelector("nav");
 
   window.addEventListener("scroll", () => {
@@ -42,3 +41,17 @@
     }
   });
 </script>
+
+{% schema %}
+{
+  "name": "Navbar",
+  "tag": "header",
+  "class": "nav",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+  ],
+}
+{% endschema %}
