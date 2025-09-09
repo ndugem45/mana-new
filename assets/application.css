@@ -1497,7 +1497,6 @@ footer .label{
 footer .right{
 	display: flex;
 	flex-direction: column;
-	max-width: 380px;
 }
 footer .contact-group{
 	display: flex;
