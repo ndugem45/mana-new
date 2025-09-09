@@ -1472,5 +1472,6 @@ footer .info{
 }
 
 .info{
-	
+	background-color: white;
+	padding-block: 12px;
 }
