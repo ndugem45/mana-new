@@ -1315,13 +1315,13 @@ footer .top {
 	}
 }
 
-footer .top .form {
+footer .form {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
 
-footer .top .form p {
+footer .form p {
 	max-width: 284px;
 	font-family: "Inter Display";
 	font-size: 18px;
