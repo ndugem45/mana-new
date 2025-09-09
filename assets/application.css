@@ -1482,6 +1482,12 @@ footer .label{
 footer .label{
 	margin-bottom: 8px;
 }
+footer .contact-group{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
 
 #info{
 	background-color: white;
