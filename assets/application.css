@@ -1292,6 +1292,10 @@ footer .menu .dot{
 	border-radius: 50%;
 }
 
+footer .menu .dot:last-child{
+	display: none;
+}
+
 footer .top {
 	display: flex;
 	justify-content: space-between;
