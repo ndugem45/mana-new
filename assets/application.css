@@ -1278,6 +1278,11 @@ footer {
 	color: white;
 }
 
+footer .container{
+	display: flex;
+	flex-direction: row;
+}
+
 footer .menu{
 	display: flex;
 	flex-direction: row;
