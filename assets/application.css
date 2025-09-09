@@ -1450,7 +1450,7 @@ footer input[type='email']{
 	border: unset;
 	background: unset;
 	appearance: none;
-	/* width: 290px; */
+	width: 290px;
 }
 footer button{
 	display: flex;
