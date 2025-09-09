@@ -1,36 +1,36 @@
 header{
 	
 }
-.nav {
+nav {
 	padding-block: 24px;
 	position: sticky;
 	top: 0;
 	z-index: 10;
 	transition: all 200ms ease-out;
 }
-.nav.active {
+nav.active {
 	background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
 	padding-block: 8px;
 }
 
-.nav .container {
+nav .container {
 	display: flex;
 	align-items: center;
 }
 @media only screen and (max-width: 990px) {
-	.nav .container {
+	nav .container {
 		justify-content: space-between;
 	}
 }
 
-.nav .nav-logo {
+nav .nav-logo {
 	width: 138px;
 	height: 56px;
 	aspect-ratio: 69 / 28;
 }
 
-.nav .menu-group {
+nav .menu-group {
 	display: flex;
 	align-items: center;
 	gap: 48px;
@@ -38,12 +38,12 @@ header{
 	margin-left: auto;
 }
 @media only screen and (max-width: 990px) {
-	.nav .menu-group {
+	nav .menu-group {
 		display: none;
 	}
 }
 
-.nav .menu-group .menu-link {
+nav .menu-group .menu-link {
 	color: #fff;
 	font-family: "Inter Display";
 	font-size: 16px;
@@ -53,17 +53,17 @@ header{
 	text-transform: uppercase;
 	cursor: pointer;
 }
-.nav .menu-link:hover {
+nav .menu-link:hover {
 	text-decoration: underline;
 }
 
-.nav .right-group {
+nav .right-group {
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
 
-.nav .right-group a {
+nav .right-group a {
 	color: #fff;
 	font-family: "Inter Display";
 	font-size: 16px;
