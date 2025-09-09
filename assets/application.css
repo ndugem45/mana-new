@@ -1345,6 +1345,7 @@ footer .top .menu .menu-label {
 
 footer .brand {
 	font-family: Farmhouse;
+	width: fit-content;
 	font-size: 120px;
 	font-style: normal;
 	font-weight: 400;
