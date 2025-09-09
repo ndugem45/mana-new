@@ -1482,5 +1482,11 @@ footer .info{
 	justify-content: center;
 }
 .info p{
-	font-size: 14px;
+	color: #332717;
+    font-family: 'Inter Display';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
 }
