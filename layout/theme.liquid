@@ -46,9 +46,9 @@
     {{ 'global.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
-    {% section 'section-navbar' %}
-    
-    <div class="nav section">
+    {% comment %} {% section 'section-navbar' %} {% endcomment %}
+
+    <nav class="section">
       <div class="container">
         <a href="">
           <img src="{{ 'nav-logo.png' | asset_url }}" alt="" class="nav-logo">
@@ -73,10 +73,12 @@
           {% comment %} <a href=""> login </a> {% endcomment %}
         </div>
       </div>
-    </div>
+    </nav>
+
     <main role="main">
       {{ content_for_layout }}
     </main>
+
     {% section 'section-footer' %}
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     {{ 'application.js' | asset_url | script_tag }}
