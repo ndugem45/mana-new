@@ -1486,6 +1486,11 @@ footer .contact-group a{
 footer .label{
 	margin-bottom: 8px;
 }
+footer .right{
+	display: flex;
+	flex-direction: column;
+	max-width: 380px;
+}
 footer .contact-group{
 	display: flex;
 	flex-direction: row;
