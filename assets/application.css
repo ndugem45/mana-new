@@ -1322,13 +1322,11 @@ footer .form {
 }
 
 footer .form p {
-	max-width: 284px;
 	font-family: "Inter Display";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 130%;
-	width: 100%;
 }
 
 footer .top .menu-group {
