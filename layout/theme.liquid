@@ -46,6 +46,7 @@
     {{ 'global.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
+    {% section 'section-info' %}
     {% section 'section-navbar' %}
     <main role="main">
       {{ content_for_layout }}
