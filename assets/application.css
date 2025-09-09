@@ -1278,6 +1278,11 @@ footer {
 	color: white;
 }
 
+footer .menu{
+	display: flex;
+	flex-direction: row;
+}
+
 footer .top {
 	display: flex;
 	justify-content: space-between;
