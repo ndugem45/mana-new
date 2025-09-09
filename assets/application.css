@@ -1473,7 +1473,7 @@ footer .info{
 	font-size: 16px;
 }
 
-.info{
+#info{
 	background-color: white;
 	padding-block: 12px;
 	display: flex;
@@ -1481,7 +1481,7 @@ footer .info{
 	align-items: center;
 	justify-content: center;
 }
-.info p{
+#info p{
 	color: #332717;
     font-family: 'Inter Display';
     font-size: 14px;
