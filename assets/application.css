@@ -1476,8 +1476,12 @@ footer .info{
 	font-size: 16px;
 }
 footer .copyright,
-footer .label{
+footer .label,
+footer .contact-group{
 	color: rgba(255, 255, 255, 0.60);
+}
+footer .contact-group a{
+	color: rgba(255, 255, 255, 1);
 }
 footer .label{
 	margin-bottom: 8px;
