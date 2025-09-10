@@ -39,7 +39,22 @@
         "feature_item_JqbEa7": {
           "type": "feature_item",
           "settings": {
-            "image": "shopify://shop_images/space.png",
+            "image": "shopify://shop_images/neuro.png",
+            "title": "Feature Title",
+            "description": "Feature description goes here."
+          }
+        },
+        "feature_item_hTbDK3": {
+          "type": "feature_item",
+          "settings": {
+            "image": "shopify://shop_images/unique.png",
+            "title": "Feature Title",
+            "description": "Feature description goes here."
+          }
+        },
+        "feature_item_MYDAqg": {
+          "type": "feature_item",
+          "settings": {
             "title": "Feature Title",
             "description": "Feature description goes here."
           }
@@ -47,7 +62,9 @@
       },
       "block_order": [
         "feature_item_CRaQM4",
-        "feature_item_JqbEa7"
+        "feature_item_JqbEa7",
+        "feature_item_hTbDK3",
+        "feature_item_MYDAqg"
       ],
       "name": "Feature Section",
       "settings": {}
