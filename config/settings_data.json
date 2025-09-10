@@ -16,6 +16,19 @@
       },
       "section-footer": {
         "type": "section-footer",
+        "blocks": {
+          "social_link_X6njJG": {
+            "type": "social_link",
+            "settings": {
+              "platform": "instagram",
+              "url": "",
+              "icon": "shopify://shop_images/Instagram.svg"
+            }
+          }
+        },
+        "block_order": [
+          "social_link_X6njJG"
+        ],
         "settings": {
           "copyright": "© <span>2024</span> Feenie's Table. | All Rights Reserved",
           "footer_menu": "footer",
