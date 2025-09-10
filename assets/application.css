@@ -1511,9 +1511,12 @@ footer .social-media{
 	justify-content: flex-start;
 }
 footer .social-media_title{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	color: var(--Text-White-Tertiary, rgba(255, 255, 255, 0.60));
+	font-family: "Inter Display";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 20.8px */
 }
 
 #info{
