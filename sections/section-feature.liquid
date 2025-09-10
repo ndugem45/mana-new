@@ -2,6 +2,9 @@
 .title-feature {
   color: red;
 }
+.dsc-feature{
+
+}
 .feature-card_wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -9,8 +12,7 @@
   margin: 64px 0
 }
 .feature-card_items {
-  padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 .feature-card_items-img img {
   max-width: 100%;
@@ -35,7 +37,7 @@
         </div>
         <div class="feature-card_items-text">
           <h3 class="title-feature">{{ block.settings.title }}</h3>
-          <p>{{ block.settings.description }}</p>
+          <p class="dsc-feature">{{ block.settings.description }}</p>
         </div>
       </div>
     {% endfor %}
