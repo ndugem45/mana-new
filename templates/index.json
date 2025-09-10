@@ -35,10 +35,19 @@
             "title": "Feature Title",
             "description": "Feature description goes here."
           }
+        },
+        "feature_item_JqbEa7": {
+          "type": "feature_item",
+          "settings": {
+            "image": "shopify://shop_images/space.png",
+            "title": "Feature Title",
+            "description": "Feature description goes here."
+          }
         }
       },
       "block_order": [
-        "feature_item_CRaQM4"
+        "feature_item_CRaQM4",
+        "feature_item_JqbEa7"
       ],
       "name": "Feature Section",
       "settings": {}
