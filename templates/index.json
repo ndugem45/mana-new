@@ -15,8 +15,8 @@
         "label": "A TRIBUTE TO WHERE WE COME FROM",
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Preserving texture, protecting flavour and honouring culture</p>",
-        "enable_cta": false,
-        "cta_title": "Shop Now",
+        "enable_cta": true,
+        "cta_title": "order on kickstarter",
         "cta_url": "",
         "enable_slider": false,
         "metafields": [
