@@ -18,6 +18,7 @@
         "type": "section-footer",
         "settings": {
           "copyright": "© <span>2024</span> Feenie's Table. | All Rights Reserved",
+          "footer_menu": "footer",
           "product_menu": "product-menu",
           "company_menu": "company-menu",
           "social_menu": "social-menu"
@@ -39,18 +40,12 @@
           "isBlackIcons": true,
           "show_comingsoon_facebook_icon": false,
           "comingsoon_facebook_link": "",
-          "show_comingsoon_twitter_icon": false,
-          "comingsoon_twitter_link": "",
           "show_comingsoon_instagram_icon": false,
           "comingsoon_instagram_link": "",
-          "show_comingsoon_linkedin_icon": false,
-          "comingsoon_linkedin_link": "",
           "show_comingsoon_youtube_icon": false,
           "comingsoon_youtube_link": "",
           "show_comingsoon_tiktok_icon": false,
-          "comingsoon_tiktok_link": "",
-          "show_comingsoon_pinterest_icon": false,
-          "comingsoon_pinterest_link": ""
+          "comingsoon_tiktok_link": ""
         }
       },
       "18131037017812181619": {
