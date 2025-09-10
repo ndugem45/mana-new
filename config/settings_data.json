@@ -32,11 +32,20 @@
               "url": "",
               "icon": "shopify://shop_images/Facebook.svg"
             }
+          },
+          "social_link_PyjcaB": {
+            "type": "social_link",
+            "settings": {
+              "platform": "tiktok",
+              "url": "",
+              "icon": "shopify://shop_images/TikTok.svg"
+            }
           }
         },
         "block_order": [
           "social_link_X6njJG",
-          "social_link_XiCmem"
+          "social_link_XiCmem",
+          "social_link_PyjcaB"
         ],
         "settings": {
           "copyright": "© <span>2024</span> Feenie's Table. | All Rights Reserved",
