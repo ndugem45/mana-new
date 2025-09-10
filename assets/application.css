@@ -909,9 +909,9 @@ nav .right-group a {
 }
 
 .representation .slider-nav .slider-right {
-	margin-bottom: -64px;
+	/* margin-bottom: -64px;
     top: -80px;
-	left: -17px;
+	left: -17px; */
 }
 .representation .slider-nav .slider-right.--mobile{
 	visibility: hidden;
@@ -927,9 +927,9 @@ nav .right-group a {
 	}
 }
 .representation .slider-nav .slider-left {
-	margin-top: -64px;
+	/* margin-top: -64px;
     bottom: -24px;
-	right: -17px;
+	right: -17px; */
 }
 @media only screen and (max-width: 990px) {
 	.representation .slider-nav .slider-left {
