@@ -1510,6 +1510,11 @@ footer .social-media{
 	flex-direction: column;
 	justify-content: flex-start;
 }
+footer .social-media_title{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
 
 #info{
 	background-color: white;
