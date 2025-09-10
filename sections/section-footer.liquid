@@ -15,6 +15,12 @@
           <div class="dot"></div>
         {% endfor %}
       </div>
+      <div class="menu">
+          <div class="menu-label">[Products]</div>
+          {% for link in section.settings.product_menu.links %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
+      </div>
 
       <div class="label">
         Reach us at
