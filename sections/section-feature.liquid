@@ -25,7 +25,8 @@
   text-align: left;
 }
 .feature-card_items-img img {
-  max-width: 100%;
+  max-width: 80px;
+  width: 100%;
   height: auto;
 }
 .feature-card_items-text h3 {
@@ -42,7 +43,7 @@
       <div class="feature-card_items">
         <div class="feature-card_items-img">
           {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ block.settings.title | escape }}">
+            <img src="{{ block.settings.image | img_url: '80x' }}" alt="{{ block.settings.title | escape }}">
           {% endif %}
         </div>
         <div class="feature-card_items-text">
