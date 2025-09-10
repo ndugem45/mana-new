@@ -75,10 +75,9 @@
           {% endform %}
         </div>
         <div class="menu">
-          <div></div>
+        <div class="social-media_follow">Follow us on</div>
         {% for link in section.settings.social_menu.links %}
           <a href="{{ link.url }}">{{ link.title }}</a>
-          <div class="dot"></div>
         {% endfor %}
       </div>
       </div>
