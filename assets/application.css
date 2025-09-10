@@ -486,11 +486,11 @@ nav .right-group a {
 .products .head a {
 	display: block;
 }
-@media only screen and (max-width: 990px) {
+/* @media only screen and (max-width: 990px) {
 	.products .head a {
 		display: none;
 	}
-}
+} */
 
 .products .head .label {
 	color: #332717;
