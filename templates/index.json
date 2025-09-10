@@ -48,8 +48,8 @@
           "type": "feature_item",
           "settings": {
             "image": "shopify://shop_images/unique.png",
-            "title": "Feature Title",
-            "description": "Feature description goes here."
+            "title": "Unique Dedicated Section",
+            "description": "Keeps breads, slides, and key elements separate."
           }
         },
         "feature_item_MYDAqg": {
