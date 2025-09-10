@@ -13,6 +13,11 @@ nav.active {
     backdrop-filter: blur(20px);
 	padding-block: 8px;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
 
 nav .container {
 	display: flex;
