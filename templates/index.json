@@ -27,6 +27,19 @@
     },
     "section_feature_7N7zdR": {
       "type": "section-feature",
+      "blocks": {
+        "feature_item_CRaQM4": {
+          "type": "feature_item",
+          "settings": {
+            "image": "shopify://shop_images/space.png",
+            "title": "Feature Title",
+            "description": "Feature description goes here."
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_CRaQM4"
+      ],
       "name": "Feature Section",
       "settings": {}
     },
