@@ -1581,6 +1581,7 @@ footer .social-media_items{
 }
 .feature .feature-card_items-img img {
   max-width: 80px;
+  min-width: 80px;
   width: 100%;
   height: auto;
 }
