@@ -55,8 +55,9 @@
         "feature_item_MYDAqg": {
           "type": "feature_item",
           "settings": {
-            "title": "Feature Title",
-            "description": "Feature description goes here."
+            "image": "shopify://shop_images/diswasher.png",
+            "title": "Dishwasher & Microwave Safe",
+            "description": "Designed for modern living - easy to use."
           }
         }
       },
