@@ -24,10 +24,19 @@
               "url": "",
               "icon": "shopify://shop_images/Instagram.svg"
             }
+          },
+          "social_link_XiCmem": {
+            "type": "social_link",
+            "settings": {
+              "platform": "facebook",
+              "url": "",
+              "icon": "shopify://shop_images/Facebook.svg"
+            }
           }
         },
         "block_order": [
-          "social_link_X6njJG"
+          "social_link_X6njJG",
+          "social_link_XiCmem"
         ],
         "settings": {
           "copyright": "© <span>2024</span> Feenie's Table. | All Rights Reserved",
