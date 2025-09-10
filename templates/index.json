@@ -25,6 +25,11 @@
         ]
       }
     },
+    "section_feature_7N7zdR": {
+      "type": "section-feature",
+      "name": "Feature Section",
+      "settings": {}
+    },
     "section_about_UCNw7C": {
       "type": "section-about",
       "name": "About Section",
@@ -88,6 +93,7 @@
   },
   "order": [
     "section-hero",
+    "section_feature_7N7zdR",
     "section_about_UCNw7C",
     "section-product",
     "section-representation",
