@@ -1,34 +1,89 @@
 {% style %}
-.title-feature{
-    color: red;
+.title-feature {
+  color: red;
+}
+.feature-card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.feature-card_items {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.feature-card_items-img img {
+  max-width: 100%;
+  height: auto;
+}
+.feature-card_items-text h3 {
+  margin: 10px 0 5px;
+}
+.feature-card_items-text p {
+  margin: 0;
 }
 {% endstyle %}
 
 <div class="container">
   <div class="feature-card_wrapper">
-    <div class="feature-card_items">
+    {% for block in section.blocks %}
+      <div class="feature-card_items">
         <div class="feature-card_items-img">
-        image
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url: '400x' }}" alt="{{ block.settings.title | escape }}">
+          {% endif %}
         </div>
         <div class="feature-card_items-text">
-          <h3 class="title-feature">hallo</h3>
-          <h3 class="title-feature">world</h3>
+          <h3 class="title-feature">{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
         </div>
-    </div>
+      </div>
+    {% endfor %}
   </div>
-
 </div>
 
 {% schema %}
 {
-  "name": "feature",
+  "name": "Feature",
   "tag": "section",
   "class": "feature",
-  "settings": [
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Feature description goes here."
+        }
+      ]
+    }
   ],
+  "max_blocks": 4,
   "presets": [
     {
       "name": "Feature Section",
+      "blocks": [
+        { "type": "feature_item" },
+        { "type": "feature_item" },
+        { "type": "feature_item" },
+        { "type": "feature_item" }
+      ]
     }
   ]
 }
