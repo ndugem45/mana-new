@@ -16,9 +16,10 @@
         {% endfor %}
       </div>
       <div class="menu">
-          <div class="menu-label">[Products]</div>
-          {% for link in section.settings.product_menu.links %}
+          {% comment %} <div class="menu-label"></div> {% endcomment %}
+          {% for link in section.settings.footer_menu.links %}
             <a href="{{ link.url }}">{{ link.title }}</a>
+            <div class="dot"></div>
           {% endfor %}
       </div>
 
