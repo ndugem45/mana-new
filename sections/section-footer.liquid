@@ -76,11 +76,17 @@
         </div>
         <div class="social-media">
           <div class="social-media_title">Follow us on</div>
+
           <div class="social-media_items">
-            {% for link in section.settings.social_menu.links %}
-              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% for block in section.blocks %}
+              <a href="{{ block.settings.url }}" target="_blank" class="social-media_item">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | img_url: '64x64' }}" alt="{{ block.settings.platform | escape }}">
+                {% endif %}
+              </a>
             {% endfor %}
           </div>
+          
       </div>
       </div>
     </div>
