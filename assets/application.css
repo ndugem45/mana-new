@@ -1519,6 +1519,13 @@ footer .social-media_title{
 	font-weight: 400;
 	line-height: 130%; /* 20.8px */
 }
+footer .contact-group{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 40px;
+}
 
 #info{
 	background-color: white;
