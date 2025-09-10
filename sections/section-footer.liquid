@@ -86,7 +86,7 @@
               </a>
             {% endfor %}
           </div>
-          
+
       </div>
       </div>
     </div>
@@ -230,5 +230,34 @@
       "label": "Social menu"
     },
   ],
+  "blocks": [
+    {
+      "type": "social_link",
+      "name": "Social Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "platform",
+          "label": "Platform name"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Media",
+      "category": "Custom"
+    }
+  ]
 }
 {% endschema %}
