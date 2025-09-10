@@ -7,7 +7,8 @@
 {% endstyle %}
 
 
-<div id="about" class="container --wide">
+{% comment %} <div id="about" class="container --wide"> {% endcomment %}
+  <div id="about" class="container --wide">
   <img src="{{ 'about-cover.png' | asset_url }}" alt="" class="cover">
   <div class="content">
     <span class="label">{{ section.settings.label }}</span>
