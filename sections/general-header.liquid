@@ -1,9 +1,16 @@
-
+{% style %}
+  .general-header {
+    background-image: url({{ section.settings.background_image | image_url }});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+{% endstyle %}
 
 <div class="container">
-      {% if section.settings.background_image != blank %}
+      {% comment %} {% if section.settings.background_image != blank %}
         style="background-image: url({{ section.settings.background_image | image_url }}); background-size: cover; background-position: center; background-repeat: no-repeat;"
-      {% endif %}
+      {% endif %} {% endcomment %}
     <div class="basic-content_wrapper">
       <div class="basic-category-content_wrapper-text">
         <h1 class="basic-category-display_title title-basic">
