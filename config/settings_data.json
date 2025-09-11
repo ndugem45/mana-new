@@ -74,7 +74,7 @@
         "type": "general-term",
         "settings": {
           "background_image": "shopify://shop_images/bg-general.png",
-          "title": "General title",
+          "title": "Terms and Conditions",
           "dsc": "General description",
           "enable_cta": true,
           "cta_title": "General Button",
