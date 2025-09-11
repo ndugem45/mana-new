@@ -1423,6 +1423,7 @@ footer .brand {
 		display: flex;
 		flex-direction: column!important;
 		align-items: center!important;
+		gap: 8px!important;
 	}
 	footer .contact-group *:not(a) {
 		display: none;
