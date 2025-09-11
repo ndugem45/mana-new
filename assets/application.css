@@ -1604,6 +1604,9 @@ footer .social-media{
  padding-top: 120px;
  padding-bottom: 64px;
 }
+.general-dsc{
+	background: #fff;
+}
 .general-dsc .container{
  padding-block: 100px;
 }
