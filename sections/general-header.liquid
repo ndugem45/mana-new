@@ -10,9 +10,12 @@
 <div class="container">
     <div class="basic-content_wrapper">
       <div class="basic-category-content_wrapper-text">
-        <h1 class="basic-category-display_title title-basic">
+        <h1 class="basic-category-display_title">
           {{ section.settings.title }}
         </h1>
+        <p class="basic-category-display_dsc">
+          {{ section.settings.dsc }}
+        </p>
       </div>
 
       {% if section.settings.enable_cta %}
@@ -38,7 +41,7 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image",
-      
+
     },
     {
       "type": "header",
@@ -49,6 +52,12 @@
       "id": "title",
       "label": "Section title",
       "default": "Privacy Policy"
+    },
+    {
+      "type": "textarea",
+      "id": "dsc",
+      "label": "Section description",
+      "default": "Last Updated: July 23, 2025"
     },
     {
       "type": "header",
