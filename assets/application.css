@@ -1379,6 +1379,9 @@ footer .top .menu {
         justify-content: center;
 		gap: 64px;
 	}
+	footer input[type=email] {
+		width: 100%;
+	}
 }
 
 footer .top .menu .menu-label {
