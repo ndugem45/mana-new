@@ -1421,8 +1421,8 @@ footer .brand {
 	}
 	footer .contact-group{
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-direction: column!important;
+		align-items: center!important;
 	}
 	footer .contact-group *:not(a) {
 		display: none;
