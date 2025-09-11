@@ -1414,9 +1414,10 @@ footer .brand {
 	footer .brand {
 		font-size: 64px;
 	}
-	footer .contact-group{
-display: flex;
-flex-direction: row;
+	footer .left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
