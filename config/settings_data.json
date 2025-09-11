@@ -60,8 +60,9 @@
         "settings": {
           "background_image": "shopify://shop_images/bg-general.png",
           "title": "Privacy Policy",
+          "dsc": "Last Updated: July 23, 2025",
           "enable_cta": true,
-          "cta_title": "Shop Now",
+          "cta_title": "terms and conditions",
           "cta_url": ""
         }
       },
