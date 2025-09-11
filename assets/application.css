@@ -1616,6 +1616,12 @@ padding-inline: 224px;
 	justify-content: space-between;
 	align-items: start;
 }
+.general-header .basic-content_wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+}
 .general-header .basic-category-display_title{
 	color: var(--Text-White-Primary, #FFF);
 	font-family: "Frank Ruhl Libre";
@@ -1624,4 +1630,12 @@ padding-inline: 224px;
 	font-weight: 400;
 	line-height: 90%; /* 72px */
 	letter-spacing: -1.6px;
+}
+.general-header .basic-category-display_dsc{
+	color: var(--Text-White-Secondary, rgba(255, 255, 255, 0.80));
+	font-family: "Inter Display";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 23.4px */
 }
