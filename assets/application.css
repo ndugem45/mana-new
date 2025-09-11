@@ -1657,4 +1657,7 @@ padding-inline: 224px;
 	.general-dsc .content-dsc{
 		padding-inline: 0px;
 	}
+	.general-header .basic-category-display_title{
+		font-size: 60px;
+	}
 }
