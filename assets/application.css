@@ -1644,6 +1644,22 @@ footer .social-media{
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .feature-card_wrapper {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  .feature-card_items {
+    flex: 0 0 80%; 
+    scroll-snap-align: start;
+  }
+}
+
 .general-header .container{
  padding-top: 170px;
  padding-bottom: 64px;
