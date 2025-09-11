@@ -551,6 +551,7 @@ nav .right-group a {
 	.products .head h2 span {
 		font-size: 62px;
 		bottom: 0px;
+		top: -30px;
 	}
 }
 @media only screen and (max-width: 480px) {
