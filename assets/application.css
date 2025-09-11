@@ -1650,6 +1650,6 @@ padding-inline: 224px;
 		align-items: flex-end;
 	}
 	.general-dsc .content-dsc{
-		padding-inline: 20px;
+		padding-inline: 0px;
 	}
 }
