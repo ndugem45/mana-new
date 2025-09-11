@@ -54,6 +54,20 @@
           "company_menu": "company-menu",
           "social_menu": "social-menu"
         }
+      },
+      "general-header": {
+        "type": "general-header",
+        "settings": {
+          "background_image": "shopify://shop_images/bg-general.png",
+          "title": "Privacy Policy",
+          "enable_cta": true,
+          "cta_title": "Shop Now",
+          "cta_url": ""
+        }
+      },
+      "general-dsc": {
+        "type": "general-dsc",
+        "settings": {}
       }
     },
     "content_for_index": [],
