@@ -55,20 +55,20 @@
           "social_menu": "social-menu"
         }
       },
-      "general-header": {
-        "type": "general-header",
+      "general-dsc": {
+        "type": "general-dsc",
+        "settings": {}
+      },
+      "general-privacy": {
+        "type": "general-privacy",
         "settings": {
           "background_image": "shopify://shop_images/bg-general.png",
           "title": "Privacy Policy",
           "dsc": "Last Updated: July 23, 2025",
           "enable_cta": true,
-          "cta_title": "Term and Condition",
+          "cta_title": "terms and conditions",
           "cta_url": "shopify://pages/terms-and-conditions"
         }
-      },
-      "general-dsc": {
-        "type": "general-dsc",
-        "settings": {}
       }
     },
     "content_for_index": [],
