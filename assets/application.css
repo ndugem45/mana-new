@@ -1614,7 +1614,7 @@ padding-inline: 224px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: start;
+	align-items: flex-end;
 }
 .general-header .basic-category-content_wrapper-text{
 	display: flex;
