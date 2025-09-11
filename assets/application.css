@@ -1643,6 +1643,10 @@ padding-inline: 224px;
 }
 
 @media only screen and (max-width: 990px) {
+	.general-header .container {
+		padding-top: 0px;
+		padding-bottom: 64px;
+	}
 	.general-header .basic-content_wrapper{
 		display: flex;
 		flex-direction: column;
