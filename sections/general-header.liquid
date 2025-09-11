@@ -1,4 +1,7 @@
 <div class="container">
+      {% if section.settings.background_image != blank %}
+            style="background-image: url({{ section.settings.background_image | image_url }}); background-size: cover; background-position: center;"
+    {% endif %}>
     <div class="basic-content_wrapper">
         <div class="basic-category-content_wrapper-text">
             <h1 class="basic-category-display_title title-basic">
