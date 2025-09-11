@@ -1383,6 +1383,10 @@ footer .top .menu {
 	footer .newsletter form  {
 		width: 100%!important;
 	}
+	footer .social-media {
+		display: flex;
+    	align-items: center;
+	}
 }
 
 footer .top .menu .menu-label {
