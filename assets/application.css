@@ -1379,7 +1379,8 @@ footer .top .menu {
         justify-content: center;
 		gap: 64px;
 	}
-	footer input[type=email] {
+	footer input[type=email],
+	footer .newsletter form  {
 		width: 100%!important;
 	}
 }
