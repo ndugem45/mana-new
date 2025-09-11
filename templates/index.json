@@ -51,21 +51,12 @@
             "title": "Unique Dedicated Section",
             "description": "Keeps breads, slides, and key elements separate."
           }
-        },
-        "feature_item_MYDAqg": {
-          "type": "feature_item",
-          "settings": {
-            "image": "shopify://shop_images/diswasher.png",
-            "title": "Dishwasher & Microwave Safe",
-            "description": "Designed for modern living - easy to use."
-          }
         }
       },
       "block_order": [
         "feature_item_CRaQM4",
         "feature_item_JqbEa7",
-        "feature_item_hTbDK3",
-        "feature_item_MYDAqg"
+        "feature_item_hTbDK3"
       ],
       "name": "Feature Section",
       "settings": {}
