@@ -69,6 +69,17 @@
           "cta_title": "terms and conditions",
           "cta_url": "shopify://pages/terms-and-conditions"
         }
+      },
+      "general-term": {
+        "type": "general-term",
+        "settings": {
+          "background_image": "shopify://shop_images/bg-general.png",
+          "title": "General title",
+          "dsc": "General description",
+          "enable_cta": true,
+          "cta_title": "General Button",
+          "cta_url": ""
+        }
       }
     },
     "content_for_index": [],
