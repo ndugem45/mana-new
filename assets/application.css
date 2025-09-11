@@ -1538,7 +1538,8 @@ footer .social-media{
 }
 
 #info{
-	background-color: white;
+	/* background-color: white; */
+	background: var(--Background-Soft-Brown, #F5EFE8);
 	padding-block: 12px;
 	display: flex;
 	flex-direction: row;
