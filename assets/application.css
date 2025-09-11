@@ -1377,6 +1377,7 @@ footer .top .menu {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+		gap: 64px;
 	}
 }
 
