@@ -1558,6 +1558,9 @@ footer .social-media{
 
 /* new section goes here */
 /* feature section style */
+.feature {
+	background: var(--Background-White, #FFF);
+}
 
 .feature .title-feature {
   color: var(--Text-Black-Primary, #332717);
