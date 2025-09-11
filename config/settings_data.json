@@ -59,11 +59,11 @@
         "type": "general-header",
         "settings": {
           "background_image": "shopify://shop_images/bg-general.png",
-          "title": "Privacy Policy",
+          "title": "Terms and Conditions",
           "dsc": "Last Updated: July 23, 2025",
           "enable_cta": true,
-          "cta_title": "terms and conditions",
-          "cta_url": ""
+          "cta_title": "Privacy Policy",
+          "cta_url": "shopify://pages/privacy-policy"
         }
       },
       "general-dsc": {
