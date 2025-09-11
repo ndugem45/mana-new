@@ -65,6 +65,13 @@ a {
 	text-transform: uppercase;
 	border: 1px solid transparent;
 }
+
+.btn-primary{
+	background: transparent;
+	color: #FFF;
+	border: solid 1px #fff;
+}
+
 @media only screen and (max-width: 990px) {
 	.btn {
 		padding: 12px 24px;
