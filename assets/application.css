@@ -1371,6 +1371,7 @@ footer .top .menu {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+		margin-top: 24px;
     }
 	footer #contact{
         display: flex;
