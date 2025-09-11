@@ -122,7 +122,7 @@ nav .right-group a {
 		align-items: flex-start;
 	}
 	.hero .label {
-		color: #fff;
+		color: #fff!important;
 	}
 }
 
