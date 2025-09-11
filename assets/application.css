@@ -533,6 +533,9 @@ nav .right-group a {
 		font-size: 56px;
 		letter-spacing: -1.12px;
 	}
+	.products .head h2 span {
+		margin-left: -20px;
+	}
 }
 
 .products .head h2 span {
