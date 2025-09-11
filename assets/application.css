@@ -1651,7 +1651,7 @@ padding-inline: 224px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: flex-start;
 		gap: 40px;
 	}
 	.general-dsc .content-dsc{
