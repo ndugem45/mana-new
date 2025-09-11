@@ -1419,7 +1419,7 @@ footer .brand {
 		flex-direction: column;
 		align-items: center;
 	}
-	footer contact-group{
+	footer .contact-group{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
