@@ -1380,7 +1380,7 @@ footer .top .menu {
 		gap: 64px;
 	}
 	footer input[type=email] {
-		width: 100%;
+		width: 100%!important;
 	}
 }
 
