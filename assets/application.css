@@ -1616,11 +1616,10 @@ padding-inline: 224px;
 	justify-content: space-between;
 	align-items: start;
 }
-.general-header .basic-content_wrapper{
+.general-header .basic-content_wrapper-text{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: start;
+	flex-direction: column;
+	gap: 24px;
 }
 .general-header .basic-category-display_title{
 	color: var(--Text-White-Primary, #FFF);
