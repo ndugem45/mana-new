@@ -1646,8 +1646,8 @@ footer .social-media{
 
 @media (max-width: 767px) {
   .feature-card_wrapper {
-    display: flex;
-    gap: 16px;
+    display: flex!important;
+    gap: 16px!important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -1655,7 +1655,7 @@ footer .social-media{
   }
 
   .feature-card_items {
-    flex: 0 0 80%; 
+    flex: 0 0 100%; 
     scroll-snap-align: start;
   }
 }
