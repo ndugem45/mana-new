@@ -1607,3 +1607,6 @@ footer .social-media{
 .general-dsc .container{
  padding-block: 100px;
 }
+.general-dsc .content-dsc{
+padding-inline: 100px;
+}
