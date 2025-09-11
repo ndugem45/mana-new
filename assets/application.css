@@ -1366,6 +1366,10 @@ footer .top .menu {
 	footer .top .menu {
 		align-items: center;
 	}
+	footer .left .menu{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 footer .top .menu .menu-label {
