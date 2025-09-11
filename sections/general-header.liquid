@@ -8,9 +8,6 @@
 {% endstyle %}
 
 <div class="container">
-      {% comment %} {% if section.settings.background_image != blank %}
-        style="background-image: url({{ section.settings.background_image | image_url }}); background-size: cover; background-position: center; background-repeat: no-repeat;"
-      {% endif %} {% endcomment %}
     <div class="basic-content_wrapper">
       <div class="basic-category-content_wrapper-text">
         <h1 class="basic-category-display_title title-basic">
@@ -40,7 +37,8 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Background Image",
+      
     },
     {
       "type": "header",
