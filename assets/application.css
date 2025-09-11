@@ -1599,3 +1599,7 @@ footer .social-media{
 .feature .feature-card_items-text p {
   margin: 0;
 }
+
+.general-header .container{
+ padding-top: 120px;
+}
