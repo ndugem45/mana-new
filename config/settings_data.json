@@ -37,7 +37,7 @@
             "type": "social_link",
             "settings": {
               "platform": "tiktok",
-              "url": "",
+              "url": "https://www.tiktok.com/@feeniestable?lang=en-GB",
               "icon": "shopify://shop_images/TikTok.svg"
             }
           }
