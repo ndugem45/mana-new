@@ -1610,3 +1610,9 @@ footer .social-media{
 .general-dsc .content-dsc{
 padding-inline: 224px;
 }
+.general-header .basic-content_wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+}
