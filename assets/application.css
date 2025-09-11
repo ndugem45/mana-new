@@ -1367,8 +1367,11 @@ footer .top .menu {
 		align-items: center;
 	}
 	footer .left .menu{
-		display: flex;
-		flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 	}
 }
 
