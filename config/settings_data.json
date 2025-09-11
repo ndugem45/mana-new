@@ -75,10 +75,10 @@
         "settings": {
           "background_image": "shopify://shop_images/bg-general.png",
           "title": "Terms and Conditions",
-          "dsc": "General description",
+          "dsc": "Last Updated: July 23, 2025",
           "enable_cta": true,
-          "cta_title": "General Button",
-          "cta_url": ""
+          "cta_title": "Privacy Policy",
+          "cta_url": "shopify://pages/privacy-policy"
         }
       }
     },
