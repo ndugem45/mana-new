@@ -1616,11 +1616,12 @@ padding-inline: 224px;
 	justify-content: space-between;
 	align-items: start;
 }
-
-color: var(--Text-White-Primary, #FFF);
-font-family: "Frank Ruhl Libre";
-font-size: 80px;
-font-style: normal;
-font-weight: 400;
-line-height: 90%; /* 72px */
-letter-spacing: -1.6px;
+.general-header .basic-category-display_title{
+	color: var(--Text-White-Primary, #FFF);
+	font-family: "Frank Ruhl Libre";
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%; /* 72px */
+	letter-spacing: -1.6px;
+}
