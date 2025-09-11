@@ -1641,3 +1641,15 @@ padding-inline: 224px;
 	font-weight: 500;
 	line-height: 130%; /* 23.4px */
 }
+
+@media only screen and (max-width: 990px) {
+	.general-header .basic-content_wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.general-dsc .content-dsc{
+padding-inline: 224px;
+}
+}
