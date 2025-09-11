@@ -1565,7 +1565,7 @@ footer .social-media{
 .feature .title-feature {
   color: var(--Text-Black-Primary, #332717);
   font-family: "Inter Display";
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1573,7 +1573,7 @@ footer .social-media{
 .feature .dsc-feature{
   color: var(--Text-Black-Primary, #332717);
   font-family: "Inter Display";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 20.8px */
@@ -1592,8 +1592,8 @@ footer .social-media{
   gap: 24px;
 }
 .feature .feature-card_items-img img {
-  max-width: 80px;
-  min-width: 80px;
+  max-width: 48px;
+  min-width: 48px;
   width: 100%;
   height: auto;
 }
