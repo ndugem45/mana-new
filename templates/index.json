@@ -112,7 +112,7 @@
       "type": "section-testimonial",
       "settings": {
         "label": "What Our Customers Are Saying",
-        "title": "Words your <br>table — <span> Testimonials </span>",
+        "title": "Words your<br>table — <span> Testimonials </span>",
         "metafields": [
           "harpreet-birdi",
           "arun-sandhu",
