@@ -75,8 +75,8 @@
     $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video')[0];
-      var playIco = event.currentTarget.querySelector('#play');
-      var pauseIco = event.currentTarget.querySelector('#pause');
+      var playIco = event.currentTarget.querySelector('#pause');
+      var pauseIco = event.currentTarget.querySelector('#play');
       var founder = $('#shopify-section-{{section.id}}');
 
       if (vid.paused) {
