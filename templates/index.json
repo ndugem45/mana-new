@@ -15,7 +15,7 @@
         "label": "HONOURING  EVERY EATING STYLE",
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Protecting The Most Important Part of Your Meal</p>",
-        "enable_cta": true,
+        "enable_cta": false,
         "cta_title": "order on kickstarter",
         "cta_url": "",
         "enable_slider": false,
