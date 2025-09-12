@@ -56,7 +56,7 @@
 </div>
 
 <script>
-   $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
+   {% comment %} $('#shopify-section-{{section.id}} .btn-play').on('click', function () {
       event.stopPropagation();
       var vid = $('#shopify-section-{{section.id}} video')[0];
       var playIco = event.currentTarget.querySelector('#play')
@@ -69,6 +69,27 @@
         playIco.style.display = 'none'
         pauseIco.style.display = 'block'
         vid.pause()
+      }
+    }); {% endcomment %}
+    $('#shopify-section-{{section.id}} .btn-play').on('click', function (event) {
+      event.stopPropagation();
+      var $btn = $(this); // button yang diklik
+      var vid = $('#shopify-section-{{section.id}} video')[0];
+      var playIco = event.currentTarget.querySelector('#play');
+      var pauseIco = event.currentTarget.querySelector('#pause');
+
+      if (vid.paused) {
+        // video masih pause, sekarang jalankan
+        pauseIco.style.display = 'block';
+        playIco.style.display = 'none';
+        vid.play();
+        $btn.addClass('active'); // tambahkan class active
+      } else {
+        // video sedang jalan, sekarang pause
+        playIco.style.display = 'block';
+        pauseIco.style.display = 'none';
+        vid.pause();
+        $btn.removeClass('active'); // hapus class active
       }
     });
 </script>
