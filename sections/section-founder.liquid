@@ -4,6 +4,17 @@
     /* background-position: center;
     background-size: cover; */
   }
+  .founder .desc,
+  .founder h2{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 200ms ease;
+  }
+  .founder.active .desc,
+  .founder.active h2{
+    transform: translateY(50%);
+    opacity: 0;
+  }
 {% endstyle %}
 
 <video muted loop playsinline poster="{{ 'founder_cover.png' | asset_url }}">
