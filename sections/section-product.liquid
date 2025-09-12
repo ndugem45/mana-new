@@ -44,9 +44,9 @@
             </div>
           {% endif %}
         {% else %}
-          <a href="{{ product.metafields.custom.cta_url }}" class="btn --brown"> 
+          {% comment %} <a href="{{ product.metafields.custom.cta_url }}" class="btn --brown"> 
             {{  product.metafields.custom.cta_title }}
-          </a>
+          </a> {% endcomment %}
         {% endif %}
       </div>
     {% endfor %}
