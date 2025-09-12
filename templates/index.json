@@ -12,7 +12,7 @@
     "section-hero": {
       "type": "section-hero",
       "settings": {
-        "label": "A TRIBUTE TO WHERE WE COME FROM",
+        "label": "HONOURING  EVERY EATING STYLE",
         "title": "A custom plate crafted for the way we eat",
         "desc": "<p>Preserving texture, protecting flavour and honouring culture</p>",
         "enable_cta": true,
@@ -67,7 +67,7 @@
       "settings": {
         "label": "ABOUT US",
         "title": "The story behind the plate — <span> Our Roots </span>",
-        "desc": "<p>Feenie’s Table began as a quiet solution—a plate designed for a daughter who ate differently and needed her food to have space. From that simple act came a larger realisation: most plates were never created to reflect the way many of us eat—with structure, with balance, and shaped by the needs of different meals, eating styles and cultures.</p><p>What began as one design found resonance far beyond a single table. We discovered that tableware can be more than functional—it can embody tradition, embrace neurodivergent needs, and create belonging where it was missing. Today, Feenie’s Table exists to fill that absence. Through thoughtful function and design that adapts, we honour every meal, every style, every culture—and invite a community to gather around it.</p>"
+        "desc": "<p>Feenie’s Table was inspired by a daughter who eats differently, needing her food to sit apart. This simple need revealed a larger truth: most plates don’t reflect the way we eat—with balance, structure, and cultural nuance.<br/><br/>Our tableware goes beyond function. It honours tradition, embraces diverse eating styles, and creates space where it was missing.</p>"
       }
     },
     "section-product": {
