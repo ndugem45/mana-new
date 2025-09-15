@@ -63,7 +63,7 @@ menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("shows");
   infotop.classList.toggle("show");
 
-    if (menuGroup.classList.contains("shows")) {
+  if (menuGroup.classList.contains("shows")) {
     document.documentElement.style.overflow = "hidden";
   } else {
     document.documentElement.style.overflow = "";
