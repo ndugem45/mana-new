@@ -1051,7 +1051,7 @@ nav .right-group a {
 }
 @media only screen and (max-width: 990px) {
 .founder video{
-	object-fit: contain;
+	object-fit: contain!important;
 }
 }
 
