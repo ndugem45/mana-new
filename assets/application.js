@@ -33,21 +33,27 @@ function scrollToSection(target, offset) {
 // });
 
 
-var prevScrollpos = window.pageYOffset;
-var nav = document.getElementById("nav");
-nav.style.transition = "top 0.3s ease";
+const nav = document.getElementById("nav");
+let prevScrollPos = window.pageYOffset;
 
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+nav.style.transition = "top 0.3s ease, background 0.3s ease";
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+
+  // Kalau di posisi paling atas
+  if (currentScrollPos === 0) {
     nav.style.top = "0";
-    nav.style.background = "red";
+    nav.style.background = "transparent";
   } else {
-    nav.style.top = "-50%";
+    // Arah scroll
+    nav.style.top = prevScrollPos > currentScrollPos ? "0" : "-50%";
     nav.style.background = "red";
   }
-  prevScrollpos = currentScrollPos;
-}
+
+  prevScrollPos = currentScrollPos;
+});
+
 
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
