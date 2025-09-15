@@ -1049,6 +1049,11 @@ nav .right-group a {
 		padding-block: 64px;
 	}
 }
+@media only screen and (max-width: 990px) {
+.founder video{
+	object-fit: contain;
+}
+}
 
 .founder .container{
 	position: relative;
