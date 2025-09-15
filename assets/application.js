@@ -52,6 +52,12 @@ const menuGroup = document.getElementById("menuGroup");
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("active");
+
+    if (menuGroup.classList.contains("active")) {
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "";
+  }
 });
 
 
