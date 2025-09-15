@@ -58,7 +58,10 @@ nav .menu-group {
 		height: 100vh;
 	}
 	nav .btn-icon-close{
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:
 	}
 }
 
