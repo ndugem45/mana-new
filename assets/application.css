@@ -93,7 +93,7 @@ nav .nav-menus{
   }
 
   .menu-group.shows {
-    right: 0;
+    height: 0vh;
   }
 
   .btn-icon-close {
