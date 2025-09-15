@@ -33,14 +33,16 @@ window.addEventListener("scroll", () => {
 });
 
 
-  var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.pageYOffset;
+var nav = document.getElementById("nav");
+nav.style.transition = "top 0.3s ease";
 
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("nav").style.top = "0";
-    } else {
-      document.getElementById("nav").style.top = "-50%";
-    }
-    prevScrollpos = currentScrollPos;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-50%";
   }
+  prevScrollpos = currentScrollPos;
+}
