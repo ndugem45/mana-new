@@ -41,8 +41,10 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     nav.style.top = "0";
+    nav.style.background = "red";
   } else {
     nav.style.top = "-50%";
+    nav.style.background = "red";
   }
   prevScrollpos = currentScrollPos;
 }
