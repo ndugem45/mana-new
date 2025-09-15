@@ -72,6 +72,10 @@ nav-layout {
 .show{
 	display: none!important;
 }
+nav .nav-menus{
+	width: 100%;
+    display: flex;
+}
 
 @media (max-width: 768px) {
   .menu-group {
