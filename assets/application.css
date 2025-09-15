@@ -31,7 +31,6 @@ nav .container {
 	nav .container {
 		justify-content: space-between;
 		display: flex;
-		flex-direction: column;
 	}
 }
 
