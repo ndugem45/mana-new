@@ -85,7 +85,7 @@ nav-layout {
     transition: right 0.3s ease;
   }
 
-  .menu-group.active {
+  .menu-group.shows {
     right: 0;
   }
 
