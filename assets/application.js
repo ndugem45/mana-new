@@ -52,10 +52,10 @@ const menuGroup = document.getElementById("menuGroup");
 const infotop = document.getElementById("info");
 
 menuToggle.addEventListener("click", () => {
-  menuGroup.classList.toggle("active");
+  menuGroup.classList.toggle("shows");
   infotop.classList.toggle("show");
 
-    if (menuGroup.classList.contains("active")) {
+    if (menuGroup.classList.contains("shows")) {
     document.documentElement.style.overflow = "hidden";
   } else {
     document.documentElement.style.overflow = "";
