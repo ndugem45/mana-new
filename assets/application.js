@@ -49,9 +49,11 @@ window.onscroll = function() {
 
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
+const infotop = document.getElementById("info");
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("active");
+  infotop.classList.toggle("show");
 
     if (menuGroup.classList.contains("active")) {
     document.documentElement.style.overflow = "hidden";
