@@ -241,7 +241,7 @@
       event.stopPropagation();
       var slider = $('#shopify-section-{{section.id}} .slider')[0];
       if(slider.slick.currentSlide == 0){
-        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', slider.slick.slideCount-1);
+        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 1);
       }else{
         $('#shopify-section-{{section.id}} .slider').slick('slickPrev');
       }
@@ -251,7 +251,7 @@
       event.stopPropagation();
       var slider = $('#shopify-section-{{section.id}} .slider')[0];
       if(slider.slick.currentSlide+1 == slider.slick.slideCount){
-        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', 0);
+        $('#shopify-section-{{section.id}} .slider').slick('slickGoTo', slider.slick.currentSlide-1);
       }else{
         $('#shopify-section-{{section.id}} .slider').slick('slickNext');
       }
