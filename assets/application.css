@@ -17,6 +17,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
 }
+#nav {
+  transition: all 200ms ease-out;
+}
 
 
 nav .container {
