@@ -80,9 +80,9 @@ nav .nav-menus{
 @media (max-width: 768px) {
   .menu-group {
     position: fixed;
-    top: -100%;
+    top: 0;
     right: 0;
-    height: 100vh;
+    height: 0vh;
     width: 100%;
     background: #132142;
     flex-direction: column;
@@ -90,11 +90,13 @@ nav .nav-menus{
     align-items: center;
     gap: 32px;
     transition: right 0.3s ease;
+	overflow: hidden;
   }
 
   .menu-group.shows {
     /* right: 0; */
-	top: 0;
+	/* top: 0; */
+	height: 100vh;
   }
 
   .btn-icon-close {
