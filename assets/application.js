@@ -22,14 +22,53 @@ function scrollToSection(target, offset) {
     });
 }
 
-const navbar = document.querySelector("nav");
+// const navbar = document.querySelector("nav");
+
+// window.addEventListener("scroll", () => {
+//     if (window.scrollY > 100) {
+//         navbar.classList.add("active");
+//     } else {
+//         navbar.classList.remove("active");
+//     }
+// });
+
+
+const nav = document.getElementById("nav");
+let prevScrollPos = window.pageYOffset;
+
+nav.style.transition = "top 0.3s ease, background 0.3s ease";
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-        navbar.classList.add("active");
-    } else {
-        navbar.classList.remove("active");
-    }
+  const currentScrollPos = window.pageYOffset;
+  if (currentScrollPos === 0) {
+    nav.style.top = "0";
+    nav.style.background = "transparent";
+    nav.style.backdropFilter= "blur(0)";
+  } else {
+    nav.style.top = prevScrollPos > currentScrollPos ? "0" : "-50%";
+    nav.style.background = " rgba(0, 0, 0, 0.2)";
+    nav.style.backdropFilter= "blur(20px)";
+    // backdrop-filter: blur(20px);
+  }
+
+  prevScrollPos = currentScrollPos;
 });
+
+
+const menuToggle = document.getElementById("menuToggle");
+const menuGroup = document.getElementById("menuGroup");
+const infotop = document.getElementById("info");
+
+menuToggle.addEventListener("click", () => {
+  menuGroup.classList.toggle("shows");
+  infotop.classList.toggle("show");
+
+  if (menuGroup.classList.contains("shows")) {
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "";
+  }
+});
+
 
 
