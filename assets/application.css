@@ -63,6 +63,7 @@ nav .menu-group {
 	nav .nav-layout.active{
 		display: flex;
         flex-direction: column;
+		background: #132142;
 	}
 
 	nav .btn-icon-close{
