@@ -40,15 +40,13 @@ nav.style.transition = "top 0.3s ease, background 0.3s ease";
 
 window.addEventListener("scroll", () => {
   const currentScrollPos = window.pageYOffset;
-
-  // Kalau di posisi paling atas
   if (currentScrollPos === 0) {
     nav.style.top = "0";
     nav.style.background = "transparent";
   } else {
-    // Arah scroll
     nav.style.top = prevScrollPos > currentScrollPos ? "0" : "-50%";
     nav.style.background = " rgba(0, 0, 0, 0.2)";
+    backdrop-filter: blur(20px);
   }
 
   prevScrollPos = currentScrollPos;
