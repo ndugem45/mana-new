@@ -90,6 +90,9 @@ nav-layout {
     display: block;
     cursor: pointer;
   }
+  nav .nav-logo{
+	z-index: 99;
+  }
 }
 
 /* Desktop (hide toggle) */
