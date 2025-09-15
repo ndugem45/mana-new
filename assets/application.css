@@ -67,7 +67,7 @@ nav-layout {
   cursor: pointer;
 }
 .show{
-	display: none;
+	display: none!important;
 }
 
 @media (max-width: 768px) {
