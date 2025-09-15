@@ -50,6 +50,22 @@ nav .menu-group {
 .btn-icon-close{
 	display: none;
 }
+
+nav-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-group {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 990px) {
 	nav .menu-group {
 		display: none;
