@@ -20,9 +20,11 @@ html {
 #nav {
 	top: 0;
 	transition: all 300ms ease-out;
-	overflow: auto!important;
 }
 
+nav.section{
+	overflow: visible;
+}
 
 nav .container {
 	display: flex;
