@@ -58,14 +58,14 @@
           <a href="">
             <img src="{{ 'nav-logo.png' | asset_url }}" alt="" class="nav-logo">
           </a>
-          <div class="menu-group">
+          <div class="menu-group" id="menuGroup">
             <div onclick="scrollToSection('hero', true)" class="menu-link"> Home </div>
             <div onclick="scrollToSection('about', true)" class="menu-link"> About </div>
             <div onclick="scrollToSection('shop', true)" class="menu-link"> Shop </div>
             <div onclick="scrollToSection('contact', false)" class="menu-link"> Contact </div>
           </div>
         </div>
-        <div class="btn-icon-close">
+        <div class="btn-icon-close" id="menuToggle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
