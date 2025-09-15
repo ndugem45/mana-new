@@ -66,6 +66,9 @@ nav-layout {
 .menu-link {
   cursor: pointer;
 }
+.show{
+	display: none;
+}
 
 @media (max-width: 768px) {
   .menu-group {
