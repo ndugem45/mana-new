@@ -49,11 +49,11 @@ window.addEventListener("scroll", () => {
 
 const menuToggle = document.getElementById("menuToggle");
 const menuGroup = document.getElementById("menuGroup");
-const infotop = document.getElementById("info");
+// const infotop = document.getElementById("info");
 
 menuToggle.addEventListener("click", () => {
   menuGroup.classList.toggle("shows");
-  infotop.classList.toggle("show");
+//   infotop.classList.toggle("show");
 
     if (menuGroup.classList.contains("shows")) {
     document.documentElement.style.overflow = "hidden";
