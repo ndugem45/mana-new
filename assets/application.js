@@ -43,9 +43,11 @@ window.addEventListener("scroll", () => {
   if (currentScrollPos === 0) {
     nav.style.top = "0";
     nav.style.background = "transparent";
+    nav.style.backdropFilter= "blur(0)";
   } else {
     nav.style.top = prevScrollPos > currentScrollPos ? "0" : "-50%";
     nav.style.background = " rgba(0, 0, 0, 0.2)";
+    nav.style.backdropFilter= "blur(20px)";
     // backdrop-filter: blur(20px);
   }
 
