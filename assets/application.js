@@ -46,3 +46,33 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+  const navLayout = document.querySelector(".nav-layout");
+  const btnToggle = document.querySelector(".btn-icon-close");
+
+  // toggle menu
+  btnToggle.addEventListener("click", () => {
+    navLayout.classList.toggle("active");
+  });
+
+  // fungsi scroll ke section
+  function scrollToSection(id, offsetTop) {
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    let y = section.offsetTop;
+    if (offsetTop) {
+      // kalau mau kasih margin atas misalnya 72px
+      y = y - 72;
+    }
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth"
+    });
+
+    // close menu setelah klik link di mobile
+    navLayout.classList.remove("active");
+  }
+
+
