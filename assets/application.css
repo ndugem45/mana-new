@@ -55,10 +55,18 @@ nav .menu-group {
 		display: none;
 	}
 	.nav-layout.active .menu-group {
-		display: flex;
-        flex-direction: column;
-        width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
 		height: 100vh;
+		background: #132142;
+		gap: 32px;
+		transform: translateX(-100%);
+		transition: transform 0.3s ease-in-out;
 	}
 	nav .nav-layout.active{
 		display: flex;
