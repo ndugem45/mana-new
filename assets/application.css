@@ -61,7 +61,8 @@ nav .menu-group {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width:
+		width: 24px;
+		padding: 10px;
 	}
 }
 
