@@ -80,8 +80,8 @@ nav .nav-menus{
 @media (max-width: 768px) {
   .menu-group {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: -100%;
+    right: 0;
     height: 100vh;
     width: 100%;
     background: #132142;
@@ -93,7 +93,8 @@ nav .nav-menus{
   }
 
   .menu-group.shows {
-    right: 0;
+    /* right: 0; */
+	top: 0;
   }
 
   .btn-icon-close {
