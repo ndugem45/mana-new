@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
   } else {
     // Arah scroll
     nav.style.top = prevScrollPos > currentScrollPos ? "0" : "-50%";
-    nav.style.background = "red";
+    nav.style.background = " rgba(0, 0, 0, 0.2)";
   }
 
   prevScrollPos = currentScrollPos;
